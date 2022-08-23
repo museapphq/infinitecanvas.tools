@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
+
+const galleryItems = await Astro.glob("../content/gallery/*.md")
 ---
 
 <Layout title="Infinite Canvas">
@@ -9,4 +11,20 @@ import Layout from "../layouts/Layout.astro"
   </header>
 
   <!-- default slot -->
+  <ul>
+    {
+      galleryItems.map(
+        ({ frontmatter: { title, platforms, url, usecases, description } }) => (
+          <li>
+            <h2>{title}</h2>
+            <a href={url}>{url.replace("https://", "")}</a>
+            <div>{description}</div>
+            <div>{platforms}</div>
+            <div>{usecases}</div>
+            <p>{description}</p>
+          </li>
+        )
+      )
+    }
+  </ul>
 </Layout>
