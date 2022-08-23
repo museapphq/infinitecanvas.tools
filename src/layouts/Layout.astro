@@ -20,6 +20,7 @@ const { title, activeItem } = Astro.props as Props
   </head>
   <body>
     <Nav activeItem={activeItem} />
+    <slot name="header" />
     <slot />
     <Footer />
   </body>
