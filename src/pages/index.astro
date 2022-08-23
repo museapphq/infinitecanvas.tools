@@ -4,99 +4,97 @@ import Layout from "../layouts/Layout.astro"
 
 <Layout title="Infinite Canvas" activeItem="home">
   <!-- header slot-->
-  <header slot="header">
+  <header slot="header" class="text-center p-4">
     <h1>Infinite Canvas</h1>
     <p>New tools that work the way we think</p>
   </header>
 
   <!-- default slot -->
-  <main>
-    <section>
-      <h2>Meet the apps paving the way</h2>
-      <div>- placeholder for list of apps -</div>
-      <a href="/gallery">Browse the app gallery →</a>
-    </section>
-    <section>
-      <div>
-        <h2>We think spatially</h2>
-        <p>
-          People have been organizing and processing information spatially for
-          centuries, whether it be with notes in a notebook or bulletin boards
-          with stickies and photos.
-        </p>
-        <p>
-          This type of work uses a parts of our brain dedicated to spatial
-          navigation.
-        </p>
-      </div>
-      <div>
-        <h2>Software that mirrors how we think</h2>
-        <p>
-          Traditional tools like text editors and presentation software have
-          linear interfaces that mimic their output.
-        </p>
-        <p>
-          Infinite canvas tools instead embrace the messy, circuitous paths we
-          take when brainstorming, sketching and distilling ideas.
-        </p>
-      </div>
-    </section>
-    <secion>
-      <h2>What makes an infinite canvas?</h2>
-      <ul>
-        <li>
-          <h3>Expansiveness</h3>
-          <p>
-            A seemingly limitless canvas allows for free thinking and creation
-          </p>
-        </li>
-        <li>
-          <h3>Zoom</h3>
-          <p>
-            Different zoom levels mimic stepping into and stepping away in the
-            real world
-          </p>
-        </li>
-        <li>
-          <h3>Direct manipulation</h3>
-          <p>
-            Direct manipulation of objects including freeform movement, editing
-            and duplication
-          </p>
-        </li>
-        <li>
-          <h3>Collaboration</h3>
-          <p>
-            Real time collaboration combines the best of software and working
-            together in person
-          </p>
-        </li>
-      </ul>
-    </secion>
-    <section>
-      <h2>History</h2>
+  <section class="text-center p-4">
+    <h2>Meet the apps paving the way</h2>
+    <div>- placeholder for list of apps -</div>
+    <a href="/gallery">Browse the app gallery →</a>
+  </section>
+
+  <section class="p-4">
+    <div>
+      <h2>We think spatially</h2>
       <p>
-        There is a long lineage of software built around an infinite canvas.
+        People have been organizing and processing information spatially for
+        centuries, whether it be with notes in a notebook or bulletin boards
+        with stickies and photos.
       </p>
-      <ol>
-        <li>
-          <time datetime="1963">1963</time>
-          <h3>Sketchpad</h3>
-        </li>
-        <li>
-          <time datetime="1987">1987</time>
-          <h3>Adobe Illustrator</h3>
-        </li>
-        <li>
-          <time datetime="2006">2006</time>
-          <h3>Blender node editor</h3>
-        </li>
-        <li>
-          <time datetime="2016">2016</time>
-          <h3>Figma</h3>
-        </li>
-      </ol>
-      <a href="/history">Browse the timeline →</a>
-    </section>
-  </main>
+      <p>
+        This type of work uses a parts of our brain dedicated to spatial
+        navigation.
+      </p>
+    </div>
+    <div>
+      <h2>Software that mirrors how we think</h2>
+      <p>
+        Traditional tools like text editors and presentation software have
+        linear interfaces that mimic their output.
+      </p>
+      <p>
+        Infinite canvas tools instead embrace the messy, circuitous paths we
+        take when brainstorming, sketching and distilling ideas.
+      </p>
+    </div>
+  </section>
+
+  <secion>
+    <h2 class="text-center">What makes an infinite canvas?</h2>
+    <ul class="grid grid-cols-2 p-4 gap-4">
+      <li>
+        <h3>Expansiveness</h3>
+        <p>
+          A seemingly limitless canvas allows for free thinking and creation
+        </p>
+      </li>
+      <li>
+        <h3>Zoom</h3>
+        <p>
+          Different zoom levels mimic stepping into and stepping away in the
+          real world
+        </p>
+      </li>
+      <li>
+        <h3>Direct manipulation</h3>
+        <p>
+          Direct manipulation of objects including freeform movement, editing
+          and duplication
+        </p>
+      </li>
+      <li>
+        <h3>Collaboration</h3>
+        <p>
+          Real time collaboration combines the best of software and working
+          together in person
+        </p>
+      </li>
+    </ul>
+  </secion>
+  <section class="text-center p-4">
+    <h2>History</h2>
+    <p>There is a long lineage of software built around an infinite canvas.</p>
+    <ol class="grid grid-cols-4 p-4 gap-4">
+      <li>
+        <time datetime="1963">1963</time>
+        <h3>Sketchpad</h3>
+      </li>
+      <li>
+        <time datetime="1987">1987</time>
+        <h3>Adobe Illustrator</h3>
+      </li>
+      <li>
+        <time datetime="2006">2006</time>
+        <h3>Blender node editor</h3>
+      </li>
+      <li>
+        <time datetime="2016">2016</time>
+        <h3>Figma</h3>
+      </li>
+    </ol>
+    <a href="/history">Browse the timeline →</a>
+  </section>
 </Layout>

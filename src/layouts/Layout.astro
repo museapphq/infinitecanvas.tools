@@ -18,10 +18,12 @@ const { title, activeItem } = Astro.props as Props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="min-h-screen flex flex-col">
     <Nav activeItem={activeItem} />
     <slot name="header" />
-    <slot />
+    <main class="flex-grow">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>

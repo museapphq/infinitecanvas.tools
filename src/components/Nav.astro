@@ -6,8 +6,10 @@ export interface Props {
 }
 ---
 
-<nav>
+<nav class="flex flex-row justify-between p-4">
   <a href="/">Home</a>
-  <a href="/gallery">App gallery</a>
-  <a href="/history">History</a>
+  <div class="space-x-4">
+    <a href="/gallery">App gallery</a>
+    <a href="/history">History</a>
+  </div>
 </nav>
