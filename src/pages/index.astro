@@ -2,12 +2,7 @@
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout title="Infinite Canvas">
-  <nav>
-    <a href="/">Home</a>
-    <a href="/gallery">App gallery</a>
-    <a href="/history">History</a>
-  </nav>
+<Layout title="Infinite Canvas" activeItem="home">
   <header>
     <h1>Infinite Canvas</h1>
     <p>New tools that work the way we think</p>
@@ -101,19 +96,4 @@ import Layout from "../layouts/Layout.astro"
       <a href="/history">Browse the timeline →</a>
     </section>
   </main>
-  <footer>
-    <p>
-      This site draws from our excitement about the growing infinite canvas
-      idea. We hope to inspire you to build and use these tools.
-    </p>
-    <p>
-      This project is open source. Feel free to contribute and provide feedback
-      on Github.
-    </p>
-    <p>
-      Crafted by <a href="https://www.arun.is/">Arun Venkatesan</a> and <a
-        href="https://museapp.com/">Muse</a
-      >
-    </p>
-  </footer>
 </Layout>

@@ -1,0 +1,13 @@
+---
+const { activeItem } = Astro.props
+
+export interface Props {
+  activeItem?: string
+}
+---
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/gallery">App gallery</a>
+  <a href="/history">History</a>
+</nav>
