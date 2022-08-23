@@ -12,6 +12,18 @@
   "devDependencies": {
     "@astrojs/image": "^0.3.4",
     "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.6"
+    "astro": "^1.0.6",
+    "prettier": "^2.7.1",
+    "prettier-plugin-astro": "^0.5.2"
+  },
+  "prettier": {
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "proseWrap": "always"
   }
 }
