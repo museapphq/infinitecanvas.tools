@@ -51,15 +51,22 @@ module.exports = {
       ]
     },
     fontSize: {
-      "sans-22": "22px",
-      "sans-26": "26px",
-      "sans-32": "32px",
-      "sans-40": "40px",
-      "sans-50": "50px",
-      "serif-16": "16px",
-      "serif-20": "20px",
-      "serif-24": "24px",
-      "serif-38": "38px"
+      // sans sizes
+      22: "22px",
+      26: "26px",
+      32: "32px",
+      40: "40px",
+      50: "50px",
+
+      // serif sizes
+      16: "16px",
+      20: "20px",
+      24: "24px",
+      38: "38px"
+    },
+    letterSpacing: {
+      normal: "0",
+      wide: "2.5%"
     },
     extend: {}
   },

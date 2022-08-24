@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilites {
+  .sans-22 {
+    @apply font-sans text-22 tracking-wide !important;
+  }
+  .sans-26 {
+    @apply font-sans text-26 tracking-wide !important;
+  }
+  .sans-32 {
+    @apply font-sans text-32 tracking-wide !important;
+  }
+  .sans-40 {
+    @apply font-sans text-40 tracking-wide !important;
+  }
+  .sans-50 {
+    @apply font-sans text-50 tracking-wide !important;
+  }
+
+  .serif-16 {
+    @apply font-serif text-16 tracking-normal !important;
+  }
+  .serif-20 {
+    @apply font-serif text-20 tracking-normal !important;
+  }
+  .serif-24 {
+    @apply font-serif text-24 tracking-normal !important;
+  }
+  .serif-38 {
+    @apply font-serif text-38 tracking-normal !important;
+  }
+}
