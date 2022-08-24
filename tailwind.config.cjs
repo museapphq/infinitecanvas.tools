@@ -50,6 +50,17 @@ module.exports = {
         "sans-serif"
       ]
     },
+    fontSize: {
+      "sans-22": "22px",
+      "sans-26": "26px",
+      "sans-32": "32px",
+      "sans-40": "40px",
+      "sans-50": "50px",
+      "serif-16": "16px",
+      "serif-20": "20px",
+      "serif-24": "24px",
+      "serif-38": "38px"
+    },
     extend: {}
   },
   plugins: []
