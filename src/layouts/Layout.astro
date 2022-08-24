@@ -1,6 +1,7 @@
 ---
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
+import style from "../styles/style.css"
 export interface Props {
   title: string
   activeItem?: string
@@ -16,6 +17,23 @@ const { title, activeItem } = Astro.props as Props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- fonts -->
+    <link
+      rel="preload"
+      href="/fonts/merriweather/merriweather-v30-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/fonts/merriweather/merriweather-v30-latin-700italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
+    />
+
     <title>{title}</title>
   </head>
   <body class="min-h-screen flex flex-col">
