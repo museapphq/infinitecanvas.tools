@@ -25,6 +25,7 @@
 @font-face {
   font-family: "Merriweather";
   font-style: italic;
+  font-display: optional;
   font-weight: 400;
   src: url("/fonts/merriweather/merriweather-v30-latin-italic.eot"); /* IE9 Compat Modes */
   src: local(""),
@@ -67,6 +68,7 @@
 @font-face {
   font-family: "Merriweather";
   font-style: italic;
+  font-display: optional;
   font-weight: 700;
   src: url("/fonts/merriweather/merriweather-v30-latin-700italic.eot"); /* IE9 Compat Modes */
   src: local(""),
@@ -83,5 +85,29 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("/fonts/merriweather/merriweather-v30-latin-700italic.svg#Merriweather")
+      format("svg"); /* Legacy iOS */
+}
+
+/* ibm-plex-sans-condensed-600 - latin */
+@font-face {
+  font-family: "IBM Plex Sans Condensed";
+  font-style: normal;
+  font-display: optional;
+  font-weight: 600;
+  src: url("../fonts/ibm-plex-sans/ibm-plex-sans-condensed-v13-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/ibm-plex-sans/ibm-plex-sans-condensed-v13-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../fonts/ibm-plex-sans/ibm-plex-sans-condensed-v13-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/ibm-plex-sans/ibm-plex-sans-condensed-v13-latin-600.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../fonts/ibm-plex-sans/ibm-plex-sans-condensed-v13-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/ibm-plex-sans/ibm-plex-sans-condensed-v13-latin-600.svg#IBMPlexSansCondensed")
       format("svg"); /* Legacy iOS */
 }
