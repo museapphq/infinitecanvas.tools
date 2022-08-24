@@ -14,7 +14,7 @@ const historyItems = await Astro.glob("../content/history/*.md")
   <ul class="p-4 grid grid-cols-1 gap-4">
     {
       historyItems.map(({ frontmatter: { title, year }, Content }) => (
-        <li class="bg-slate-300 p-4 space-y-4">
+        <li class="bg-brown bg-opacity-5 p-4 space-y-4">
           <time datetime={year}>{year}</time>
           <h2>{title}</h2>
           <Content />

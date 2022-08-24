@@ -43,7 +43,7 @@ const { title, activeItem } = Astro.props as Props
 
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col">
+  <body class="min-h-screen flex flex-col bg-parchment">
     <Nav activeItem={activeItem} />
     <slot name="header" />
     <main class="flex-grow">

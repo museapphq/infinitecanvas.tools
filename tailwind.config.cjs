@@ -2,6 +2,18 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    colors: {
+      parchment: "#F9F9F1",
+      red: "#C7381E",
+      green: "#409E3F",
+      blue: "#3C9499",
+      magenta: "#BF3C7A",
+      yellow: "#ECD437",
+      black: "#000000",
+      gray: "#2C393A",
+      white: "#FFFFFF",
+      brown: "#49461F"
+    },
     fontFamily: {
       sans: [
         "IBM Plex Sans Condensed",
