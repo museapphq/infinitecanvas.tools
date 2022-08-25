@@ -29,7 +29,7 @@ This site is styled using Tailwind CSS.
 
 [Tailwind documentation](https://tailwindcss.com)
 
-## VSCode
+## VSCode plugins
 
 If you are using VSCode, there are some useful plugins that can make development
 easier.
