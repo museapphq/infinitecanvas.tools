@@ -80,6 +80,10 @@ module.exports = {
       normal: "0",
       wide: "2.5%"
     },
+    lineHeight: {
+      normal: "1",
+      high: "1.5"
+    },
     maxWidth: {
       1440: "1440px"
     },

@@ -20,15 +20,15 @@
   }
 
   .serif-16 {
-    @apply font-serif text-16 tracking-normal !important;
+    @apply font-serif text-16 tracking-normal leading-high !important;
   }
   .serif-20 {
-    @apply font-serif text-20 tracking-normal !important;
+    @apply font-serif text-20 tracking-normal leading-high !important;
   }
   .serif-24 {
-    @apply font-serif text-24 tracking-normal !important;
+    @apply font-serif text-24 tracking-normal leading-high !important;
   }
   .serif-38 {
-    @apply font-serif text-38 tracking-normal !important;
+    @apply font-serif text-38 tracking-normal leading-high !important;
   }
 }
