@@ -2,6 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
+    borderRadius: {
+      none: 0,
+      4: "4px",
+      8: "8px"
+    },
     colors: {
       parchment: "#F9F9F1",
       red: "#C7381E",
@@ -96,7 +101,8 @@ module.exports = {
       32: "32px",
       48: "48px",
       64: "64px",
-      72: "72px"
+      72: "72px",
+      168: "168px"
     },
 
     extend: {}
