@@ -34,35 +34,15 @@ This site is styled using Tailwind CSS.
 If you are using VSCode, there are some useful plugins that can make development
 easier.
 
-## Astro
-
-This plugin (maintained by the Astro team) adds language support for Astro to
-VSCode.
-
-## Tailwind
-
-### Headwind
-
-This plugin automatically sorts tailwind classes every save.
-
-### Tailwind CSS IntelliSense
-
-This plugin (maintained by the Tailwind Labs team) adds code completion
-(including custom classes). Try pressing the `space` key on your keyboard when
-writing classes.
-
-## Prettier
-
-### Prettier - Code formatter
-
-This formatter, once installed, will pick up the prettier config in this
-project's `package.json`.
-
-### prettier-plugin-astro
-
-`prettier-plugin-astro` adds support for `.astro` files. It is already a dev
-dependency for this project.
-
-Follow
-[instructions](https://www.npmjs.com/package/prettier-plugin-astro#user-content-using-in-vs-code)
-to get it working.
+- **Astro:** This plugin (maintained by the Astro team) adds language support
+  for Astro to VSCode.
+- **Headwind:** This plugin automatically sorts tailwind classes every save.
+- **Tailwind CSS IntelliSense:** This plugin (maintained by the Tailwind Labs
+  team) adds code completion (including custom classes). Try pressing the
+  `space` key on your keyboard when writing classes.
+- **Prettier - Code formatter:** This formatter, once installed, will pick up
+  the prettier config in this project's `package.json`.
+- **prettier-plugin-astro:** `prettier-plugin-astro` adds support for `.astro`
+  files. Follow
+  [instructions](https://www.npmjs.com/package/prettier-plugin-astro#user-content-using-in-vs-code)
+  to get it working. It is already a dev dependency for this project.
