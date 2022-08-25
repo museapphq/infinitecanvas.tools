@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro"
 const historyItems = await Astro.glob("../content/history/*.md")
 ---
 
-<Layout title="Infinite Canvas">
+<Layout title="Infinite Canvas" activeItem="/history">
   <!-- header slot-->
   <header slot="header" class="text-center p-4">
     <h1>History</h1>
