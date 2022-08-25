@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilites {
+@layer components {
   .sans-22 {
     @apply font-sans text-22 tracking-wide !important;
   }
