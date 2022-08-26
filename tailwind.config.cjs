@@ -93,7 +93,7 @@ module.exports = {
     },
     letterSpacing: {
       normal: "0",
-      wide: "2.5%"
+      wide: "5%"
     },
     lineHeight: {
       normal: "1",
