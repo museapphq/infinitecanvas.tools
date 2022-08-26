@@ -3,20 +3,24 @@
 @tailwind utilities;
 
 @layer components {
-  .sans-22 {
-    @apply font-sans text-22 tracking-wide leading-normal !important;
-  }
-  .sans-26 {
-    @apply font-sans text-26 tracking-wide leading-normal !important;
-  }
-  .sans-32 {
-    @apply font-sans text-32 tracking-wide leading-normal !important;
-  }
-  .sans-40 {
-    @apply font-sans text-40 tracking-wide leading-normal !important;
-  }
   .sans-50 {
     @apply font-sans text-50 tracking-wide leading-normal !important;
+  }
+
+  .sans-16 {
+    @apply font-sans text-16 tracking-normal leading-high !important;
+  }
+  .sans-20 {
+    @apply font-sans text-20 tracking-normal leading-high !important;
+  }
+  .sans-24 {
+    @apply font-sans text-24 tracking-normal leading-high !important;
+  }
+  .sans-38 {
+    @apply font-sans text-38 tracking-normal leading-high !important;
+  }
+  .sans-48 {
+    @apply font-sans text-48 tracking-normal leading-high !important;
   }
 
   .serif-16 {
@@ -28,7 +32,13 @@
   .serif-24 {
     @apply font-serif text-24 tracking-normal leading-high !important;
   }
+  .serif-30 {
+    @apply font-serif text-30 tracking-normal leading-high !important;
+  }
   .serif-38 {
     @apply font-serif text-38 tracking-normal leading-high !important;
+  }
+  .serif-48 {
+    @apply font-serif text-48 tracking-normal leading-high !important;
   }
 }

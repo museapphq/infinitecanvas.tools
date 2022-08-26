@@ -78,18 +78,13 @@ module.exports = {
       ]
     },
     fontSize: {
-      // sans sizes
-      22: "22px",
-      26: "26px",
-      32: "32px",
-      40: "40px",
-      50: "50px",
-
       // serif sizes
       16: "16px",
       20: "20px",
       24: "24px",
-      38: "38px"
+      30: "30px",
+      38: "38px",
+      48: "48px"
     },
     letterSpacing: {
       normal: "0",
