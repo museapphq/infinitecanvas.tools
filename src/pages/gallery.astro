@@ -17,7 +17,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       galleryItems.map(
         ({ frontmatter: { title, platforms, url, usecases, description } }) => (
           <li class="bg-brown bg-opacity-5 p-24 rounded-4">
-            <h2 class="mb-4 sans-22 text-brown">{title}</h2>
+            <h2 class="mb-4 sans-22 text-gray">{title}</h2>
             <a href={url}>
               <p class="mb-16 serif-16 text-blue font-weight">
                 {url.replace("https://", "")}

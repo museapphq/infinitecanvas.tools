@@ -4,19 +4,19 @@
 
 @layer components {
   .sans-22 {
-    @apply font-sans text-22 tracking-wide !important;
+    @apply font-sans text-22 tracking-wide leading-normal !important;
   }
   .sans-26 {
-    @apply font-sans text-26 tracking-wide !important;
+    @apply font-sans text-26 tracking-wide leading-normal !important;
   }
   .sans-32 {
-    @apply font-sans text-32 tracking-wide !important;
+    @apply font-sans text-32 tracking-wide leading-normal !important;
   }
   .sans-40 {
-    @apply font-sans text-40 tracking-wide !important;
+    @apply font-sans text-40 tracking-wide leading-normal !important;
   }
   .sans-50 {
-    @apply font-sans text-50 tracking-wide !important;
+    @apply font-sans text-50 tracking-wide leading-normal !important;
   }
 
   .serif-16 {

@@ -5,7 +5,16 @@ module.exports = {
     borderRadius: {
       none: 0,
       4: "4px",
-      8: "8px"
+      8: "8px",
+      full: "9999px"
+    },
+    borderWidth: {
+      DEFAULT: "1px",
+      0: "0",
+      2: "2px",
+      4: "4px",
+      8: "8px",
+      16: "16px"
     },
     colors: {
       parchment: "#F9F9F1",
@@ -17,7 +26,8 @@ module.exports = {
       black: "#000000",
       gray: "#2C393A",
       white: "#FFFFFF",
-      brown: "#49461F"
+      brown: "#49461F",
+      transparent: "transparent"
     },
     fontFamily: {
       sans: [
@@ -93,6 +103,7 @@ module.exports = {
       1440: "1440px"
     },
     spacing: {
+      0: 0,
       4: "4px",
       8: "8px",
       12: "12px",

@@ -6,18 +6,29 @@ const historyItems = await Astro.glob("../content/history/*.md")
 
 <Layout title="Infinite Canvas" activeItem="/history">
   <!-- header slot-->
-  <header slot="header" class="text-center p-4">
-    <h1>History</h1>
+  <header slot="header" class="text-center space-y-16 pb-168 pt-72">
+    <h1 class="text-black sans-50">History</h1>
+    <p class="serif-24 text-brown">Some tagline about history</p>
   </header>
 
   <!-- default slot -->
-  <ul class="p-4 grid grid-cols-1 gap-4">
+  <ul class="p-32 grid grid-cols-1 gap-48 max-w-1440 mx-auto">
     {
       historyItems.map(({ frontmatter: { title, year }, Content }) => (
-        <li class="bg-brown bg-opacity-5 p-4 space-y-4">
-          <time datetime={year}>{year}</time>
-          <h2>{title}</h2>
-          <Content />
+        <li class="flex items-center">
+          <time
+            class="bg-red text-white proportional-nums sans-22 rounded-full py-4 px-16"
+            datetime={year}
+          >
+            {year}
+          </time>
+          <div class="ml-4 w-0 h-0 border-r-16 border-r-brown/5 border-t-16 border-b-16 border-t-transparent border-b-transparent" />
+          <div class="bg-brown bg-opacity-5 p-32 rounded-4">
+            <h2 class="sans-32 text-gray mb-16">{title}</h2>
+            <div class="text-brown serif-20 text-opacity-80">
+              <Content />
+            </div>
+          </div>
         </li>
       ))
     }
