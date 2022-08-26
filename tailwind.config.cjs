@@ -78,7 +78,6 @@ module.exports = {
       ]
     },
     fontSize: {
-      // serif sizes
       16: "16px",
       20: "20px",
       24: "24px",

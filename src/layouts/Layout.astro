@@ -36,7 +36,7 @@ const { title, activeItem } = Astro.props as Props
     />
     <link
       rel="preload"
-      href="/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-v13-latin-600.woff2"
+      href="/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-v13-latin-500.woff2"
       as="font"
       type="font/woff2"
       crossorigin="anonymous"
@@ -44,7 +44,7 @@ const { title, activeItem } = Astro.props as Props
 
     <title>{title}</title>
   </head>
-  <body class="min-h-screen flex flex-col bg-parchment">
+  <body class="flex flex-col min-h-screen bg-parchment">
     <Nav activeItem={activeItem} />
     <slot name="header" />
     <main class="flex-grow">
