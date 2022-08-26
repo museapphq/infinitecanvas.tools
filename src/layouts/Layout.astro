@@ -1,7 +1,7 @@
 ---
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
-
+import dots from "../images/background/dot_grid.svg"
 import style from "../styles/style.css"
 export interface Props {
   title: string
@@ -45,8 +45,10 @@ const { title, activeItem } = Astro.props as Props
     <title>{title}</title>
   </head>
   <body class="flex flex-col min-h-screen bg-parchment">
-    <Nav activeItem={activeItem} />
-    <slot name="header" />
+    <div style={`background-image: url("${dots}")`}>
+      <Nav activeItem={activeItem} />
+      <slot name="header" />
+    </div>
     <main class="flex-grow">
       <slot />
     </main>

@@ -6,7 +6,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
 <Layout title="Infinite Canvas" activeItem="/gallery">
   <!-- header slot-->
-  <header slot="header" class="text-center space-y-16 pb-168 pt-72">
+  <header slot="header" class="space-y-16 text-center pb-168 pt-72">
     <h1 class="text-black sans-48">App gallery</h1>
     <p class="serif-24 text-brown">Some tagline about the app gallery</p>
   </header>
@@ -16,7 +16,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     {
       galleryItems.map(
         ({ frontmatter: { title, platforms, url, usecases, description } }) => (
-          <li class="bg-brown bg-opacity-5 p-24 rounded-4">
+          <li class="p-24 bg-brown bg-opacity-5 rounded-4">
             <h2 class="mb-4 sans-20 text-gray">{title}</h2>
             <a href={url}>
               <p class="mb-16 serif-16 text-blue font-weight">
