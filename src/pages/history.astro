@@ -19,6 +19,14 @@ const historyItems = await Astro.glob("../content/history/*.md")
       style={`background-image: url("${dots}")`}
     >
     </div>
+    <div
+      class="absolute top-0 z-0 w-4 h-96 left-[70px] bg-gradient-to-b from-parchment"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 z-0 w-4 h-96 left-[70px] bg-gradient-to-t from-parchment"
+    >
+    </div>
     {
       historyItems.map(({ frontmatter: { title, year }, Content }) => (
         <li class="z-10 flex items-center">
