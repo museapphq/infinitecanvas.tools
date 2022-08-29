@@ -1,7 +1,5 @@
 ---
 import { Picture } from "@astrojs/image/components"
-import arun from "../images/footer/arun.jpg"
-import muse from "../images/footer/muse.jpg"
 ---
 
 <footer class="bg-gray">
@@ -24,12 +22,9 @@ import muse from "../images/footer/muse.jpg"
         class="inline-flex gap-x-4 hover-dim"
         target="_blank"
       >
-        <Picture
-          src={arun}
-          widths={[24]}
-          sizes="24px"
-          aspectRatio="1:1"
-          formats={["avif", "jpeg", "png", "webp"]}
+        <img
+          src="/images/footer/arun.jpg"
+          width={24}
           alt="Portrait of Arun Venkatesan"
           class="block drop-shadow-1 rounded-full overflow-hidden"
         />Arun Venkatesan</a
@@ -39,13 +34,10 @@ import muse from "../images/footer/muse.jpg"
         class="inline-flex gap-x-4 hover-dim"
         target="_blank"
       >
-        <Picture
-          src={muse}
-          widths={[24]}
-          sizes="24px"
-          aspectRatio="1:1"
-          formats={["avif", "jpeg", "png", "webp"]}
-          alt="Portrait of Arun Venkatesan"
+        <img
+          src="/images/footer/muse.jpg"
+          width={24}
+          alt="Muse icon"
           class="block drop-shadow-1 rounded-full overflow-hidden"
         />Muse</a
       >
