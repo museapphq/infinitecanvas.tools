@@ -11,13 +11,15 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
 <Layout title="Infinite Canvas" activeItem="/">
   <!-- header slot-->
-  <header slot="header" class="text-center relative pb-48">
+  <header slot="header" class="relative pb-48">
     <img src={index_header} class="max-w-1440 mx-auto w-full" />
     <div
       class="absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center flex-col"
     >
-      <h1 class="font-sans text-black text-[94px]">Infinite Canvas</h1>
-      <p class="serif-38 text-brown max-w-[400px]">
+      <h1 class="font-sans text-black text-[94px] text-center">
+        Infinite Canvas
+      </h1>
+      <p class="serif-38 text-brown max-w-[400px] text-center">
         New tools that work the way we think
       </p>
     </div>
@@ -25,8 +27,10 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
   <!-- default slot -->
   <div class="space-y-96 mt-96">
-    <section class="flex flex-col text-center gap-y-32 max-w-1440 mx-auto">
-      <h2 class="sans-38 text-gray">Meet the apps paving the way</h2>
+    <section class="flex flex-col gap-y-32 max-w-1440 mx-auto items-center">
+      <h2 class="sans-38 text-gray text-center">
+        Meet the apps paving the way
+      </h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
       <ButtonLink href="/gallery" color="bg-dark-blue"
         >Browse the app gallery →</ButtonLink
