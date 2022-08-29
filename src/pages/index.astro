@@ -1,5 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro"
+import IndexRandomGallery from "../components/IndexRandomGallery"
+
+const galleryItems = await Astro.glob("../content/gallery/*.md")
 ---
 
 <Layout title="Infinite Canvas" activeItem="/">
@@ -13,7 +16,7 @@ import Layout from "../layouts/Layout.astro"
   <div class="space-y-96">
     <section class="text-center">
       <h2>Meet the apps paving the way</h2>
-      <div>- placeholder for list of apps -</div>
+      <IndexRandomGallery client:load galleryItems={galleryItems} />
       <a href="/gallery">Browse the app gallery →</a>
     </section>
 
