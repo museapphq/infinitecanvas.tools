@@ -19,8 +19,8 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           <li class="p-24 bg-brown bg-opacity-5 rounded-4">
             <h2 class="mb-4 sans-20 text-gray">{title}</h2>
             <a href={url}>
-              <p class="mb-16 serif-16 text-blue font-weight">
-                {url.replace("https://", "")}
+              <p class="mb-16 sans-16 text-blue font-weight hover-dim">
+                {url.replace("https://", "") + " ↗"}
               </p>
             </a>
             <p class="serif-16 text-brown text-opacity-80">{description}</p>

@@ -40,4 +40,8 @@
   .serif-48 {
     @apply font-serif text-48 tracking-normal leading-high !important;
   }
+
+  .hover-dim {
+    @apply hover:opacity-50 ease-in-out duration-100 !important;
+  }
 }
