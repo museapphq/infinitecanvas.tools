@@ -16,16 +16,16 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   <!-- default slot -->
   <div class="space-y-96">
     <section class="text-center">
-      <h2>Meet the apps paving the way</h2>
+      <h2 class="sans-38 text-gray">Meet the apps paving the way</h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
       <ButtonLink href="/gallery">Browse the app gallery →</ButtonLink>
     </section>
 
     <section class="bg-brown bg-opacity-5">
-      <div class="px-32 mx-auto space-y-48 max-w-1440 py-96">
+      <div class="px-32 mx-auto max-w-1440 py-96 grid grid-cols-2">
         <div>
-          <h2 class="sans-38 text-gray">We think spatially</h2>
-          <p class="serif-20 text-brown text-opacity-80">
+          <h2 class="sans-30 text-gray mb-24">We think spatially</h2>
+          <p class="serif-20 text-brown text-opacity-80 mb-16">
             People have been organizing and processing information spatially for
             centuries, whether it be with notes in a notebook or bulletin boards
             with stickies and photos.
@@ -36,8 +36,10 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           </p>
         </div>
         <div>
-          <h2 class="sans-38 text-gray">Software that mirrors how we think</h2>
-          <p class="serif-20 text-brown text-opacity-80">
+          <h2 class="sans-30 text-gray mb-24">
+            Software that mirrors how we think
+          </h2>
+          <p class="serif-20 text-brown text-opacity-80 mb-16">
             Traditional tools like text editors and presentation software have
             linear interfaces that mimic their output.
           </p>
