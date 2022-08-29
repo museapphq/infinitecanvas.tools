@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import dots from "../images/backgrounds/timeline_dot_vertical.svg"
+import Date from "../components/history/Date.astro"
 
 const historyItems = await Astro.glob("../content/history/*.md")
 ---
@@ -30,12 +31,7 @@ const historyItems = await Astro.glob("../content/history/*.md")
     {
       historyItems.map(({ frontmatter: { title, year }, Content }) => (
         <li class="z-10 flex items-center">
-          <time
-            class="px-16 py-4 text-white rounded-full bg-red proportional-nums sans-20"
-            datetime={year}
-          >
-            {year}
-          </time>
+          <Date date={year} />
           <div class="w-0 h-0 ml-4 border-r-16 border-r-brown/5 border-t-16 border-b-16 border-t-transparent border-b-transparent" />
           <div class="p-32 bg-brown bg-opacity-5 rounded-4">
             <h2 class="mb-16 sans-30 text-gray">{title}</h2>

@@ -19,8 +19,11 @@ module.exports = {
     colors: {
       parchment: "#F9F9F1",
       red: "#C7381E",
+      "dark-red": "#862514",
       green: "#409E3F",
+      "dark-green": "#2B692A",
       blue: "#3C9499",
+      "dark-blue": "#286467",
       magenta: "#BF3C7A",
       yellow: "#ECD437",
       black: "#000000",

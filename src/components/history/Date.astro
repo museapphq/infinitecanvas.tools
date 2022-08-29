@@ -1,0 +1,10 @@
+---
+const { date } = Astro.props
+---
+
+<time
+  class="px-16 py-4 text-white rounded-full bg-red proportional-nums sans-20"
+  datetime={date}
+>
+  {date}
+</time>

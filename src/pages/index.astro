@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro"
 import ButtonLink from "../components/ButtonLink.astro"
 import IndexRandomGallery from "../components/index/IndexRandomGallery.jsx"
 import WhatMakesItem from "../components/index/WhatMakesItem.astro"
+import Date from "../components/history/Date.astro"
 import index_header from "../images/illustrations/index_header.svg"
 
 const galleryItems = await Astro.glob("../content/gallery/*.md")
@@ -23,15 +24,19 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   </header>
 
   <!-- default slot -->
-  <div class="space-y-96 my-96">
+  <div class="space-y-96 mt-96">
     <section class="flex flex-col text-center gap-y-32 max-w-1440 mx-auto">
       <h2 class="sans-38 text-gray">Meet the apps paving the way</h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
-      <ButtonLink href="/gallery">Browse the app gallery →</ButtonLink>
+      <ButtonLink href="/gallery" color="bg-dark-blue"
+        >Browse the app gallery →</ButtonLink
+      >
     </section>
 
     <section class="bg-brown bg-opacity-5">
-      <div class="px-32 mx-auto max-w-1440 py-96 grid grid-cols-2">
+      <div
+        class="px-32 mx-auto max-w-1440 py-96 grid grid-cols-2 gap-x-48 gap-y-64"
+      >
         <div>
           <h2 class="sans-30 text-gray mb-24">We think spatially</h2>
           <p class="serif-20 text-brown text-opacity-80 mb-16">
@@ -82,30 +87,31 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </ul>
     </section>
 
-    <section class="text-center">
-      <h2>History</h2>
-      <p>
-        There is a long lineage of software built around an infinite canvas.
-      </p>
-      <ol class="grid grid-cols-4 ga">
-        <li>
-          <time datetime="1963">1963</time>
-          <h3>Sketchpad</h3>
-        </li>
-        <li>
-          <time datetime="1987">1987</time>
-          <h3>Adobe Illustrator</h3>
-        </li>
-        <li>
-          <time datetime="2006">2006</time>
-          <h3>Blender node editor</h3>
-        </li>
-        <li>
-          <time datetime="2016">2016</time>
-          <h3>Figma</h3>
-        </li>
-      </ol>
-      <ButtonLink href="/history">Browse the timeline →</ButtonLink>
+    <section class="bg-brown bg-opacity-5 py-96">
+      <div class="text-center flex flex-col gap-y-32 max-w-1440 mx-auto">
+        <h2 class="sans-38 text-gray">History</h2>
+        <ol class="grid grid-cols-4 ga">
+          <li>
+            <Date date={1963} />
+            <h3>Sketchpad</h3>
+          </li>
+          <li>
+            <Date date={1987} />
+            <h3>Adobe Illustrator</h3>
+          </li>
+          <li>
+            <Date date={2006} />
+            <h3>Blender node editor</h3>
+          </li>
+          <li>
+            <Date date={2016} />
+            <h3>Figma</h3>
+          </li>
+        </ol>
+        <ButtonLink href="/history" color="bg-dark-red">
+          Browse the timeline →
+        </ButtonLink>
+      </div>
     </section>
   </div>
 </Layout>
