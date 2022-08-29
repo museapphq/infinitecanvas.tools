@@ -1,0 +1,9 @@
+---
+const { date, title } = Astro.props
+import Date from "../history/Date.astro"
+---
+
+<li class="z-10 space-y-8">
+  <Date date={date} />
+  <h3 class="serif-20 text-brown">{title}</h3>
+</li>

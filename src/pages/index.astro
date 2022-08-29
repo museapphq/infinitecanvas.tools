@@ -3,8 +3,10 @@ import Layout from "../layouts/Layout.astro"
 import ButtonLink from "../components/ButtonLink.astro"
 import IndexRandomGallery from "../components/index/IndexRandomGallery.jsx"
 import WhatMakesItem from "../components/index/WhatMakesItem.astro"
-import Date from "../components/history/Date.astro"
+import TimelineItem from "../components/index/TimelineItem.astro"
+
 import index_header from "../images/illustrations/index_header.svg"
+import dots from "../images/backgrounds/timeline_dot_horizontal.svg"
 
 const galleryItems = await Astro.glob("../content/gallery/*.md")
 ---
@@ -92,25 +94,18 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     </section>
 
     <section class="bg-brown bg-opacity-5 py-96">
-      <div class="text-center flex flex-col gap-y-32 max-w-1440 mx-auto">
+      <div class="text-center flex flex-col gap-y-32">
         <h2 class="sans-38 text-gray">History</h2>
-        <ol class="grid grid-cols-4 ga">
-          <li>
-            <Date date={1963} />
-            <h3>Sketchpad</h3>
-          </li>
-          <li>
-            <Date date={1987} />
-            <h3>Adobe Illustrator</h3>
-          </li>
-          <li>
-            <Date date={2006} />
-            <h3>Blender node editor</h3>
-          </li>
-          <li>
-            <Date date={2016} />
-            <h3>Figma</h3>
-          </li>
+        <ol class="grid grid-cols-4 relative max-w-1440 mx-auto w-full py-32">
+          <div
+            class="absolute left-[144px] right-[144px] z-0 h-4 top-[44px]"
+            style={`background-image: url("${dots}")`}
+          >
+          </div>
+          <TimelineItem date="1963" title="Sketchpad" />
+          <TimelineItem date="space" title="Adobe Illustrator" />
+          <TimelineItem date="2006" title="Blender node editor" />
+          <TimelineItem date="2016" title="Figma" />
         </ol>
         <ButtonLink href="/history" color="bg-dark-red">
           Browse the timeline →
