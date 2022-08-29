@@ -1,21 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import ButtonLink from "../components/ButtonLink.astro"
-import IndexRandomGallery from "../components/IndexRandomGallery.jsx"
+import IndexRandomGallery from "../components/index/IndexRandomGallery.jsx"
+import WhatMakesItem from "../components/index/WhatMakesItem.astro"
+import index_header from "../images/illustrations/index_header.svg"
 
 const galleryItems = await Astro.glob("../content/gallery/*.md")
 ---
 
 <Layout title="Infinite Canvas" activeItem="/">
   <!-- header slot-->
-  <header slot="header" class="text-center">
-    <h1>Infinite Canvas</h1>
-    <p class="font-serif">New tools that work the way we think</p>
+  <header slot="header" class="text-center relative pb-48">
+    <img src={index_header} class="max-w-1440 mx-auto w-full" />
+    <div
+      class="absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center flex-col"
+    >
+      <h1 class="font-sans text-black text-[94px]">Infinite Canvas</h1>
+      <p class="serif-38 text-brown max-w-[400px]">
+        New tools that work the way we think
+      </p>
+    </div>
   </header>
 
   <!-- default slot -->
-  <div class="space-y-96">
-    <section class="text-center">
+  <div class="space-y-96 my-96">
+    <section class="flex flex-col text-center gap-y-32 max-w-1440 mx-auto">
       <h2 class="sans-38 text-gray">Meet the apps paving the way</h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
       <ButtonLink href="/gallery">Browse the app gallery →</ButtonLink>
@@ -51,36 +60,25 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="px-32 mx-auto max-w-1440">
+    <section class="px-32 mx-auto max-w-1440 space-y-32">
       <h2 class="text-gray sans-38">What makes an infinite canvas?</h2>
-      <ul class="grid grid-cols-2">
-        <li>
-          <h3>Expansiveness</h3>
-          <p>
-            A seemingly limitless canvas allows for free thinking and creation
-          </p>
-        </li>
-        <li>
-          <h3>Zoom</h3>
-          <p>
-            Different zoom levels mimic stepping into and stepping away in the
-            real world
-          </p>
-        </li>
-        <li>
-          <h3>Direct manipulation</h3>
-          <p>
-            Direct manipulation of objects including freeform movement, editing
-            and duplication
-          </p>
-        </li>
-        <li>
-          <h3>Collaboration</h3>
-          <p>
-            Real time collaboration combines the best of software and working
-            together in person
-          </p>
-        </li>
+      <ul class="grid grid-cols-2 gap-x-48 gap-y-64">
+        <WhatMakesItem
+          title="Expansiveness"
+          description="A seemingly limitless canvas allows for free thinking and creation"
+        />
+        <WhatMakesItem
+          title="Zoom"
+          description="Different zoom levels mimic stepping into and stepping away in the real world"
+        />
+        <WhatMakesItem
+          title="Direct manipulation"
+          description="Direct manipulation of objects including freeform movement, editing and duplication"
+        />
+        <WhatMakesItem
+          title="Collaboration"
+          description="Real time collaboration combines the best of software and working together in person"
+        />
       </ul>
     </section>
 
