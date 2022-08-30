@@ -102,6 +102,16 @@ module.exports = {
     maxWidth: {
       1440: "1440px"
     },
+    screens: {
+      1440: "1440px",
+      1280: "1280px",
+      1024: "1024px",
+      860: "860px",
+      768: "768px",
+      640: "640px",
+      540: "540px",
+      420: "420px"
+    },
     spacing: {
       0: 0,
       4: "4px",
@@ -116,7 +126,6 @@ module.exports = {
       96: "96px",
       168: "168px"
     },
-
     extend: {}
   },
   plugins: []
