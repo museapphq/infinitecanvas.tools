@@ -6,8 +6,12 @@ const IndexRandomGallery = ({ galleryItems }) => {
 
   return (
     <ul class="grid grid-cols-4 gap-24 px-32 w-full">
-      {selected.map(({ frontmatter: { title } }) => (
-        <li class="p-24 bg-brown bg-opacity-5 rounded-4">
+      {selected.map(({ frontmatter: { title, image } }) => (
+        <li class="p-24 bg-brown bg-opacity-5 rounded-4 space-y-16">
+          <img
+            src={`/images/gallery/${image}`}
+            alt={`Screenshot of ${title}`}
+          />
           <h2 class="mb-4 sans-20 text-gray">{title}</h2>
         </li>
       ))}
