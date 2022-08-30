@@ -29,15 +29,21 @@ const historyItems = await Astro.glob("../content/history/*.md")
     >
     </div>
     {
-      historyItems.map(({ frontmatter: { title, year }, Content }) => (
+      historyItems.map(({ frontmatter: { title, year, image }, Content }) => (
         <li class="z-10 flex items-center">
           <Date date={year} />
           <div class="w-0 h-0 ml-4 border-r-16 border-r-brown/5 border-t-16 border-b-16 border-t-transparent border-b-transparent" />
-          <div class="p-32 bg-brown bg-opacity-5 rounded-4">
-            <h2 class="mb-16 sans-30 text-gray">{title}</h2>
-            <div class="text-brown serif-20 text-opacity-80">
-              <Content />
+          <div class="p-32 bg-brown bg-opacity-5 rounded-4 grid grid-cols-3 gap-48">
+            <div class="col-span-2">
+              <h2 class="mb-16 sans-30 text-gray">{title}</h2>
+              <div class="text-brown serif-20 text-opacity-80">
+                <Content />
+              </div>
             </div>
+            <img
+              src={`/images/history/${image}`}
+              alt={`Screenshot of ${title} from ${year}`}
+            />
           </div>
         </li>
       ))

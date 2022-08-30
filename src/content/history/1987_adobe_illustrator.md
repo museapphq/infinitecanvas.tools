@@ -1,6 +1,7 @@
 ---
-year: 1984
+year: 1987
 title: Adobe Illustrator
+image: 1987_adobe_illustrator.jpg
 ---
 
 Adobe Illustrator was originally developed from Adobe’s in-house font

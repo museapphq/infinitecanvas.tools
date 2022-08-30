@@ -1,6 +1,7 @@
 ---
 year: 1963
 title: Sketchpad
+image: 1963_sketchpad.jpg
 ---
 
 As part of his PhD thesis at MIT, Ivan Sutherland, developed the earliest
