@@ -13,7 +13,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
   <!-- default slot -->
   <ul
-    class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-3 1280:grid-cols-4 gap-24 p-32 max-w-1440 m-auto"
+    class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-3 1280:grid-cols-4 gap-24 p-24 640:p-32 max-w-1440 m-auto"
   >
     {
       galleryItems.map(
