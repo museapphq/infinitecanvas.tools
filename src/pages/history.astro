@@ -14,36 +14,42 @@ const historyItems = await Astro.glob("../content/history/*.md")
   </header>
 
   <!-- default slot -->
-  <ul class="relative grid grid-cols-1 gap-48 p-32 mx-auto max-w-1440">
-    <div
-      class="absolute top-0 bottom-0 z-0 w-4 left-[70px]"
-      style={`background-image: url("${dots}")`}
-    >
-    </div>
-    <div
-      class="absolute top-0 z-0 w-4 h-96 left-[70px] bg-gradient-to-b from-parchment"
-    >
-    </div>
-    <div
-      class="absolute bottom-0 z-0 w-4 h-96 left-[70px] bg-gradient-to-t from-parchment"
-    >
+  <ul
+    class="relative grid grid-cols-1 gap-48 px-24 640:px-32 py-64 mx-auto max-w-1440"
+  >
+    <div class="absolute top-0 bottom-0 z-0 640:left-72 left-[50vw]">
+      <div class="h-full w-4 -ml-2" style={`background-image: url("${dots}")`}>
+      </div>
+      <div
+        class="absolute top-0 z-0 w-4 h-128 bg-gradient-to-b from-parchment -ml-2"
+      >
+      </div>
+      <div
+        class="absolute bottom-0 z-0 w-4 h-128 bg-gradient-to-t from-parchment -ml-2"
+      >
+      </div>
     </div>
     {
       historyItems.map(({ frontmatter: { title, year, image }, Content }) => (
-        <li class="z-10 flex items-center">
+        <li class="z-10 flex flex-col 640:flex-row items-center">
           <Date date={year} />
-          <div class="w-0 h-0 ml-4 border-r-16 border-r-brown/5 border-t-16 border-b-16 border-t-transparent border-b-transparent" />
-          <div class="p-32 bg-brown bg-opacity-5 rounded-4 grid grid-cols-3 gap-48">
-            <div class="col-span-2">
-              <h2 class="mb-16 sans-30 text-gray">{title}</h2>
-              <div class="text-brown serif-20 text-opacity-80">
-                <Content />
+          <div class="bg-parchment block 640:hidden">
+            <div class="w-0 h-0 mt-4 border-b-16 border-b-brown/5 border-l-16 border-r-16 border-l-transparent border-r-transparent " />
+          </div>
+          <div class="flex flex-row 640:flex-row items-center bg-parchment">
+            <div class="w-0 h-0 ml-4 border-r-16 border-r-brown/5 border-t-16 border-b-16 border-t-transparent border-b-transparent hidden 640:block" />
+            <div class="p-32 bg-brown bg-opacity-5 rounded-4 grid grid-cols-1 768:grid-cols-2 1280:grid-cols-3 gap-48">
+              <div class="col-span-1 1280:col-span-2">
+                <h2 class="mb-16 sans-24 text-gray">{title}</h2>
+                <div class="text-brown serif-16 text-opacity-80">
+                  <Content />
+                </div>
               </div>
+              <img
+                src={`/images/history/${image}`}
+                alt={`Screenshot of ${title} from ${year}`}
+              />
             </div>
-            <img
-              src={`/images/history/${image}`}
-              alt={`Screenshot of ${title} from ${year}`}
-            />
           </div>
         </li>
       ))
