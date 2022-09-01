@@ -78,7 +78,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
     <section class="px-32 mx-auto max-w-1440 space-y-32">
       <h2 class="text-gray sans-38">What makes an infinite canvas?</h2>
-      <ul class="grid grid-cols-4 gap-x-48 gap-y-64">
+      <ul
+        class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-48 gap-y-64"
+      >
         <WhatMakesItem
           title="Expansiveness"
           description="A seemingly limitless canvas allows for free thinking and creation"
