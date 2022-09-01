@@ -50,6 +50,6 @@
   }
 
   .md a {
-    @apply sans-16 540:text-dark-blue hover-dim;
+    @apply sans-16 540:text-dark-red hover-dim;
   }
 }
