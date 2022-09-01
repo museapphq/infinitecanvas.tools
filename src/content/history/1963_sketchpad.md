@@ -14,3 +14,5 @@ language.
 
 <a href="https://archive.org/details/AlanKeyD1987" target="_blank">Alan Kay
 narrating Sketchpad demo ↗</a>
+<a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Wikipedia
+↗</a>
