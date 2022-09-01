@@ -11,3 +11,6 @@ to a Lincoln TX-2 computer.
 It was first interactive graphics program, using the first object oriented
 software system which was implimented in the first non-procedural programming
 language.
+
+<a href="https://archive.org/details/AlanKeyD1987" target="_blank">Alan Kay
+narrating Sketchpad demo ↗</a>
