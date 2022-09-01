@@ -44,4 +44,20 @@
   .hover-dim {
     @apply hover:opacity-50 ease-in-out duration-100 !important;
   }
+
+  .md p {
+    @apply my-16 serif-16 text-brown serif-16 text-opacity-80;
+  }
+
+  .md:first-child {
+    @apply mt-0 !important;
+  }
+
+  .md:last-child {
+    @apply mb-0 !important;
+  }
+
+  .md a {
+    @apply sans-16 540:text-dark-blue hover-dim;
+  }
 }

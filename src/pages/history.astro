@@ -41,7 +41,7 @@ const historyItems = await Astro.glob("../content/history/*.md")
             <div class="p-32 bg-brown bg-opacity-5 rounded-4 grid grid-cols-1 768:grid-cols-2 1280:grid-cols-3 gap-48">
               <div class="col-span-1 1280:col-span-2">
                 <h2 class="mb-16 sans-24 text-gray">{title}</h2>
-                <div class="text-brown serif-16 text-opacity-80">
+                <div class="md">
                   <Content />
                 </div>
               </div>
