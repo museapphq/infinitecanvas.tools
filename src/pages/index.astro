@@ -10,7 +10,8 @@ import index_header from "/images/illustrations/index_header.svg"
 import expansive from "/images/illustrations/expansive.svg"
 import zoom from "/images/illustrations/zoom.svg"
 
-import dots from "/images/backgrounds/timeline_dot_horizontal.svg"
+import horizontalDots from "/images/backgrounds/timeline_dot_horizontal.svg"
+import verticalDots from "/images/backgrounds/timeline_dot_vertical.svg"
 
 const galleryItems = await Astro.glob("../content/gallery/*.md")
 ---
@@ -108,10 +109,17 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     <section class="bg-brown bg-opacity-5 py-96">
       <div class="text-center flex flex-col gap-y-32">
         <h2 class="sans-38 text-gray">History</h2>
-        <ol class="grid grid-cols-4 relative max-w-1440 mx-auto w-full py-32">
+        <ol
+          class="grid grid-cols-1 gap-y-24 640:grid-cols-4 relative max-w-1440 mx-auto w-full py-32"
+        >
           <div
-            class="absolute left-[144px] right-[144px] z-0 h-4 top-[44px]"
-            style={`background-image: url("${dots}")`}
+            class="absolute left-96 right-96 860:left-128 860:right-128 1280:left-[144px] 1280:right-[144px] z-0 h-4 top-[44px] hidden 640:block"
+            style={`background-image: url("${horizontalDots}")`}
+          >
+          </div>
+          <div
+            class="absolute h-full left-72 w-4 -ml-2 block 640:hidden"
+            style={`background-image: url("${verticalDots}")`}
           >
           </div>
           <TimelineItem date="1963" title="Sketchpad" />
