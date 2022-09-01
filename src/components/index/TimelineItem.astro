@@ -3,7 +3,23 @@ const { date, title } = Astro.props
 import Date from "../history/Date.astro"
 ---
 
-<li class="z-10 space-x-8 640:space-y-8 px-24 flex flex-row 640:flex-col">
+<li class="z-10 640:space-x-8 px-24 flex flex-col items-center">
   <div><Date date={date} /></div>
-  <h3 class="sans-20 text-brown">{title}</h3>
+  <div class="bg-parchment block 640:hidden mt-4">
+    <div class="bg-brown bg-opacity-5">
+      <div
+        class="w-0 h-0 border-b-16 border-b-brown/5 border-l-16 border-r-16 border-l-transparent border-r-transparent"
+      >
+      </div>
+    </div>
+  </div>
+  <div class="pt-0 640:pt-8">
+    <div class="inline-block bg-parchment">
+      <h3
+        class="sans-20 text-brown bg-brown 640:bg-opacity-5 bg-opacity-10 p-16 640:p-0 rounded-4"
+      >
+        {title}
+      </h3>
+    </div>
+  </div>
 </li>

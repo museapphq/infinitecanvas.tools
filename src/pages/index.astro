@@ -112,15 +112,15 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       <div class="text-center flex flex-col gap-y-32">
         <h2 class="sans-38 text-gray">History</h2>
         <ol
-          class="grid grid-cols-1 gap-y-24 640:grid-cols-4 relative max-w-1440 mx-auto w-full py-32"
+          class="grid grid-cols-1 gap-y-32 640:grid-cols-4 relative max-w-1440 mx-auto w-full py-48"
         >
           <div
-            class="absolute left-96 right-96 860:left-128 860:right-128 1280:left-[144px] 1280:right-[144px] z-0 h-4 top-[44px] hidden 640:block"
+            class="absolute left-96 right-96 860:left-128 860:right-128 1280:left-[144px] 1280:right-[144px] z-0 h-4 top-[60px] hidden 640:block"
             style={`background-image: url("${horizontalDots}")`}
           >
           </div>
           <div
-            class="absolute h-full left-72 w-4 -ml-2 block 640:hidden"
+            class="absolute h-full left-[50vw] w-4 -ml-2 block 640:hidden"
             style={`background-image: url("${verticalDots}")`}
           >
           </div>
