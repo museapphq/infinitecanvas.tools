@@ -8,10 +8,12 @@ const IndexRandomGallery = ({ galleryItems }) => {
     <ul className="grid grid-cols-4 gap-24 px-32 w-full">
       {selected.map(({ frontmatter: { title, image } }) => (
         <li className="p-24 bg-brown bg-opacity-5 rounded-4 space-y-16">
-          <img
-            src={`/images/gallery/${image}`}
-            alt={`Screenshot of ${title}`}
-          />
+          <div class="bg-white aspect-[16/9]">
+            <img
+              src={`/images/gallery/${image}`}
+              alt={`Screenshot of ${title}`}
+            />
+          </div>
           <h2 className="mb-4 sans-20 text-gray">{title}</h2>
         </li>
       ))}

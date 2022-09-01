@@ -21,11 +21,11 @@ const historyItems = await Astro.glob("../content/history/*.md")
       <div class="h-full w-4 -ml-2" style={`background-image: url("${dots}")`}>
       </div>
       <div
-        class="absolute top-0 z-0 w-4 h-128 bg-gradient-to-b from-parchment -ml-2"
+        class="absolute top-0 z-0 w-4 h-64 bg-gradient-to-b from-parchment -ml-2"
       >
       </div>
       <div
-        class="absolute bottom-0 z-0 w-4 h-128 bg-gradient-to-t from-parchment -ml-2"
+        class="absolute bottom-0 z-0 w-4 h-64 bg-gradient-to-t from-parchment -ml-2"
       >
       </div>
     </div>
@@ -45,10 +45,13 @@ const historyItems = await Astro.glob("../content/history/*.md")
                   <Content />
                 </div>
               </div>
-              <img
-                src={`/images/history/${image}`}
-                alt={`Screenshot of ${title} from ${year}`}
-              />
+
+              <div class="bg-white aspect-[3/2]">
+                <img
+                  src={`/images/history/${image}`}
+                  alt={`Screenshot of ${title} from ${year}`}
+                />
+              </div>
             </div>
           </div>
         </li>
