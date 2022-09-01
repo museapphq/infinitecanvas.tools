@@ -13,6 +13,5 @@ software system which was implimented in the first non-procedural programming
 language.
 
 <a href="https://archive.org/details/AlanKeyD1987" target="_blank">Alan Kay
-narrating Sketchpad demo ↗</a>
-<a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Wikipedia
-↗</a>
+narrating Sketchpad demo↗</a>
+<a href="https://en.wikipedia.org/wiki/Sketchpad" target="_blank">Wikipedia↗</a>
