@@ -56,28 +56,25 @@
     <style>
         @keyframes scale {
             0% {
-                transform: scale(2.5);
-            }
-            35% {
-                transform: scale(2.5);
+                transform: scale(3);
             }
             45% {
+                transform: scale(3);
+            }
+            50% {
                 transform: scale(1);
             }
-            55% {
+            95% {
                 transform: scale(1);
-            }
-            65% {
-                transform: scale(2.5);
             }
             100% {
-                transform: scale(2.5);
+                transform: scale(3);
             }
           }
           
           #diagram {
             transform-origin: center;
-            animation: scale 10000ms ease-in-out;
+            animation: scale 8s ease-in-out;
             animation-iteration-count: infinite;
           }
     </style>
