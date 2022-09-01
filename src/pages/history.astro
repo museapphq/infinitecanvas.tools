@@ -15,9 +15,9 @@ const historyItems = await Astro.glob("../content/history/*.md")
 
   <!-- default slot -->
   <ul
-    class="relative grid grid-cols-1 gap-48 px-24 640:px-32 py-64 mx-auto max-w-1440"
+    class="relative grid grid-cols-1 gap-48 px-24 640:px-32 py-96 mx-auto max-w-1440"
   >
-    <div class="absolute top-0 bottom-0 z-0 640:left-72 left-[50vw]">
+    <div class="absolute top-32 bottom-32 z-0 640:left-72 left-[50vw]">
       <div class="h-full w-4 -ml-2" style={`background-image: url("${dots}")`}>
       </div>
       <div
