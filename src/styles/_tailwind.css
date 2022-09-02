@@ -57,12 +57,15 @@
   @keyframes slide {
     10% {
       opacity: 1;
+      visibility: visible;
     }
-    20% {
+    49% {
       opacity: 1;
+      visibility: visible;
     }
-    30% {
+    51% {
       opacity: 0;
+      visibility: hidden;
     }
   }
 }
