@@ -1,0 +1,28 @@
+---
+const { items } = Astro.props
+---
+
+<div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
+  <figure class="px-24 pt-24 pb-16 flex flex-col space-y-8">
+    <div class="aspect-[3/2] relative">
+      {
+        items.map(({ title, imgSrc }) => (
+          <img src={imgSrc} alt={title} class="absolute" />
+        ))
+      }
+    </div>
+    <div class="h-24 relative">
+      {
+        items.map(({ title, sourceUrl }) => (
+          <figcaption class="serif-16 text-brown absolute">
+            {title} (
+            <a class="text-brown text-opacity-80 hover-dim" href={sourceUrl}>
+              source
+            </a>
+            )
+          </figcaption>
+        ))
+      }
+    </div>
+  </figure>
+</div>

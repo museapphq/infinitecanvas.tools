@@ -4,6 +4,7 @@ import ButtonLink from "../components/ButtonLink.astro"
 import IndexRandomGallery from "../components/index/IndexRandomGallery.jsx"
 import WhatMakesItem from "../components/index/WhatMakesItem.astro"
 import TimelineItem from "../components/index/TimelineItem.astro"
+import Slideshow from "../components/index/Slideshow.astro"
 
 import index_header from "/images/illustrations/index_header.svg"
 
@@ -60,23 +61,22 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             navigation.
           </p>
         </div>
-        <div>
-          <figure
-            class="px-24 pt-24 pb-16 flex flex-col space-y-8"
-            style={`background-image: url("/images/backgrounds/dot_grid.svg")`}
-          >
-            <div class="aspect-[3/2]">
-              <img src="/images/homepage/pixar.jpg" alt="Art room at Pixar" />
-            </div>
-            <figcaption class="serif-16 text-brown">
-              An art room at Pixar (<a
-                class="text-brown text-opacity-80 hover-dim"
-                href="http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
-                >source</a
-              >)
-            </figcaption>
-          </figure>
-        </div>
+        <Slideshow
+          items={[
+            {
+              title: "Art room at Pixar",
+              imgSrc: "/images/homepage/pixar.jpg",
+              sourceUrl:
+                "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+            },
+            {
+              title: "Moodboard for installation",
+              imgSrc: "/images/homepage/moodboard.jpg",
+              sourceUrl:
+                "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+            }
+          ]}
+        />
         <div>
           <h2 class="sans-30 text-gray mb-24">
             Software that mirrors how we think
