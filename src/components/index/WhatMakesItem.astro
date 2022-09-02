@@ -1,11 +1,9 @@
 ---
-import dots from "/images/backgrounds/dot_grid.svg"
-
 const { title, description, src, alt } = Astro.props
 ---
 
 <li>
-  <div style={`background-image: url("${dots}")`}>
+  <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
     <img src={src} alt={alt} />
   </div>
   <h3 class="sans-24 text-gray mb-8 text-center">{title}</h3>

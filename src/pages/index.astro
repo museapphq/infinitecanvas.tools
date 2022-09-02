@@ -46,7 +46,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
     <section class="bg-brown bg-opacity-5">
       <div
-        class="px-32 mx-auto max-w-1440 py-96 grid grid-cols-2 gap-x-48 gap-y-64"
+        class="px-32 mx-auto max-w-1440 py-96 grid grid-cols-1 768:grid-cols-2 gap-x-48 gap-y-64"
       >
         <div>
           <h2 class="sans-30 text-gray mb-24">We think spatially</h2>
@@ -59,6 +59,23 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             This type of work uses a parts of our brain dedicated to spatial
             navigation.
           </p>
+        </div>
+        <div>
+          <figure
+            class="px-24 pt-24 pb-16 flex flex-col space-y-8"
+            style={`background-image: url("/images/backgrounds/dot_grid.svg")`}
+          >
+            <div class="aspect-[3/2]">
+              <img src="/images/homepage/pixar.jpg" alt="Art room at Pixar" />
+            </div>
+            <figcaption class="serif-16 text-brown">
+              An art room at Pixar (<a
+                class="text-brown text-opacity-80 hover-dim"
+                href="http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+                >source</a
+              >)
+            </figcaption>
+          </figure>
         </div>
         <div>
           <h2 class="sans-30 text-gray mb-24">
