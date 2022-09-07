@@ -4,7 +4,7 @@ import ButtonLink from "../components/ButtonLink.astro"
 import IndexRandomGallery from "../components/index/IndexRandomGallery.jsx"
 import WhatMakesItem from "../components/index/WhatMakesItem.astro"
 import TimelineItem from "../components/index/TimelineItem.astro"
-import Slideshow from "../components/index/Slideshow.astro"
+import SlideShow from "../components/index/SlideShow.jsx"
 
 import index_header from "/images/illustrations/index_header.svg"
 
@@ -20,9 +20,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 <Layout title="Infinite Canvas" activeItem="/">
   <!-- header slot-->
   <header slot="header" class="relative pb-48">
-    <img src={index_header} class="max-w-1440 mx-auto w-full" />
+    <img src={index_header} class="w-full mx-auto max-w-1440" />
     <div
-      class="absolute top-0 right-0 bottom-0 left-0 flex justify-center items-center flex-col"
+      class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center"
     >
       <h1 class="font-sans text-black text-[94px] text-center">
         Infinite Canvas
@@ -35,8 +35,8 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
   <!-- default slot -->
   <div class="space-y-96 mt-96">
-    <section class="flex flex-col gap-y-32 max-w-1440 mx-auto items-center">
-      <h2 class="sans-38 text-gray text-center">
+    <section class="flex flex-col items-center mx-auto gap-y-32 max-w-1440">
+      <h2 class="text-center sans-38 text-gray">
         Meet the apps paving the way
       </h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
@@ -47,11 +47,11 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
     <section class="bg-brown bg-opacity-5">
       <div
-        class="px-32 mx-auto max-w-1440 py-96 grid grid-cols-1 768:grid-cols-2 gap-x-48 gap-y-64"
+        class="grid grid-cols-1 px-32 mx-auto max-w-1440 py-96 768:grid-cols-2 gap-x-48 gap-y-64"
       >
         <div>
-          <h2 class="sans-30 text-gray mb-24">We think spatially</h2>
-          <p class="serif-20 text-brown text-opacity-80 mb-16">
+          <h2 class="mb-24 sans-30 text-gray">We think spatially</h2>
+          <p class="mb-16 serif-20 text-brown text-opacity-80">
             People have been organizing and processing information spatially for
             centuries, whether it be with notes in a notebook or bulletin boards
             with stickies and photos.
@@ -61,7 +61,8 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             navigation.
           </p>
         </div>
-        <Slideshow
+        <SlideShow
+          client:load
           items={[
             {
               title: "Art room at Pixar",
@@ -78,10 +79,10 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           ]}
         />
         <div>
-          <h2 class="sans-30 text-gray mb-24">
+          <h2 class="mb-24 sans-30 text-gray">
             Software that mirrors how we think
           </h2>
-          <p class="serif-20 text-brown text-opacity-80 mb-16">
+          <p class="mb-16 serif-20 text-brown text-opacity-80">
             Traditional tools like text editors and presentation software have
             linear interfaces that mimic their output.
           </p>
@@ -93,7 +94,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="px-32 mx-auto max-w-1440 space-y-32">
+    <section class="px-32 mx-auto space-y-32 max-w-1440">
       <h2 class="text-gray sans-38">What makes an infinite canvas?</h2>
       <ul
         class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-48 gap-y-64"
@@ -126,10 +127,10 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     </section>
 
     <section class="bg-brown bg-opacity-5 py-96">
-      <div class="text-center flex flex-col gap-y-32">
+      <div class="flex flex-col text-center gap-y-32">
         <h2 class="sans-38 text-gray">History</h2>
         <ol
-          class="grid grid-cols-1 gap-y-32 640:grid-cols-4 relative max-w-1440 mx-auto w-full py-48"
+          class="relative grid w-full grid-cols-1 py-48 mx-auto gap-y-32 640:grid-cols-4 max-w-1440"
         >
           <div
             class="absolute left-96 right-96 860:left-128 860:right-128 1280:left-[144px] 1280:right-[144px] z-0 h-4 top-[60px] hidden 640:block"
