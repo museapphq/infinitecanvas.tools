@@ -1,0 +1,15 @@
+{
+  "name": "import_script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.js",
+  "scripts": {
+    "import": "node --harmony run.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csvdata": "^2.0.0"
+  }
+}
