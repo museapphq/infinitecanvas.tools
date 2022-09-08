@@ -57,7 +57,7 @@ function useInterval(callback, delay) {
   }, [delay])
 }
 
-const SlideShow = ({ items }) => {
+const SlideShow = ({ items, classes }) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   useInterval(() => {
@@ -70,7 +70,10 @@ const SlideShow = ({ items }) => {
   }, MILLISECONDS_PER_SLIDE)
 
   return (
-    <div style={{ backgroundImage: 'url("/images/backgrounds/dot_grid.svg"' }}>
+    <div
+      style={{ backgroundImage: 'url("/images/backgrounds/dot_grid.svg"' }}
+      className={classes}
+    >
       <div className="relative flex flex-col px-24 pt-24 pb-16 space-y-8">
         <Template />
         {items.map((item, index) => (

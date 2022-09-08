@@ -63,6 +63,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
         </div>
         <SlideShow
           client:load
+          classes=""
           items={[
             {
               title: "Film art room",
@@ -80,6 +81,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
         />
         <SlideShow
           client:load
+          classes="768:order-none order-last"
           items={[
             {
               title: "Flowcharts & diagrams",
