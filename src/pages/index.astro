@@ -65,16 +65,29 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           client:load
           items={[
             {
-              title: "Art room at Pixar",
+              title: "Film art room",
               imgSrc: "/images/homepage/pixar.jpg",
               sourceUrl:
                 "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
             },
             {
-              title: "Moodboard for installation",
+              title: "Moodboard",
               imgSrc: "/images/homepage/moodboard.jpg",
               sourceUrl:
                 "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+            }
+          ]}
+        />
+        <SlideShow
+          client:load
+          items={[
+            {
+              title: "Flowcharts & diagrams",
+              imgSrc: "/images/homepage/diagram_illustration.svg"
+            },
+            {
+              title: "Brainstorming",
+              imgSrc: "/images/homepage/brainstorming_illustration.svg"
             }
           ]}
         />
