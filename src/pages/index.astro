@@ -39,7 +39,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
   <!-- default slot -->
   <div class="space-y-168 mt-96">
-    <section class="flex flex-col items-center mx-auto gap-y-32 max-w-1440">
+    <section
+      class="flex flex-col items-center mx-auto gap-y-32 max-w-1440 px-24 640:px-32"
+    >
       <h2 class="text-center sans-38 text-gray">
         Meet the apps paving the way
       </h2>
@@ -50,7 +52,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     </section>
 
     <section class="bg-brown bg-opacity-80 py-96">
-      <div class="max-w-1440 px-32 space-y-64 mx-auto">
+      <div class="max-w-1440 px-24 640:px-32 space-y-64 mx-auto">
         <div
           class="flex 768:flex-row flex-col max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
         >
