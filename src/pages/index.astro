@@ -45,9 +45,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       >
     </section>
 
-    <section class="bg-brown bg-opacity-5">
+    <section class="">
       <div
-        class="grid grid-cols-1 px-32 mx-auto max-w-1440 py-96 768:grid-cols-2 gap-x-48 gap-y-64"
+        class="grid grid-cols-1 px-32 mx-auto max-w-1440 py-96 768:grid-cols-2 gap-x-48 gap-y-64 items-center"
       >
         <div>
           <h2 class="mb-24 sans-30 text-gray">We think spatially</h2>
@@ -61,38 +61,41 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             navigation.
           </p>
         </div>
-        <SlideShow
-          client:load
-          classes=""
-          items={[
-            {
-              title: "Film art room",
-              imgSrc: "/images/homepage/pixar.jpg",
-              sourceUrl:
-                "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
-            },
-            {
-              title: "Moodboard",
-              imgSrc: "/images/homepage/moodboard.jpg",
-              sourceUrl:
-                "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
-            }
-          ]}
-        />
-        <SlideShow
-          client:load
-          classes="768:order-none order-last"
-          items={[
-            {
-              title: "Flowcharts & diagrams",
-              imgSrc: "/images/homepage/diagram_illustration.svg"
-            },
-            {
-              title: "Brainstorming",
-              imgSrc: "/images/homepage/brainstorming_illustration.svg"
-            }
-          ]}
-        />
+        <div class="bg-brown bg-opacity-5">
+          <SlideShow
+            client:load
+            items={[
+              {
+                title: "Film art room",
+                imgSrc: "/images/homepage/pixar.jpg",
+                sourceUrl:
+                  "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+              },
+              {
+                title: "Moodboard",
+                imgSrc: "/images/homepage/moodboard.jpg",
+                sourceUrl:
+                  "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+              }
+            ]}
+          />
+        </div>
+        <div class="768:order-none order-last bg-brown bg-opacity-5">
+          <SlideShow
+            client:load
+            items={[
+              {
+                title: "Flowcharts & diagrams",
+                imgSrc: "/images/homepage/diagram_illustration.svg"
+              },
+              {
+                title: "Brainstorming",
+                imgSrc: "/images/homepage/brainstorming_illustration.svg"
+              }
+            ]}
+          />
+        </div>
+
         <div>
           <h2 class="mb-24 sans-30 text-gray">
             Software that mirrors how we think
