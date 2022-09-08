@@ -4,22 +4,22 @@
 
 @layer components {
   .sans-16 {
-    @apply font-sans text-16 tracking-normal leading-high font-medium  !important;
+    @apply font-sans text-16 tracking-normal leading-normal font-medium  !important;
   }
   .sans-20 {
-    @apply font-sans text-20 tracking-normal leading-high font-medium  !important;
+    @apply font-sans text-20 tracking-normal leading-normal font-medium  !important;
   }
   .sans-24 {
-    @apply font-sans text-24 tracking-normal leading-high font-medium  !important;
+    @apply font-sans text-24 tracking-normal leading-normal font-medium  !important;
   }
   .sans-30 {
-    @apply font-sans text-30 tracking-normal leading-high font-medium  !important;
+    @apply font-sans text-30 tracking-normal leading-normal font-medium  !important;
   }
   .sans-38 {
-    @apply font-sans text-38 tracking-normal leading-high font-medium  !important;
+    @apply font-sans text-38 tracking-normal leading-normal font-medium  !important;
   }
   .sans-48 {
-    @apply font-sans text-48 tracking-normal leading-high font-medium  !important;
+    @apply font-sans text-48 tracking-normal leading-normal font-medium  !important;
   }
 
   .serif-16 {

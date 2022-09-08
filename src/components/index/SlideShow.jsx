@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, Component } from "react"
 import joinClasses from "../../utilities/joinClasses"
 
 const Template = () => (
-  <div className="flex flex-col p-48">
+  <div className="flex flex-col">
     <div className="aspect-[3/2] w-full"></div>
     <div className="h-24 mt-8"></div>
   </div>
@@ -11,18 +11,18 @@ const Template = () => (
 const Figure = ({ title, imgSrc, sourceUrl, active }) => (
   <figure
     className={joinClasses(
-      "p-48 flex flex-col absolute top-0 right-0 bottom-0 left-0 ease-linear duration-500",
+      "flex flex-col absolute top-0 right-0 bottom-0 left-0 ease-linear duration-500",
       active ? "opacity-0 pointer-events-none" : "opacity-1"
     )}
   >
     <img src={imgSrc} alt={title} />
-    <figcaption className="h-24 mt-8 serif-16 text-brown text-center">
+    <figcaption className="h-24 mt-8 serif-16 text-white text-opacity-80 text-center">
       {title}
       {sourceUrl && (
         <>
           {" ("}
           <a
-            className="text-brown text-opacity-80 hover-dim slide"
+            className="text-white text-opacity-60 hover-dim slide"
             href={sourceUrl}
           >
             source
