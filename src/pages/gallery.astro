@@ -27,7 +27,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
                 alt={`Screenshot of ${title}`}
               />
             </div>
-            <h2 class="sans-20 text-gray">{title}</h2>
+            <h2 class="sans-20 text-gray mb-8">{title}</h2>
             <a href={url} target="_blank">
               <p class="sans-16 mb-16 text-blue font-weight hover-dim">
                 {url.replace("https://", "") + " ↗"}
