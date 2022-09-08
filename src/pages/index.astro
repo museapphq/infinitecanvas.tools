@@ -34,7 +34,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   </header>
 
   <!-- default slot -->
-  <div class="space-y-96 mt-96">
+  <div class="space-y-96 my-96">
     <section class="flex flex-col items-center mx-auto gap-y-32 max-w-1440">
       <h2 class="text-center sans-38 text-gray">
         Meet the apps paving the way
@@ -45,11 +45,11 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       >
     </section>
 
-    <section class="">
+    <section class="max-w-1440 px-32 space-y-64 mx-auto">
       <div
-        class="grid grid-cols-1 px-32 mx-auto max-w-1440 py-96 768:grid-cols-2 gap-x-48 gap-y-64 items-center"
+        class="flex 768:flex-row flex-col max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
       >
-        <div>
+        <div class="w-full 768:w-3/6 1280:w-4/6">
           <h2 class="mb-24 sans-30 text-gray">We think spatially</h2>
           <p class="mb-16 serif-20 text-brown text-opacity-80">
             People have been organizing and processing information spatially for
@@ -61,7 +61,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             navigation.
           </p>
         </div>
-        <div class="bg-brown bg-opacity-5">
+        <div class="bg-brown bg-opacity-5 w-full 768:w-3/6 1280:w-2/6">
           <SlideShow
             client:load
             items={[
@@ -80,7 +80,11 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             ]}
           />
         </div>
-        <div class="768:order-none order-last bg-brown bg-opacity-5">
+      </div>
+      <div
+        class="flex 768:flex-row flex-col-reverse max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
+      >
+        <div class="bg-brown bg-opacity-5 w-full 768:w-3/6 1280:w-2/6">
           <SlideShow
             client:load
             items={[
@@ -96,7 +100,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           />
         </div>
 
-        <div>
+        <div class="w-full 768:w-3/6 1280:w-4/6">
           <h2 class="mb-24 sans-30 text-gray">
             Software that mirrors how we think
           </h2>
