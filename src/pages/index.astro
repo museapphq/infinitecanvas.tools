@@ -21,7 +21,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   <!-- header slot-->
   <header slot="header" class="pb-32 768:pb-48">
     <div
-      class="relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32"
+      class="relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32 1440:bg-auto"
       style={`background-image: url("${index_header}")`}
     >
       <h1
