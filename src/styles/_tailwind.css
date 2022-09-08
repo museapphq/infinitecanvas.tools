@@ -52,20 +52,4 @@
   .md a {
     @apply sans-16 540:text-dark-red hover-dim;
   }
-
-  /* fading slideshow animation */
-  @keyframes slide {
-    10% {
-      opacity: 1;
-      visibility: visible;
-    }
-    49% {
-      opacity: 1;
-      visibility: visible;
-    }
-    51% {
-      opacity: 0;
-      visibility: hidden;
-    }
-  }
 }
