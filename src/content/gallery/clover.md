@@ -1,10 +1,9 @@
 ---
 title: Clover
-platforms: Web, Windows, iOS, iPadOS, macOS
+platforms: ['Web','Windows','iOS','iPadOS','macOS']
 url: https://cloverapp.com
-usecases: digital whiteboard, task management, visual notetaking
+usecases: ['digital whiteboard','task management','visual notetaking']
 image: clover.jpg
-description:
-  Digital notebook that blends notes, tasks, whiteboards, and a daily planner
-  into one streamlined app.
+description: Digital notebook that blends notes, tasks, whiteboards, and a daily planner into one streamlined app.
+multiplayer: false
 ---
