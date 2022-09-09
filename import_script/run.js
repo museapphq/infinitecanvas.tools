@@ -73,6 +73,7 @@ const run = async () => {
   // clear out directory
   clearDirectory(OUTPUT_DIRECTORY)
 
+  // write files using string template
   doneRecords.forEach((record) => {
     fs.writeFileSync(
       `${OUTPUT_DIRECTORY}/${record.fileName}.md`,
