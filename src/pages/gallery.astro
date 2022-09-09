@@ -19,23 +19,34 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       galleryItems.map(
         ({
           frontmatter: { title, platforms, url, usecases, description, image }
-        }) => (
-          <li class="p-24 bg-brown bg-opacity-5 rounded-4">
-            <div class="bg-white aspect-[16/9] mb-24">
-              <img
-                src={`/images/gallery/${image}`}
-                alt={`Screenshot of ${title}`}
-              />
-            </div>
-            <h2 class="sans-20 text-gray mb-8">{title}</h2>
-            <a href={url} target="_blank">
-              <p class="sans-16 mb-16 text-blue font-weight hover-dim">
-                {url.replace("https://", "") + " ↗"}
-              </p>
-            </a>
-            <p class="serif-16 text-brown text-opacity-80">{description}</p>
-          </li>
-        )
+        }) => {
+          let formattedURL = url
+          if (formattedURL.slice(-1) === "/") {
+            formattedURL = formattedURL.slice(0, formattedURL.length - 1)
+          }
+          formattedURL =
+            formattedURL
+              .replace("https://", "")
+              .replace("http://", "")
+              .replace("www.", "") + "↗"
+          return (
+            <li class="p-24 bg-brown bg-opacity-5 rounded-4">
+              <div class="bg-white aspect-[16/9] mb-24">
+                <img
+                  src={`/images/gallery/${image}`}
+                  alt={`Screenshot of ${title}`}
+                />
+              </div>
+              <h2 class="sans-20 text-gray mb-8">{title}</h2>
+              <a href={url} target="_blank">
+                <p class="sans-16 mb-16 text-blue font-weight hover-dim">
+                  {formattedURL}
+                </p>
+              </a>
+              <p class="serif-16 text-brown text-opacity-80">{description}</p>
+            </li>
+          )
+        }
       )
     }
   </ul>
