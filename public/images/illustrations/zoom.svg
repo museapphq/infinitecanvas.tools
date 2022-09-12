@@ -13,11 +13,8 @@
             50% {
                 transform: scale(3);
             }
-            55% {
+            96% {
                 transform: scale(3);
-            }
-            59% {
-                transform: scale(1);
             }
             100% {
                 transform: scale(1);
