@@ -8,10 +8,6 @@ import SlideShow from "../components/index/SlideShow.jsx"
 
 import index_header from "/images/illustrations/index_header.svg"
 
-import expansive from "/images/illustrations/expansive.svg"
-import zoom from "/images/illustrations/zoom.svg"
-import collaboration from "/images/illustrations/collaboration.svg"
-
 import horizontalDots from "/images/backgrounds/timeline_dot_horizontal.svg"
 import verticalDots from "/images/backgrounds/timeline_dot_vertical.svg"
 
@@ -138,25 +134,25 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
         <WhatMakesItem
           title="Expansiveness"
           description="A seemingly limitless canvas allows for free thinking and creation"
-          src={expansive}
+          src="/images/illustrations/expansive.svg"
           alt="animation showing panning around infinite canvas"
         />
         <WhatMakesItem
           title="Zoom"
           description="Different zoom levels mimic stepping into and stepping away in the real world"
-          src={zoom}
+          src="/images/illustrations/zoom.svg"
           alt="animation showing zooming in and out of a canvas"
         />
         <WhatMakesItem
           title="Direct manipulation"
           description="Direct manipulation of objects including freeform movement, editing and duplication"
-          src={expansive}
+          src="/images/illustrations/manipulation.svg"
           alt="animation showing panning around infinite canvas"
         />
         <WhatMakesItem
           title="Collaboration"
           description="Real time collaboration combines the best of software and working together in person"
-          src={collaboration}
+          src="/images/illustrations/collaboration.svg"
           alt="animation showing panning around infinite canvas"
         />
       </ul>

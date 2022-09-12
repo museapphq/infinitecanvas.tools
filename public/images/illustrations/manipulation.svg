@@ -1,0 +1,78 @@
+<svg width="308" height="308" viewBox="0 0 308 308" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="40" y="40" width="100" height="100" fill="#ECD437" />
+    <rect class="rectangle" x="40" y="40" width="100" height="100" fill="#ECD437" />
+    <path class="cursor" d="M139.314 138.314L173.583 149.955L158.006 157.006L150.955 172.583L139.314 138.314Z" fill="#2C393A" />
+    <style>
+    @keyframes cursor {
+        0% {
+            transform: translate(0px);
+        }
+        10% {
+            transform: translate(-50px, -50px);
+        }
+        20% {
+            transform: translate(78px, -50px);
+        }
+        30% {
+            transform: translate(-50px, -50px);
+        }
+        40% {
+            transform: translate(0px);
+        }
+        60% {
+            transform: translate(0px);
+        }
+        70% {
+            transform: translate(128px, 128px);
+        }
+        80% {
+            transform: translate(0px);
+        }
+        100% {
+            transform: translate(0px);
+        }
+    }
+
+    @keyframes rectangle {
+        0% {
+            transform: translate(0px);
+        }
+        10% {
+            transform: translate(0px);
+        }
+        20% {
+            transform: translate(128px, 0px);
+        }
+        30% {
+            transform: translate(0px);
+        }
+        50% {
+            transform: translate(0px);
+        }
+        60% {
+            transform: translate(0px);
+        }
+        70% {
+            transform: scale(228%, 228%);
+        }
+        80% {
+            transform: translate(0px);
+        }
+        100% {
+            transform: translate(0px);
+        }
+    }
+      
+    .cursor {
+        transform-origin: center;
+        animation: cursor 6s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    .rectangle {
+        transform-origin: 40px 40px;
+        animation: rectangle 6s ease-in-out;
+        animation-iteration-count: infinite;
+    }
+</style>
+</svg>
