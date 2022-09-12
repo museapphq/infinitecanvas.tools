@@ -59,7 +59,7 @@
             transform: translate(0px);
         }
         80% {
-            transform: scale(228%, 228%);
+            transform: scale(2.28, 2.28);
         }
         90% {
             transform: translate(0px);
