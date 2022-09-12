@@ -13,19 +13,22 @@
         20% {
             transform: translate(78px, -50px);
         }
-        30% {
+        25% {
+            transform: translate(78px, -50px);
+        }
+        35% {
             transform: translate(-50px, -50px);
         }
-        40% {
-            transform: translate(0px);
-        }
-        60% {
+        45% {
             transform: translate(0px);
         }
         70% {
-            transform: translate(128px, 128px);
+            transform: translate(0px);
         }
         80% {
+            transform: translate(128px, 128px);
+        }
+        90% {
             transform: translate(0px);
         }
         100% {
@@ -43,19 +46,22 @@
         20% {
             transform: translate(128px, 0px);
         }
-        30% {
+        25% {
+            transform: translate(128px, 0px);
+        }
+        35% {
             transform: translate(0px);
         }
         50% {
             transform: translate(0px);
         }
-        60% {
+        70% {
             transform: translate(0px);
         }
-        70% {
+        80% {
             transform: scale(228%, 228%);
         }
-        80% {
+        90% {
             transform: translate(0px);
         }
         100% {
