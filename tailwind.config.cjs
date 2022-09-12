@@ -17,7 +17,7 @@ module.exports = {
       16: "16px"
     },
     colors: {
-      parchment: "#F9F9F1",
+      parchment: "#FCFAF6",
       red: "#C7381E",
       "dark-red": "#862514",
       green: "#409E3F",

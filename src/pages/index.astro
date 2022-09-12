@@ -10,6 +10,7 @@ import index_header from "/images/illustrations/index_header.svg"
 
 import expansive from "/images/illustrations/expansive.svg"
 import zoom from "/images/illustrations/zoom.svg"
+import collaboration from "/images/illustrations/collaboration.svg"
 
 import horizontalDots from "/images/backgrounds/timeline_dot_horizontal.svg"
 import verticalDots from "/images/backgrounds/timeline_dot_vertical.svg"
@@ -51,19 +52,19 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       >
     </section>
 
-    <section class="bg-brown bg-opacity-80 py-128">
+    <section class="bg-brown bg-opacity-5 py-128">
       <div class="max-w-1440 px-24 640:px-32 space-y-64 mx-auto">
         <div
           class="flex 768:flex-row flex-col max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
         >
           <div class="w-full 768:w-3/6 1280:w-4/6">
-            <h2 class="mb-24 sans-30 text-white">We think spatially</h2>
-            <p class="mb-16 serif-20 text-white text-opacity-60">
+            <h2 class="mb-24 sans-30 text-gray">We think spatially</h2>
+            <p class="mb-16 serif-20 text-brown text-opacity-60">
               People have been organizing and processing information spatially
               for centuries, whether it be with notes in a notebook or bulletin
               boards with stickies and photos.
             </p>
-            <p class="serif-20 text-white text-opacity-60">
+            <p class="serif-20 text-brown text-opacity-60">
               In fact, <a
                 href="https://www.youtube.com/watch?v=wMCiVL2qduQ"
                 class="underline hover-dim underline-offset-4"
@@ -111,14 +112,14 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           </div>
 
           <div class="w-full 768:w-3/6 1280:w-4/6">
-            <h2 class="mb-24 sans-30 text-white">
+            <h2 class="mb-24 sans-30 text-gray">
               Software that mirrors how we think
             </h2>
-            <p class="mb-16 serif-20 text-white text-opacity-60">
+            <p class="mb-16 serif-20 text-brown text-opacity-60">
               Traditional tools like text editors and presentation software have
               linear interfaces that mimic their output.
             </p>
-            <p class="serif-20 text-white white text-opacity-60">
+            <p class="serif-20 text-brown text-opacity-60">
               Infinite canvas tools instead embrace the messy, circuitous paths
               we take when brainstorming, sketching and distilling ideas.
             </p>
@@ -155,7 +156,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
         <WhatMakesItem
           title="Collaboration"
           description="Real time collaboration combines the best of software and working together in person"
-          src={expansive}
+          src={collaboration}
           alt="animation showing panning around infinite canvas"
         />
       </ul>
