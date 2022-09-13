@@ -2,7 +2,7 @@
 title: Renote
 platforms: 
 url: https://renote.so/
-usecases: ['digital whiteboard','studying','teaching','visual notetaking']
+usecases: ['notetaking','studying','teaching','whiteboard']
 image: renote.jpg
 description: "Space for creating or studying"
 multiplayer: false
