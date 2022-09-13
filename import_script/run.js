@@ -48,7 +48,7 @@ platforms: ${commasToArray(Platforms)}
 url: ${URL}
 usecases: ${commasToArray(usecases)}
 image: ${fileName}.jpg
-description: ${description}
+description: "${description}"
 multiplayer: ${(Multiplayer === "Yes").toString()}
 ---
 `
