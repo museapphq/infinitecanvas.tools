@@ -39,10 +39,10 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   <!-- default slot -->
   <div class="space-y-96 mt-96">
     <section
-      class="mx-auto max-w-1440 px-24 640:px-48 gap-y-48 flex flex-col items-end"
+      class="flex flex-col items-end px-24 mx-auto max-w-1440 640:px-48 gap-y-48"
     >
       <h2
-        class="text-black font-serif text-24 border-t-2 border-black w-full pt-16"
+        class="w-full pt-16 font-serif text-black border-t-2 border-black text-24"
       >
         Meet the apps paving the way
       </h2>
@@ -51,12 +51,12 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     </section>
 
     <section class="bg-brown bg-opacity-5 py-96">
-      <div class="max-w-1440 mx-auto px-24 640:px-48 space-y-96">
+      <div class="px-24 mx-auto max-w-1440 640:px-48 space-y-96">
         <div class="border-t-2 border-black">
           <div
-            class="mt-16 grid grid-cols-1 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+            class="grid grid-cols-1 mt-16 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
           >
-            <h2 class="text-black font-serif text-24 w-full">
+            <h2 class="w-full font-serif text-black text-24">
               We think spatially
             </h2>
             <div class="space-y-16">
@@ -111,9 +111,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
         </div>
         <div class="border-t-2 border-black">
           <div
-            class="mt-16 grid grid-cols-1 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+            class="grid grid-cols-1 mt-16 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
           >
-            <h2 class="text-black font-serif text-24 w-full">
+            <h2 class="w-full font-serif text-black text-24">
               Software that mirrors how we think
             </h2>
             <div class="space-y-16">
@@ -157,9 +157,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="mx-auto max-w-1440 px-24 640:px-48">
-      <div class="border-t-2 border-black space-y-48">
-        <h2 class="text-black font-serif text-24 w-full mt-16">
+    <section class="px-24 mx-auto max-w-1440 640:px-48">
+      <div class="space-y-48 border-t-2 border-black">
+        <h2 class="w-full mt-16 font-serif text-black text-24">
           What makes an infinite canvas?
         </h2>
         <ul
@@ -193,31 +193,37 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="bg-brown bg-opacity-5 py-128">
-      <div class="flex flex-col text-center gap-y-32">
-        <h2 class="sans-40 text-gray">History</h2>
-        <ol
-          class="relative grid w-full grid-cols-1 py-48 mx-auto gap-y-32 640:grid-cols-4 max-w-1440"
-        >
-          <div
-            class="absolute left-96 right-96 860:left-128 860:right-128 1280:left-[144px] 1280:right-[144px] z-0 h-4 top-[56px] hidden 640:block"
-            style={`background-image: url("${horizontalDots}")`}
+    <section class="bg-brown bg-opacity-5 py-96">
+      <section class="px-24 mx-auto max-w-1440 640:px-48">
+        <div class="flex flex-col items-end space-y-48 border-t-2 border-black">
+          <h2 class="w-full mt-16 font-serif text-black text-24">History</h2>
+          <ul
+            class="grid w-full grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-24 640:gap-x-48 gap-y-48"
           >
-          </div>
-          <div
-            class="absolute left-[50vw] top-48 bottom-48 w-4 -ml-2 block 640:hidden"
-            style={`background-image: url("${verticalDots}")`}
-          >
-          </div>
-          <TimelineItem date="1963" title="Sketchpad" />
-          <TimelineItem date="1977" title="Post-it Note" />
-          <TimelineItem date="1984" title="Adobe Illustrator" />
-          <TimelineItem date="2000" title="“Infinite Canvas” coined" />
-        </ol>
-        <ButtonLink href="/history" color="bg-dark-red">
-          Browse the timeline →
-        </ButtonLink>
-      </div>
+            <TimelineItem
+              date="1963"
+              title="Sketchpad"
+              imgSrc="1963_sketchpad.jpg"
+            />
+            <TimelineItem
+              date="1977"
+              title="Post-it Note"
+              imgSrc="1979_post_it.png"
+            />
+            <TimelineItem
+              date="1984"
+              title="Adobe Illustrator"
+              imgSrc="1987_adobe_illustrator.jpg"
+            />
+            <TimelineItem
+              date="2000"
+              title="“Infinite Canvas” coined"
+              imgSrc="2000_reinventing_comics.png"
+            />
+          </ul>
+          <ButtonLink href="/history" color="bg-red">History →</ButtonLink>
+        </div>
+      </section>
     </section>
   </div>
 </Layout>

@@ -1,25 +1,15 @@
 ---
-const { date, title } = Astro.props
-import Date from "../history/Date.astro"
+const { date, title, imgSrc } = Astro.props
 ---
 
-<li class="z-10 640:space-x-8 px-24 flex flex-col items-center">
-  <div><Date date={date} /></div>
-  <div class="bg-parchment block 640:hidden mt-4">
-    <div class="bg-brown bg-opacity-5">
-      <div
-        class="w-0 h-0 border-b-16 border-b-brown/5 border-l-16 border-r-16 border-l-transparent border-r-transparent"
-      >
-      </div>
-    </div>
+<li class="space-y-8">
+  <div class="aspect-[3/2]">
+    <img
+      src={`/images/history/${imgSrc}`}
+      alt={`Image of ${title} from ${date}`}
+    />
   </div>
-  <div class="pt-0 640:pt-8">
-    <div class="inline-block bg-parchment">
-      <h3
-        class="sans-20 text-brown bg-brown 640:bg-opacity-5 bg-opacity-10 p-16 640:p-0 rounded-4"
-      >
-        {title}
-      </h3>
-    </div>
-  </div>
+  <h3 class="font-serif text-16 text-gray">
+    <time datetime={date}>{date}</time> • {title}
+  </h3>
 </li>
