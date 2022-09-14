@@ -5,8 +5,10 @@ const { activeItem } = Astro.props
 // sets the color based on if item is active or not
 const navClass = (currentItem) =>
   joinClasses(
-    "text-gray hover-dim ",
-    activeItem === currentItem ? "font-bold" : "text-opacity-60"
+    "hover-dim ",
+    activeItem === currentItem
+      ? "font-bold text-black"
+      : "text-gray text-opacity-80"
   )
 
 export interface Props {
