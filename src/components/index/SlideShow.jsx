@@ -1,6 +1,8 @@
 import { useEffect, useState, useRef, Component } from "react"
 import joinClasses from "../../utilities/joinClasses"
 
+const MILLISECONDS_PER_SLIDE = 8000
+
 const Template = () => (
   <div className="flex flex-col">
     <div className="aspect-[3/2] w-full"></div>
@@ -16,7 +18,7 @@ const Figure = ({ title, imgSrc, sourceUrl, active }) => (
     )}
   >
     <img src={imgSrc} alt={title} />
-    <figcaption className="h-24 mt-8  text-brown text-opacity-80 text-center">
+    <figcaption className="h-24 mt-8 text-center text-brown text-opacity-80">
       {title}
       {sourceUrl && (
         <>
@@ -34,29 +36,33 @@ const Figure = ({ title, imgSrc, sourceUrl, active }) => (
   </figure>
 )
 
-const MILLISECONDS_PER_SLIDE = 4000
-
 class SlideShow extends Component {
   constructor(props) {
     super(props)
-    const { items } = this.props
+    const { items, delayMilliseconds } = this.props
 
-    const intervalId = setInterval(
-      () => {
-        const nextIndex = this.state.activeIndex + 1
-        if (nextIndex === items.length) {
-          this.setActiveIndex(0)
-        } else {
-          this.setActiveIndex(nextIndex)
-        }
-      },
+    setTimeout(() => {
+      const intervalId = setInterval(
+        () => {
+          const nextIndex = this.state.activeIndex + 1
+          if (nextIndex === items.length) {
+            this.setActiveIndex(0)
+          } else {
+            this.setActiveIndex(nextIndex)
+          }
+        },
 
-      MILLISECONDS_PER_SLIDE
-    )
+        MILLISECONDS_PER_SLIDE
+      )
+      this.setState((prevState) => ({
+        ...prevState,
+        intervalId: intervalId
+      }))
+    }, delayMilliseconds)
 
     this.state = {
       activeIndex: 0,
-      intervalId: intervalId
+      intervalId: null
     }
     this.setActiveIndex = this.setActiveIndex.bind(this)
   }

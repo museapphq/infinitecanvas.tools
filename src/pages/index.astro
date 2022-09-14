@@ -75,6 +75,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             </div>
             <SlideShow
               client:load
+              delayMilliseconds={0}
               items={[
                 {
                   title: "Film art room",
@@ -92,6 +93,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             />
             <SlideShow
               client:load
+              delayMilliseconds={4000}
               items={[
                 {
                   title: "Film art room",
@@ -129,6 +131,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             </div>
             <SlideShow
               client:load
+              delayMilliseconds={2000}
               items={[
                 {
                   title: "Flowcharts & diagrams",
@@ -141,6 +144,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
               ]}
             /><SlideShow
               client:load
+              delayMilliseconds={6000}
               items={[
                 {
                   title: "Flowcharts & diagrams",
