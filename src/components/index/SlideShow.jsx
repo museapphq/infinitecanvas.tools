@@ -18,13 +18,13 @@ const Figure = ({ title, imgSrc, sourceUrl, active }) => (
     )}
   >
     <img src={imgSrc} alt={title} />
-    <figcaption className="h-24 mt-8 text-center text-brown text-opacity-80">
+    <figcaption className="h-24 mt-8 font-sans text-gray text-16 text-opacity-80">
       {title}
       {sourceUrl && (
         <>
           {" ("}
           <a
-            className="text-brown text-opacity-60 hover-dim slide"
+            className="text-gray text-opacity-60 hover-dim slide"
             href={sourceUrl}
           >
             source
