@@ -5,7 +5,7 @@ const IndexRandomGallery = ({ galleryItems }) => {
   const selected = shuffled.slice(0, NUMBER_OF_ITEMS_TO_SELECT)
 
   return (
-    <ul className="grid grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-24 gap-y-48 w-full">
+    <ul className="grid grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-24 640:gap-x-48 gap-y-48 w-full">
       {selected.map(({ frontmatter: { title, image } }) => (
         <li className="space-y-8" key={title}>
           <div className="aspect-[16/9]">

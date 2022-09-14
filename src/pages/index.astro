@@ -50,8 +50,112 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       <ButtonLink href="/gallery" color="bg-red">App gallery →</ButtonLink>
     </section>
 
-    <section class="bg-brown bg-opacity-5 py-128">
-      <div class="max-w-1440 px-24 640:px-32 space-y-64 mx-auto">
+    <section class="bg-brown bg-opacity-5 py-96">
+      <div class="max-w-1440 mx-auto px-24 640:px-48 space-y-96">
+        <div class="border-t-2 border-black">
+          <div
+            class="mt-16 grid grid-cols-1 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+          >
+            <h2 class="text-black font-serif text-32 w-full">
+              We think spatially
+            </h2>
+            <div class="space-y-16">
+              <p class="sans-20 text-gray text-opacity-80">
+                People have been organizing and processing information spatially
+                for centuries, whether it be with notes in a notebook or
+                bulletin boards with stickies and photos.
+              </p>
+              <p class="sans-20 text-gray text-opacity-80">
+                This kind of thinking harnesses <a
+                  href="https://www.youtube.com/watch?v=wMCiVL2qduQ"
+                  class="underline hover-dim underline-offset-4"
+                  >areas of the brain</a
+                > dedicated to spatial thinking and mapping relationships.
+              </p>
+            </div>
+            <SlideShow
+              client:load
+              items={[
+                {
+                  title: "Film art room",
+                  imgSrc: "/images/homepage/pixar.jpg",
+                  sourceUrl:
+                    "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+                },
+                {
+                  title: "Moodboard",
+                  imgSrc: "/images/homepage/moodboard.jpg",
+                  sourceUrl:
+                    "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+                }
+              ]}
+            />
+            <SlideShow
+              client:load
+              items={[
+                {
+                  title: "Film art room",
+                  imgSrc: "/images/homepage/pixar.jpg",
+                  sourceUrl:
+                    "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+                },
+                {
+                  title: "Moodboard",
+                  imgSrc: "/images/homepage/moodboard.jpg",
+                  sourceUrl:
+                    "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+                }
+              ]}
+            />
+          </div>
+        </div>
+        <div class="border-t-2 border-black">
+          <div
+            class="mt-16 grid grid-cols-1 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+          >
+            <h2 class="text-black font-serif text-32 w-full">
+              Software that mirrors how we think
+            </h2>
+            <div class="space-y-16">
+              <p class="sans-20 text-gray text-opacity-80">
+                Traditional tools like text editors and presentation software
+                have linear interfaces that mimic their output.
+              </p>
+              <p class="sans-20 text-gray text-opacity-80">
+                Infinite canvas tools instead embrace the messy, circuitous
+                paths we take when brainstorming, sketching, and distilling
+                ideas.
+              </p>
+            </div>
+            <SlideShow
+              client:load
+              items={[
+                {
+                  title: "Flowcharts & diagrams",
+                  imgSrc: "/images/homepage/diagram_illustration.svg"
+                },
+                {
+                  title: "Brainstorming",
+                  imgSrc: "/images/homepage/brainstorming_illustration.svg"
+                }
+              ]}
+            /><SlideShow
+              client:load
+              items={[
+                {
+                  title: "Flowcharts & diagrams",
+                  imgSrc: "/images/homepage/diagram_illustration.svg"
+                },
+                {
+                  title: "Brainstorming",
+                  imgSrc: "/images/homepage/brainstorming_illustration.svg"
+                }
+              ]}
+            />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="max-w-1440 px-24 640:px-32 space-y-64 mx-auto">
         <div
           class="flex 768:flex-row flex-col max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
         >
@@ -123,7 +227,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section class="px-32 mx-auto space-y-32 max-w-1440">
