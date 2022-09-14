@@ -41,19 +41,21 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
                 .match(/[a-z1-3.]*/g)[0] + "↗" //capture just the domain and nothing after
             return (
               <li class="">
-                <div class="aspect-[16/9] mb-24">
+                <div class="aspect-[16/9] mb-16">
                   <img
                     src={`/images/gallery/${image}`}
                     alt={`Screenshot of ${title}`}
                   />
                 </div>
-                <h2 class="mb-8 sans-20 text-gray">{title}</h2>
+                <h2 class="font-serif text-20 text-gray">{title}</h2>
                 <a href={url} target="_blank">
-                  <p class="mb-16 text-blue font-weight hover-dim">
+                  <p class="mb-16 font-sans font-bold text-red hover-dim text-16">
                     {formattedURL}
                   </p>
                 </a>
-                <p class=" text-brown text-opacity-80">{description}</p>
+                <p class="font-sans text-gray text-opacity-80 text-16">
+                  {description}
+                </p>
               </li>
             )
           }
