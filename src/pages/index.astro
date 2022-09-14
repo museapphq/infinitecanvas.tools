@@ -37,17 +37,17 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   </header>
 
   <!-- default slot -->
-  <div class="space-y-128 mt-128">
+  <div class="space-y-96 mt-96">
     <section
-      class="flex flex-col items-center mx-auto gap-y-32 max-w-1440 px-24 640:px-32"
+      class="mx-auto max-w-1440 px-24 640:px-48 gap-y-48 flex flex-col items-end"
     >
-      <h2 class="text-center sans-40 text-gray">
+      <h2
+        class="text-black font-serif text-32 border-t-2 border-black w-full pt-16"
+      >
         Meet the apps paving the way
       </h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
-      <ButtonLink href="/gallery" color="bg-dark-blue"
-        >Browse the app gallery →</ButtonLink
-      >
+      <ButtonLink href="/gallery" color="bg-red">App gallery →</ButtonLink>
     </section>
 
     <section class="bg-brown bg-opacity-5 py-128">
