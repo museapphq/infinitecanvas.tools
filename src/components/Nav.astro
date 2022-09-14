@@ -6,7 +6,7 @@ const { activeItem } = Astro.props
 const navClass = (currentItem) =>
   joinClasses(
     "text-gray hover-dim ",
-    activeItem === currentItem ? "" : "text-opacity-60"
+    activeItem === currentItem ? "font-bold" : "text-opacity-60"
   )
 
 export interface Props {
@@ -14,9 +14,11 @@ export interface Props {
 }
 ---
 
-<nav class="flex flex-row justify-between p-24 640:p-32 mx-auto max-w-1440">
+<nav
+  class="flex flex-row justify-between py-24 px-24 640:px-48 mx-auto max-w-1440"
+>
   <a class={navClass("/")} href="/">Home</a>
-  <div class="space-x-24 640:space-x-32">
+  <div class="space-x-24 640:space-x-48">
     <a href="/gallery" class={navClass("/gallery")}>App gallery</a>
     <a href="/history" class={navClass("/history")}>History</a>
   </div>
