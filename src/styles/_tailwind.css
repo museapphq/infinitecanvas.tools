@@ -8,10 +8,10 @@
   }
 
   .md p {
-    @apply my-16  text-brown  text-opacity-80;
+    @apply mb-16 text-gray text-16 text-opacity-80;
   }
 
   .md a {
-    @apply 540:text-dark-red hover-dim;
+    @apply pr-8 font-bold text-16 text-opacity-80 text-dark-red hover-dim;
   }
 }
