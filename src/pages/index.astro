@@ -157,38 +157,40 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="px-32 mx-auto space-y-32 max-w-1440">
-      <h2 class="text-gray sans-40 text-center">
-        What makes an infinite canvas?
-      </h2>
-      <ul
-        class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-48 gap-y-64"
-      >
-        <WhatMakesItem
-          title="Expansiveness"
-          description="A seemingly limitless canvas empowers users to structure documents in their own way."
-          src="/images/illustrations/expansive.svg"
-          alt="animation showing panning around infinite canvas"
-        />
-        <WhatMakesItem
-          title="Zoom"
-          description="Different zoom levels facilitate navigation, mimicking stepping in and away in the real world."
-          src="/images/illustrations/zoom.svg"
-          alt="animation showing zooming in and out of a canvas"
-        />
-        <WhatMakesItem
-          title="Direct manipulation"
-          description="Freeform movement, editing, and duplication of objects keep the infinite canvas the source of truth."
-          src="/images/illustrations/manipulation.svg"
-          alt="animation showing panning around infinite canvas"
-        />
-        <WhatMakesItem
-          title="Collaboration"
-          description="Real-time collaboration enables teams to work exactly the way they want."
-          src="/images/illustrations/collaboration.svg"
-          alt="animation showing panning around infinite canvas"
-        />
-      </ul>
+    <section class="mx-auto max-w-1440 px-24 640:px-48">
+      <div class="border-t-2 border-black space-y-48">
+        <h2 class="text-black font-serif text-24 w-full mt-16">
+          What makes an infinite canvas?
+        </h2>
+        <ul
+          class="grid grid-cols-1 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+        >
+          <WhatMakesItem
+            title="Expansiveness"
+            description="A seemingly limitless canvas empowers users to structure documents in their own way."
+            src="/images/illustrations/expansive.svg"
+            alt="animation showing panning around infinite canvas"
+          />
+          <WhatMakesItem
+            title="Zoom"
+            description="Different zoom levels facilitate navigation, mimicking stepping in and away in the real world."
+            src="/images/illustrations/zoom.svg"
+            alt="animation showing zooming in and out of a canvas"
+          />
+          <WhatMakesItem
+            title="Direct manipulation"
+            description="Freeform movement, editing, and duplication of objects keep the infinite canvas the source of truth."
+            src="/images/illustrations/manipulation.svg"
+            alt="animation showing panning around infinite canvas"
+          />
+          <WhatMakesItem
+            title="Collaboration"
+            description="Real-time collaboration enables teams to work exactly the way they want."
+            src="/images/illustrations/collaboration.svg"
+            alt="animation showing panning around infinite canvas"
+          />
+        </ul>
+      </div>
     </section>
 
     <section class="bg-brown bg-opacity-5 py-128">
