@@ -17,20 +17,22 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 <Layout title="Infinite Canvas" activeItem="/">
   <!-- header slot-->
   <header slot="header" class="pb-32 768:pb-48">
-    <div
-      class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32 1440:bg-auto"
-      style={`background-image: url("${index_header}")`}
-    >
-      <h1
-        class="font-sans text-black text-48 768:text-[72px] 1280:text-[94px] text-center mt-48 768:mt-96 1280:mt-128"
+    <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
+      <div
+        class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32 1440:bg-auto"
+        style={`background-image: url("${index_header}")`}
       >
-        Infinite Canvas
-      </h1>
-      <p
-        class="serif-20 768:serif-30 1280:serif-38 text-brown max-w-[400px] text-center"
-      >
-        New tools that work the way we think
-      </p>
+        <h1
+          class="font-sans text-black text-48 768:text-[72px] 1280:text-[94px] text-center mt-48 768:mt-96 1280:mt-128"
+        >
+          Infinite Canvas
+        </h1>
+        <p
+          class="serif-20 768:serif-32 1280:serif-40 text-brown max-w-[400px] text-center"
+        >
+          New tools that work the way we think
+        </p>
+      </div>
     </div>
   </header>
 
@@ -39,7 +41,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     <section
       class="flex flex-col items-center mx-auto gap-y-32 max-w-1440 px-24 640:px-32"
     >
-      <h2 class="text-center sans-38 text-gray">
+      <h2 class="text-center sans-40 text-gray">
         Meet the apps paving the way
       </h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
@@ -54,7 +56,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           class="flex 768:flex-row flex-col max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
         >
           <div class="w-full 768:w-3/6 1280:w-4/6">
-            <h2 class="mb-24 sans-30 text-gray">We think spatially</h2>
+            <h2 class="mb-24 sans-32 text-gray">We think spatially</h2>
             <p class="mb-16 serif-20 text-brown text-opacity-60">
               People have been organizing and processing information spatially
               for centuries, whether it be with notes in a notebook or bulletin
@@ -108,7 +110,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
           </div>
 
           <div class="w-full 768:w-3/6 1280:w-4/6">
-            <h2 class="mb-24 sans-30 text-gray">
+            <h2 class="mb-24 sans-32 text-gray">
               Software that mirrors how we think
             </h2>
             <p class="mb-16 serif-20 text-brown text-opacity-60">
@@ -125,7 +127,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     </section>
 
     <section class="px-32 mx-auto space-y-32 max-w-1440">
-      <h2 class="text-gray sans-38 text-center">
+      <h2 class="text-gray sans-40 text-center">
         What makes an infinite canvas?
       </h2>
       <ul
@@ -160,7 +162,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
     <section class="bg-brown bg-opacity-5 py-128">
       <div class="flex flex-col text-center gap-y-32">
-        <h2 class="sans-38 text-gray">History</h2>
+        <h2 class="sans-40 text-gray">History</h2>
         <ol
           class="relative grid w-full grid-cols-1 py-48 mx-auto gap-y-32 640:grid-cols-4 max-w-1440"
         >

@@ -37,7 +37,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        "IBM Plex Sans Condensed",
+        "IBM Plex Sans",
         "-apple-system",
         "BlinkMacSystemFont",
         "avenir next",
@@ -87,8 +87,8 @@ module.exports = {
       16: "16px",
       20: "20px",
       24: "24px",
-      30: "30px",
-      38: "38px",
+      32: "32px",
+      40: "40px",
       48: "48px"
     },
     letterSpacing: {

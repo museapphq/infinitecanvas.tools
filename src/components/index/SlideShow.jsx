@@ -16,7 +16,7 @@ const Figure = ({ title, imgSrc, sourceUrl, active }) => (
     )}
   >
     <img src={imgSrc} alt={title} />
-    <figcaption className="h-24 mt-8 serif-16 text-brown text-opacity-80 text-center">
+    <figcaption className="h-24 mt-8  text-brown text-opacity-80 text-center">
       {title}
       {sourceUrl && (
         <>

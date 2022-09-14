@@ -20,32 +20,17 @@ const { title, activeItem } = Astro.props as Props
     <meta name="theme-color" content="#F9F9F1" />
 
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      rel="preload"
-      href="/fonts/merriweather/merriweather-v30-latin-700.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/fonts/merriweather/merriweather-v30-latin-700italic.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="/fonts/ibm-plex-sans-condensed/ibm-plex-sans-condensed-v13-latin-500.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&family=Merriweather&display=swap"
+      rel="stylesheet"
     />
 
     <title>{title}</title>
   </head>
   <body class="flex flex-col min-h-screen bg-parchment">
-    <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
+    <div>
       <Nav activeItem={activeItem} />
       <slot name="header" />
     </div>

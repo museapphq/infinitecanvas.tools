@@ -40,11 +40,11 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
               </div>
               <h2 class="sans-20 text-gray mb-8">{title}</h2>
               <a href={url} target="_blank">
-                <p class="sans-16 mb-16 text-blue font-weight hover-dim">
+                <p class=" mb-16 text-blue font-weight hover-dim">
                   {formattedURL}
                 </p>
               </a>
-              <p class="serif-16 text-brown text-opacity-80">{description}</p>
+              <p class=" text-brown text-opacity-80">{description}</p>
             </li>
           )
         }
