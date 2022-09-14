@@ -17,60 +17,83 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 <Layout title="Infinite Canvas" activeItem="/">
   <!-- header slot-->
   <header slot="header" class="pb-32 768:pb-48">
-    <div
-      class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32 1440:bg-auto"
-      style={`background-image: url("${index_header}")`}
-    >
-      <h1
-        class="font-sans text-black text-48 768:text-[72px] 1280:text-[94px] text-center mt-48 768:mt-96 1280:mt-128"
+    <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
+      <div
+        class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32 1440:bg-auto"
+        style={`background-image: url("${index_header}")`}
       >
-        Infinite Canvas
-      </h1>
-      <p
-        class="serif-20 768:serif-30 1280:serif-38 text-brown max-w-[400px] text-center"
-      >
-        New tools that work the way we think
-      </p>
+        <h1
+          class="font-sans text-black text-48 768:text-[72px] 1280:text-[94px] text-center mt-48 768:mt-96 1280:mt-128"
+        >
+          Infinite Canvas
+        </h1>
+        <p
+          class="serif-20 768:serif-32 1280:serif-40 text-brown max-w-[400px] text-center"
+        >
+          New tools that work the way we think
+        </p>
+      </div>
     </div>
   </header>
 
   <!-- default slot -->
-  <div class="space-y-128 mt-128">
+  <div class="space-y-96 mt-96">
     <section
-      class="flex flex-col items-center mx-auto gap-y-32 max-w-1440 px-24 640:px-32"
+      class="flex flex-col items-end px-24 mx-auto max-w-1440 640:px-48 gap-y-48"
     >
-      <h2 class="text-center sans-38 text-gray">
+      <h2
+        class="w-full pt-16 font-serif text-black border-t-2 border-gray text-24"
+      >
         Meet the apps paving the way
       </h2>
       <IndexRandomGallery client:load galleryItems={galleryItems} />
-      <ButtonLink href="/gallery" color="bg-dark-blue"
-        >Browse the app gallery →</ButtonLink
-      >
+      <ButtonLink href="/gallery" color="bg-red">App gallery →</ButtonLink>
     </section>
 
-    <section class="bg-brown bg-opacity-5 py-128">
-      <div class="max-w-1440 px-24 640:px-32 space-y-64 mx-auto">
-        <div
-          class="flex 768:flex-row flex-col max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
-        >
-          <div class="w-full 768:w-3/6 1280:w-4/6">
-            <h2 class="mb-24 sans-30 text-gray">We think spatially</h2>
-            <p class="mb-16 serif-20 text-brown text-opacity-60">
-              People have been organizing and processing information spatially
-              for centuries, whether it be with notes in a notebook or bulletin
-              boards with stickies and photos.
-            </p>
-            <p class="serif-20 text-brown text-opacity-60">
-              This kind of thinking harnesses <a
-                href="https://www.youtube.com/watch?v=wMCiVL2qduQ"
-                class="underline hover-dim underline-offset-4"
-                >areas of the brain</a
-              > dedicated to spatial thinking and mapping relationships.
-            </p>
-          </div>
-          <div class="w-full 768:w-3/6 1280:w-2/6">
+    <section class="bg-brown bg-opacity-5 py-96">
+      <div class="px-24 mx-auto max-w-1440 640:px-48 space-y-96">
+        <div class="border-t-2 border-gray">
+          <div
+            class="grid grid-cols-1 mt-16 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+          >
+            <h2 class="w-full font-serif text-black text-24">
+              We think spatially
+            </h2>
+            <div class="space-y-16">
+              <p class="sans-20 text-gray text-opacity-80">
+                People have been organizing and processing information spatially
+                for centuries, whether by writing in a notebook or posting paper
+                on walls.
+              </p>
+              <p class="sans-20 text-gray text-opacity-80">
+                This kind of thinking harnesses <a
+                  href="https://www.youtube.com/watch?v=wMCiVL2qduQ"
+                  class="underline hover-dim underline-offset-4"
+                  >areas of the brain</a
+                > dedicated to spatial thinking and mapping relationships.
+              </p>
+            </div>
             <SlideShow
               client:load
+              delayMilliseconds={0}
+              items={[
+                {
+                  title: "Film art room",
+                  imgSrc: "/images/homepage/pixar.jpg",
+                  sourceUrl:
+                    "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+                },
+                {
+                  title: "Moodboard",
+                  imgSrc: "/images/homepage/moodboard.jpg",
+                  sourceUrl:
+                    "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+                }
+              ]}
+            />
+            <SlideShow
+              client:load
+              delayMilliseconds={4000}
               items={[
                 {
                   title: "Film art room",
@@ -88,12 +111,40 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             />
           </div>
         </div>
-        <div
-          class="flex 768:flex-row flex-col-reverse max-w-1440 768:gap-x-48 mx-auto gap-y-32 768:gap-y-0"
-        >
-          <div class="w-full 768:w-3/6 1280:w-2/6">
+        <div class="border-t-2 border-gray">
+          <div
+            class="grid grid-cols-1 mt-16 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+          >
+            <h2 class="w-full font-serif text-black text-24">
+              Software that mirrors how we think
+            </h2>
+            <div class="space-y-16">
+              <p class="sans-20 text-gray text-opacity-80">
+                Traditional tools like text editors and presentation software
+                have linear interfaces that mimic their output.
+              </p>
+              <p class="sans-20 text-gray text-opacity-80">
+                Infinite canvas tools instead embrace the messy, circuitous
+                paths we take when brainstorming, sketching, and distilling
+                ideas.
+              </p>
+            </div>
             <SlideShow
               client:load
+              delayMilliseconds={2000}
+              items={[
+                {
+                  title: "Flowcharts & diagrams",
+                  imgSrc: "/images/homepage/diagram_illustration.svg"
+                },
+                {
+                  title: "Brainstorming",
+                  imgSrc: "/images/homepage/brainstorming_illustration.svg"
+                }
+              ]}
+            /><SlideShow
+              client:load
+              delayMilliseconds={6000}
               items={[
                 {
                   title: "Flowcharts & diagrams",
@@ -106,83 +157,77 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
               ]}
             />
           </div>
-
-          <div class="w-full 768:w-3/6 1280:w-4/6">
-            <h2 class="mb-24 sans-30 text-gray">
-              Software that mirrors how we think
-            </h2>
-            <p class="mb-16 serif-20 text-brown text-opacity-60">
-              Traditional tools like text editors and presentation software have
-              linear interfaces that mimic their output.
-            </p>
-            <p class="serif-20 text-brown text-opacity-60">
-              Infinite canvas tools instead embrace the messy, circuitous paths
-              we take when brainstorming, sketching, and distilling ideas.
-            </p>
-          </div>
         </div>
       </div>
     </section>
 
-    <section class="px-32 mx-auto space-y-32 max-w-1440">
-      <h2 class="text-gray sans-38 text-center">
-        What makes an infinite canvas?
-      </h2>
-      <ul
-        class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-48 gap-y-64"
-      >
-        <WhatMakesItem
-          title="Expansiveness"
-          description="A seemingly limitless canvas empowers users to structure documents in their own way."
-          src="/images/illustrations/expansive.svg"
-          alt="animation showing panning around infinite canvas"
-        />
-        <WhatMakesItem
-          title="Zoom"
-          description="Different zoom levels facilitate navigation, mimicking stepping in and away in the real world."
-          src="/images/illustrations/zoom.svg"
-          alt="animation showing zooming in and out of a canvas"
-        />
-        <WhatMakesItem
-          title="Direct manipulation"
-          description="Freeform movement, editing, and duplication of objects keep the infinite canvas the source of truth."
-          src="/images/illustrations/manipulation.svg"
-          alt="animation showing panning around infinite canvas"
-        />
-        <WhatMakesItem
-          title="Collaboration"
-          description="Real-time collaboration enables teams to work exactly the way they want."
-          src="/images/illustrations/collaboration.svg"
-          alt="animation showing panning around infinite canvas"
-        />
-      </ul>
+    <section class="px-24 mx-auto max-w-1440 640:px-48">
+      <div class="space-y-48 border-t-2 border-gray">
+        <h2 class="w-full mt-16 font-serif text-black text-24">
+          What makes an infinite canvas?
+        </h2>
+        <ul
+          class="grid grid-cols-1 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
+        >
+          <WhatMakesItem
+            title="Expansiveness"
+            description="A seemingly limitless canvas empowers users to structure documents in their own way."
+            src="/images/illustrations/expansive.svg"
+            alt="animation showing panning around infinite canvas"
+          />
+          <WhatMakesItem
+            title="Zoom"
+            description="Different zoom levels facilitate navigation, mimicking stepping in and away in the real world."
+            src="/images/illustrations/zoom.svg"
+            alt="animation showing zooming in and out of a canvas"
+          />
+          <WhatMakesItem
+            title="Direct manipulation"
+            description="Freeform movement, editing, and duplication of objects keep the infinite canvas the source of truth."
+            src="/images/illustrations/manipulation.svg"
+            alt="animation showing panning around infinite canvas"
+          />
+          <WhatMakesItem
+            title="Collaboration"
+            description="Real-time collaboration enables teams to work exactly the way they want."
+            src="/images/illustrations/collaboration.svg"
+            alt="animation showing panning around infinite canvas"
+          />
+        </ul>
+      </div>
     </section>
 
-    <section class="bg-brown bg-opacity-5 py-128">
-      <div class="flex flex-col text-center gap-y-32">
-        <h2 class="sans-38 text-gray">History</h2>
-        <ol
-          class="relative grid w-full grid-cols-1 py-48 mx-auto gap-y-32 640:grid-cols-4 max-w-1440"
-        >
-          <div
-            class="absolute left-96 right-96 860:left-128 860:right-128 1280:left-[144px] 1280:right-[144px] z-0 h-4 top-[56px] hidden 640:block"
-            style={`background-image: url("${horizontalDots}")`}
+    <section class="bg-brown bg-opacity-5 py-96">
+      <section class="px-24 mx-auto max-w-1440 640:px-48">
+        <div class="flex flex-col items-end space-y-48 border-t-2 border-gray">
+          <h2 class="w-full mt-16 font-serif text-black text-24">History</h2>
+          <ul
+            class="grid w-full grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-24 640:gap-x-48 gap-y-48"
           >
-          </div>
-          <div
-            class="absolute left-[50vw] top-48 bottom-48 w-4 -ml-2 block 640:hidden"
-            style={`background-image: url("${verticalDots}")`}
-          >
-          </div>
-          <TimelineItem date="1963" title="Sketchpad" />
-          <TimelineItem date="1977" title="Post-it Note" />
-          <TimelineItem date="1984" title="Adobe Illustrator" />
-          <TimelineItem date="2000" title="“Infinite Canvas” coined" />
-        </ol>
-        <ButtonLink href="/history" color="bg-dark-red">
-          Browse the timeline →
-        </ButtonLink>
-      </div>
+            <TimelineItem
+              date="1963"
+              title="Sketchpad"
+              imgSrc="1963_sketchpad.jpg"
+            />
+            <TimelineItem
+              date="1977"
+              title="Post-it Note"
+              imgSrc="1979_post_it.png"
+            />
+            <TimelineItem
+              date="1984"
+              title="Adobe Illustrator"
+              imgSrc="1987_adobe_illustrator.jpg"
+            />
+            <TimelineItem
+              date="2000"
+              title="“Infinite Canvas” coined"
+              imgSrc="2000_reinventing_comics.png"
+            />
+          </ul>
+          <ButtonLink href="/history" color="bg-red">History →</ButtonLink>
+        </div>
+      </section>
     </section>
   </div>
 </Layout>

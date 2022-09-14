@@ -6,49 +6,61 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
 <Layout title="Infinite Canvas" activeItem="/gallery">
   <!-- header slot-->
-  <header slot="header" class="space-y-8 text-center pb-168 pt-72">
-    <h1 class="text-black sans-48">App gallery</h1>
-    <p class="serif-24 text-brown">Some tagline about the app gallery</p>
+  <header
+    slot="header"
+    class="grid grid-cols-4 gap-48 px-24 mx-auto max-w-1440 640:px-48 mt-72"
+  >
+    <div class="col-span-4 space-y-16 1024:col-span-2 1024:col-start-2">
+      <h1 class="font-serif text-black text-32">App gallery</h1>
+      <p class="font-sans text-gray text-opacity-80 text-20">
+        The infinite canvas is the foundation of a new class of apps from design
+        tools, to code editors, and workspaces.
+      </p>
+    </div>
   </header>
 
   <!-- default slot -->
-  <ul
-    class="grid grid-cols-1 540:grid-cols-2 860:grid-cols-3 1280:grid-cols-4 gap-24 py-96 px-24 640:px-32 max-w-1440 m-auto"
-  >
-    {
-      galleryItems.map(
-        ({
-          frontmatter: { title, platforms, url, usecases, description, image }
-        }) => {
-          let formattedURL = url
-          if (formattedURL.slice(-1) === "/") {
-            formattedURL = formattedURL.slice(0, formattedURL.length - 1)
-          }
-          formattedURL =
-            formattedURL
-              .replace("https://", "")
-              .replace("http://", "")
-              .replace("www.", "")
-              .match(/[a-z1-3.]*/g)[0] + "↗" //capture just the domain and nothing after
-          return (
-            <li class="p-24 bg-brown bg-opacity-5 rounded-4">
-              <div class="aspect-[16/9] mb-24">
-                <img
-                  src={`/images/gallery/${image}`}
-                  alt={`Screenshot of ${title}`}
-                />
-              </div>
-              <h2 class="sans-20 text-gray mb-8">{title}</h2>
-              <a href={url} target="_blank">
-                <p class="sans-16 mb-16 text-blue font-weight hover-dim">
-                  {formattedURL}
+  <section class="px-24 mx-auto py-96 max-w-1440 640:px-48">
+    <ul
+      class="grid grid-cols-1 pt-48 mx-auto border-t-2 border-gray 540:grid-cols-2 860:grid-cols-3 1024:grid-cols-4 gap-y-48 gap-x-24 640:gap-x-48"
+    >
+      {
+        galleryItems.map(
+          ({
+            frontmatter: { title, platforms, url, usecases, description, image }
+          }) => {
+            let formattedURL = url
+            if (formattedURL.slice(-1) === "/") {
+              formattedURL = formattedURL.slice(0, formattedURL.length - 1)
+            }
+            formattedURL =
+              formattedURL
+                .replace("https://", "")
+                .replace("http://", "")
+                .replace("www.", "")
+                .match(/[a-z1-3.]*/g)[0] + "↗" //capture just the domain and nothing after
+            return (
+              <li class="">
+                <div class="aspect-[16/9] mb-16">
+                  <img
+                    src={`/images/gallery/${image}`}
+                    alt={`Screenshot of ${title}`}
+                  />
+                </div>
+                <h2 class="font-serif text-20 text-gray">{title}</h2>
+                <a href={url} target="_blank">
+                  <p class="mb-16 font-sans font-bold text-red hover-dim text-16">
+                    {formattedURL}
+                  </p>
+                </a>
+                <p class="font-sans text-gray text-opacity-80 text-16">
+                  {description}
                 </p>
-              </a>
-              <p class="serif-16 text-brown text-opacity-80">{description}</p>
-            </li>
-          )
-        }
-      )
-    }
-  </ul>
+              </li>
+            )
+          }
+        )
+      }
+    </ul>
+  </section>
 </Layout>

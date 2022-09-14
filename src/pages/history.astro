@@ -1,6 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro"
-import dots from "/images/backgrounds/timeline_dot_vertical.svg"
 import Date from "../components/history/Date.astro"
 
 const historyItems = await Astro.glob("../content/history/*.md")
@@ -8,51 +7,35 @@ const historyItems = await Astro.glob("../content/history/*.md")
 
 <Layout title="Infinite Canvas" activeItem="/history">
   <!-- header slot-->
-  <header slot="header" class="space-y-8 text-center pb-168 pt-72">
-    <h1 class="text-black sans-48">History</h1>
-    <p class="serif-24 text-brown">Some tagline about history</p>
+  <header
+    slot="header"
+    class="grid grid-cols-4 gap-48 px-24 mx-auto max-w-1440 640:px-48 mt-72"
+  >
+    <div class="col-span-4 space-y-16 1024:col-span-2 1024:col-start-2">
+      <h1 class="font-serif text-black text-32">History</h1>
+      <p class="font-sans text-gray text-opacity-80 text-20">
+        The story of infinite canvas software goes back more than half a
+        century.
+      </p>
+    </div>
   </header>
 
   <!-- default slot -->
-  <ul
-    class="relative grid grid-cols-1 gap-48 px-24 640:px-32 py-96 mx-auto max-w-1440"
-  >
-    <div class="absolute top-32 bottom-32 z-0 640:left-72 left-[50vw]">
-      <div class="h-full w-4 -ml-2" style={`background-image: url("${dots}")`}>
-      </div>
-      <div
-        class="absolute top-0 z-0 w-4 h-64 bg-gradient-to-b from-parchment -ml-2"
-      >
-      </div>
-      <div
-        class="absolute bottom-0 z-0 w-4 h-64 bg-gradient-to-t from-parchment -ml-2"
-      >
-      </div>
-    </div>
+  <ul class="px-24 mx-auto space-y-96 py-96 max-w-1440 640:px-48">
     {
       historyItems.map(({ frontmatter: { title, year, image }, Content }) => (
-        <li class="z-10 flex flex-col 640:flex-row items-center">
-          <Date date={year} />
-          <div class="bg-parchment block 640:hidden">
-            <div class="w-0 h-0 mt-4 border-b-16 border-b-brown/5 border-l-16 border-r-16 border-l-transparent border-r-transparent " />
-          </div>
-          <div class="flex flex-row 640:flex-row items-center bg-parchment">
-            <div class="w-0 h-0 ml-4 border-r-16 border-r-brown/5 border-t-16 border-b-16 border-t-transparent border-b-transparent hidden 640:block" />
-            <div class="p-32 bg-brown bg-opacity-5 rounded-4 grid grid-cols-1 768:grid-cols-2 1280:grid-cols-3 768:gap-48 gap-24">
-              <div class="col-span-1 1280:col-span-2">
-                <h2 class="mb-16 sans-24 text-gray">{title}</h2>
-                <div class="md">
-                  <Content />
-                </div>
-              </div>
-
-              <div class="aspect-[3/2]">
-                <img
-                  src={`/images/history/${image}`}
-                  alt={`Screenshot of ${title} from ${year}`}
-                />
-              </div>
-            </div>
+        <li class="grid grid-cols-1 pt-16 border-t-2 border-gray 640:grid-cols-2 gap-x-24 640:gap-x-48 gap-y-24 1024:grid-cols-4">
+          <h3 class="font-serif text-black 640:col-span-2 1024:col-span-1 text-20">
+            <time datetime={year}>{year}</time> • {title}
+          </h3>
+          <div class="1024:col-span-2 md">
+            <Content />
+          </div>{" "}
+          <div class="aspect-[3/2]">
+            <img
+              src={`/images/history/${image}`}
+              alt={`Image of ${title} from ${year}`}
+            />
           </div>
         </li>
       ))

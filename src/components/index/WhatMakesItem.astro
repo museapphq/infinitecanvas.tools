@@ -2,12 +2,16 @@
 const { title, description, src, alt } = Astro.props
 ---
 
-<li>
+<li
+  class="grid grid-cols-1 gap-24 420:grid-cols-2 540:grid-cols-1 860:grid-cols-2 640:gap-48"
+>
+  <div>
+    <h3 class="mb-16 font-serif text-gray text-20">{title}</h3>
+    <p class="text-gray text-opacity-80 text-sans leading-high text-20">
+      {description}
+    </p>
+  </div>
   <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
     <img src={src} alt={alt} class="mix-blend-multiply" />
   </div>
-  <h3 class="sans-24 text-gray mb-8 text-center">{title}</h3>
-  <p class="serif-16 text-brown text-opacity-80 text-center">
-    {description}
-  </p>
 </li>

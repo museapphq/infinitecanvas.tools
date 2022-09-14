@@ -3,53 +3,15 @@
 @tailwind utilities;
 
 @layer components {
-  .sans-16 {
-    @apply font-sans text-16 tracking-normal leading-normal font-medium  !important;
-  }
-  .sans-20 {
-    @apply font-sans text-20 tracking-normal leading-normal font-medium  !important;
-  }
-  .sans-24 {
-    @apply font-sans text-24 tracking-normal leading-normal font-medium  !important;
-  }
-  .sans-30 {
-    @apply font-sans text-30 tracking-normal leading-normal font-medium  !important;
-  }
-  .sans-38 {
-    @apply font-sans text-38 tracking-normal leading-normal font-medium  !important;
-  }
-  .sans-48 {
-    @apply font-sans text-48 tracking-normal leading-normal font-medium  !important;
-  }
-
-  .serif-16 {
-    @apply font-serif text-16 tracking-normal leading-high !important;
-  }
-  .serif-20 {
-    @apply font-serif text-20 tracking-normal leading-high !important;
-  }
-  .serif-24 {
-    @apply font-serif text-24 tracking-normal leading-high !important;
-  }
-  .serif-30 {
-    @apply font-serif text-30 tracking-normal leading-high !important;
-  }
-  .serif-38 {
-    @apply font-serif text-38 tracking-normal leading-high !important;
-  }
-  .serif-48 {
-    @apply font-serif text-48 tracking-normal leading-high !important;
-  }
-
   .hover-dim {
     @apply hover:opacity-50 ease-in-out duration-100 !important;
   }
 
   .md p {
-    @apply my-16 serif-16 text-brown serif-16 text-opacity-80;
+    @apply mb-16 font-sans text-gray text-16 text-opacity-80;
   }
 
   .md a {
-    @apply sans-16 540:text-dark-red hover-dim;
+    @apply pr-8 font-sans font-bold text-16 text-red hover-dim;
   }
 }
