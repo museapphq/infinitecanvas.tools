@@ -5,7 +5,7 @@ const MILLISECONDS_PER_SLIDE = 8000
 
 const Template = () => (
   <div className="flex flex-col">
-    <div className="aspect-[3/2] w-full"></div>
+    <div className="aspect-[16/9] w-full"></div>
     <div className="h-24 mt-8"></div>
   </div>
 )
@@ -14,7 +14,7 @@ const Figure = ({ title, imgSrc, sourceUrl, active }) => (
   <figure
     className={joinClasses(
       "flex flex-col absolute top-0 right-0 bottom-0 left-0 ease-linear duration-500",
-      active ? "opacity-0 pointer-events-none" : "opacity-1"
+      active ? "opacity-1" : "opacity-0 pointer-events-none"
     )}
   >
     <img src={imgSrc} alt={title} />

@@ -78,16 +78,22 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
               delayMilliseconds={0}
               items={[
                 {
-                  title: "Film art room",
+                  title: "Art room at Pixar",
                   imgSrc: "/images/homepage/pixar.jpg",
                   sourceUrl:
                     "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
                 },
                 {
-                  title: "Moodboard",
+                  title: "Moodboard for art installation",
                   imgSrc: "/images/homepage/moodboard.jpg",
                   sourceUrl:
                     "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+                },
+                {
+                  title: "Tabletop collaboration",
+                  imgSrc: "/images/homepage/ideo_table.jpg",
+                  sourceUrl:
+                    "https://www.ideo.com/case-study/driving-growth-at-europes-largest-online-retailer"
                 }
               ]}
             />
@@ -96,16 +102,22 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
               delayMilliseconds={4000}
               items={[
                 {
-                  title: "Film art room",
-                  imgSrc: "/images/homepage/pixar.jpg",
+                  title: "Laying out book on floor",
+                  imgSrc: "/images/homepage/craig_mod_book.jpg",
                   sourceUrl:
-                    "http://joshholtsclaw.com/blog/2018/3/5/the-graphic-art-of-incredibles-2"
+                    "https://craigmod.com/essays/to_make_a_book_walk_on_a_book/"
                 },
                 {
-                  title: "Moodboard",
-                  imgSrc: "/images/homepage/moodboard.jpg",
+                  title: "Leonardo da Vinci's notebook",
+                  imgSrc: "/images/homepage/leonardo_notebook.jpg",
                   sourceUrl:
-                    "https://www.wallpaper.com/design/art-nouveau-mischertraxler-reveal-perrier-jout-collaboration-for-ldf"
+                    "https://www.vam.ac.uk/articles/explore-leonardo-da-vinci-codex-forster-i#?c=&m=&s=&cv=14&xywh=-82%2C-1165%2C3337%2C4319"
+                },
+                {
+                  title: "Moodboard for watch design",
+                  imgSrc: "/images/homepage/moodboard_2.jpg",
+                  sourceUrl:
+                    "https://nomos-glashuette.com/en/mediadb/category/id/design-807"
                 }
               ]}
             />
@@ -131,28 +143,36 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             </div>
             <SlideShow
               client:load
-              delayMilliseconds={2000}
+              delayMilliseconds={6000}
               items={[
                 {
-                  title: "Flowcharts & diagrams",
-                  imgSrc: "/images/homepage/diagram_illustration.svg"
+                  title: "Drawing in Concepts",
+                  imgSrc: "/images/homepage/drawing_concepts.jpg"
                 },
                 {
-                  title: "Brainstorming",
-                  imgSrc: "/images/homepage/brainstorming_illustration.svg"
+                  title: "Notetaking in Heptabase",
+                  imgSrc: "/images/homepage/notes_heptabase.jpg"
+                },
+                {
+                  title: "Thinking in Muse",
+                  imgSrc: "/images/homepage/thinking_muse.jpg"
                 }
               ]}
             /><SlideShow
               client:load
-              delayMilliseconds={6000}
+              delayMilliseconds={2000}
               items={[
                 {
-                  title: "Flowcharts & diagrams",
-                  imgSrc: "/images/homepage/diagram_illustration.svg"
+                  title: "Mindmapping in MindNode",
+                  imgSrc: "/images/homepage/mindnode_mindmap.jpg"
                 },
                 {
-                  title: "Brainstorming",
-                  imgSrc: "/images/homepage/brainstorming_illustration.svg"
+                  title: "Brainstorming in Miro",
+                  imgSrc: "/images/homepage/miro_brainstorm.jpg"
+                },
+                {
+                  title: "Programming in Nodes",
+                  imgSrc: "/images/homepage/programming_nodes.jpg"
                 }
               ]}
             />
