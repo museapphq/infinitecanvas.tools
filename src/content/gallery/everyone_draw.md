@@ -1,8 +1,8 @@
 ---
 title: Everyone draw
-platforms: 
+platforms: ["Web"]
 url: https://everyonedraw.com/
-usecases: 
+usecases: ["drawing"]
 image: everyone_draw.jpg
 description: "An infinite canvas for people all over the world to collaborate on pixel art. Sixteen colors, endless possibilities."
 multiplayer: false
