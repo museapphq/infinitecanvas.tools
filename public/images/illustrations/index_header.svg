@@ -32,8 +32,8 @@
     <!-- arrows and rects -->
 
     <g opacity="0.6">
-        <path class="arrow1" style="animation-delay: -19.2s" d="M512 50C489.29 50 475 68.5803 475 98.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path class="arrowhead" style="animation-delay: -19.4s" d="M481.5 92.5L475.707 98.2929C475.317 98.6834 474.683 98.6834 474.293 98.2929L468.5 92.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrow1" style="animation-delay: -17.2s" d="M512 50C489.29 50 475 68.5803 475 98.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -17.4s" d="M481.5 92.5L475.707 98.2929C475.317 98.6834 474.683 98.6834 474.293 98.2929L468.5 92.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
     <g opacity="0.6">
         <path d="M828 604.5C828 636.5 766 643 742.5 642.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
