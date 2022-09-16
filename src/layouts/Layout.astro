@@ -4,20 +4,46 @@ import Footer from "../components/Footer.astro"
 import style from "../styles/style.css"
 export interface Props {
   title: string
-  activeItem?: string
+  url?: string
 }
 
-const { title, activeItem } = Astro.props as Props
+const { title, url } = Astro.props as Props
+const DESCRIPTION =
+  "Explore the exciting class Infinite Canvas tools that work the way we think"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="description" content={DESCRIPTION} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={`https://infinitecanvas.tools${url}`} />
+    <meta
+      property="og:image"
+      content="https://infinitecanvas.tools/images/og_image.jpg"
+    />
+    <meta property="og:description" content={DESCRIPTION} />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={DESCRIPTION} />
+    <meta
+      name="twitter:image"
+      content="https://infinitecanvas.tools/images/og_image.jpg"
+    />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#FCFAF6" />
+
     <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="#F9F9F1" />
+    <meta name="theme-color" content="#FCFAF6" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -32,7 +58,7 @@ const { title, activeItem } = Astro.props as Props
   </head>
   <body class="flex flex-col min-h-screen bg-parchment">
     <div>
-      <Nav activeItem={activeItem} />
+      <Nav activeItem={url} />
       <slot name="header" />
     </div>
     <main class="flex-grow">
