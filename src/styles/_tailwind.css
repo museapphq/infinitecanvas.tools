@@ -14,4 +14,16 @@
   .md a {
     @apply pr-8 font-sans font-bold text-16 text-red hover-dim;
   }
+
+  .scroll {
+    @apply ease-linear duration-700 transition-opacity;
+  }
+
+  .scroll-hidden {
+    @apply opacity-0;
+  }
+
+  .scroll-reveal {
+    @apply opacity-100;
+  }
 }

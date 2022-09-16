@@ -8,7 +8,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   <!-- header slot-->
   <header
     slot="header"
-    class="grid grid-cols-4 gap-48 px-24 mx-auto max-w-1440 640:px-48 mt-72"
+    class="grid grid-cols-4 gap-48 px-24 mx-auto max-w-1440 640:px-48 mt-72 scroll scroll-hidden"
   >
     <div class="col-span-4 space-y-16 1024:col-span-2 1024:col-start-2">
       <h1 class="font-serif text-black text-32">App gallery</h1>
@@ -20,7 +20,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   </header>
 
   <!-- default slot -->
-  <section class="px-24 mx-auto py-96 max-w-1440 640:px-48">
+  <section
+    class="px-24 mx-auto py-96 max-w-1440 640:px-48 scroll scroll-hidden"
+  >
     <ul
       class="grid grid-cols-1 pt-48 mx-auto border-t-2 border-gray 540:grid-cols-2 860:grid-cols-3 1024:grid-cols-4 gap-y-48 gap-x-24 640:gap-x-48"
     >
@@ -40,7 +42,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
                 .replace("www.", "")
                 .match(/[a-z1-3.]*/g)[0] + "↗" //capture just the domain and nothing after
             return (
-              <li class="">
+              <li class="scroll scroll-hidden">
                 <div class="aspect-[16/9] mb-16">
                   <img
                     src={`/images/gallery/${image}`}

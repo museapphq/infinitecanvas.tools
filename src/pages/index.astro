@@ -23,12 +23,12 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
         style={`background-image: url("${index_header}")`}
       >
         <h1
-          class="font-sans text-black text-40 768:text-[72px] 1280:text-[94px] text-center mt-64 768:mt-96 1280:mt-96 leading-normal mb-16"
+          class="font-sans text-black text-40 768:text-[72px] 1280:text-[94px] text-center mt-64 768:mt-96 1280:mt-96 leading-normal mb-16 scroll scroll-hidden"
         >
           Infinite Canvas
         </h1>
         <p
-          class="font-sans text-20 768:text-32 1280:text-40 text-brown max-w-[240px] 420:max-w-[400px] text-center leading-normal"
+          class="font-sans text-20 768:text-32 1280:text-40 text-brown max-w-[240px] 420:max-w-[400px] text-center leading-normal scroll scroll-hidden"
         >
           New tools that work the way we think
         </p>
@@ -39,7 +39,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   <!-- default slot -->
   <div class="space-y-96 mt-96">
     <section
-      class="flex flex-col items-end px-24 mx-auto max-w-1440 640:px-48 gap-y-48"
+      class="flex flex-col items-end px-24 mx-auto max-w-1440 640:px-48 gap-y-48 scroll scroll-hidden"
     >
       <h2
         class="w-full pt-16 font-serif text-black border-t-2 border-gray text-24"
@@ -52,7 +52,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
 
     <section class="bg-brown bg-opacity-5 py-96">
       <div class="px-24 mx-auto max-w-1440 640:px-48 space-y-96">
-        <div class="border-t-2 border-gray">
+        <div class="border-t-2 border-gray scroll scroll-hidden">
           <div
             class="grid grid-cols-1 mt-16 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
           >
@@ -123,7 +123,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             />
           </div>
         </div>
-        <div class="border-t-2 border-gray">
+        <div class="border-t-2 border-gray scroll scroll-hidden">
           <div
             class="grid grid-cols-1 mt-16 540:grid-cols-2 gap-y-48 gap-x-24 640:gap-x-48"
           >
@@ -181,7 +181,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="px-24 mx-auto max-w-1440 640:px-48">
+    <section class="px-24 mx-auto max-w-1440 640:px-48 scroll scroll-hidden">
       <div class="space-y-48 border-t-2 border-gray">
         <h2 class="w-full mt-16 font-serif text-black text-24">
           What makes an infinite canvas?
@@ -217,7 +217,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       </div>
     </section>
 
-    <section class="bg-brown bg-opacity-5 py-96">
+    <section class="bg-brown bg-opacity-5 py-96 scroll scroll-hidden">
       <section class="px-24 mx-auto max-w-1440 640:px-48">
         <div class="flex flex-col items-end space-y-48 border-t-2 border-gray">
           <h2 class="w-full mt-16 font-serif text-black text-24">History</h2>
