@@ -2,7 +2,7 @@ import csv from "csvtojson"
 import fs from "fs"
 
 const FILE_PATH = "./list.csv"
-const OUTPUT_DIRECTORY = "./output"
+const OUTPUT_DIRECTORY = "./output/"
 
 // https://stackoverflow.com/questions/52963900/convert-different-strings-to-snake-case-in-javascript
 const snakeCase = (string) => {
@@ -26,10 +26,10 @@ const clearDirectory = (directory) => {
 }
 
 const commasToArray = (field) => {
-  if (!field || !field.includes(",")) return ""
+  if (!field || !field.includes(",")) return `["${field}"]`
   return `[${field
     .split(", ")
-    .map((item) => `'${item}'`)
+    .map((item) => `"${item}"`)
     .toString()}]`
 }
 

@@ -1,8 +1,8 @@
 ---
 title: Tensorflow
-platforms: ['Linux','Windows','macOS']
+platforms: ["Linux","Windows","macOS"]
 url: https://www.tensorflow.org/
-usecases: 
+usecases: ["machine learning"]
 image: tensorflow.jpg
 description: "An end-to-end platform for machine learning"
 multiplayer: false
