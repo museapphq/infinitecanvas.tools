@@ -11,7 +11,11 @@ const { title, description, src, alt } = Astro.props
       {description}
     </p>
   </div>
-  <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
-    <img src={src} alt={alt} class="mix-blend-multiply" />
+
+  <!-- use flex to stick image to top or bottom depending on breakpoint since text height can be different between columns -->
+  <div class="flex flex-col justify-end 860:justify-start">
+    <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
+      <img src={src} alt={alt} class="mix-blend-multiply" />
+    </div>
   </div>
 </li>
