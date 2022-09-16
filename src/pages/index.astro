@@ -19,18 +19,18 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
   <header slot="header" class="pb-32 768:pb-48">
     <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
       <div
-        class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover px-32 1440:bg-auto"
+        class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover 1440:bg-auto"
         style={`background-image: url("${index_header}")`}
       >
         <h1
-          class="font-sans text-black text-40 768:text-[72px] 1280:text-[94px] text-center mt-64 768:mt-96 1280:mt-96 leading-normal mb-16 scroll scroll-hidden"
+          class="font-sans text-black text-48 768:text-[72px] 1280:text-[94px] text-center mt-64 768:mt-96 1280:mt-96 leading-normal mb-16 scroll scroll-hidden"
         >
           Infinite Canvas
         </h1>
         <p
-          class="font-sans text-20 768:text-32 1280:text-40 text-brown max-w-[240px] 420:max-w-[400px] text-center leading-normal scroll scroll-hidden"
+          class="font-sans text-24 768:text-32 1280:text-40 text-brown max-w-[200px] 768:max-w-[260px] 1280:max-w-[340px] text-center leading-normal scroll scroll-hidden"
         >
-          New tools that work the way we think
+          Tools that work the way we think
         </p>
       </div>
     </div>

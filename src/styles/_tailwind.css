@@ -16,7 +16,7 @@
   }
 
   .scroll {
-    @apply ease-linear duration-700 transition-opacity;
+    @apply ease-linear duration-300 transition-opacity;
   }
 
   .scroll-hidden {
