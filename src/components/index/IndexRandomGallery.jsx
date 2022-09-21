@@ -1,15 +1,35 @@
 const NUMBER_OF_ITEMS_TO_SELECT = 4
 
+const getRandomItemFromArray = (array) =>
+  array[Math.floor(Math.random() * array.length)]
+
 const IndexRandomGallery = ({ galleryItems }) => {
   const filePathToName = (filePath) =>
     filePath.match(/([^/]*).md$/g)[0].replace(".md", "")
 
+  // turn list into key-value store with key being name of .md file
   const galleryMap = galleryItems.reduce((map, { file, frontmatter }) => {
     map[filePathToName(file)] = { frontmatter }
     return map
   }, {})
 
-  console.log(galleryMap)
+  // each list refers to a slot in the four items shown on the homepage
+  const itemsToChooseFrom = [
+    ["miro", "fig_jam"],
+    ["sketch", "figma"],
+    ["muse", "concepts"],
+    ["felt", "nodes"]
+  ]
+
+  //check if all items in the list of lists actually exist in the galleryMap
+  itemsToChooseFrom.forEach((list) =>
+    list.forEach((item) => {
+      if (!galleryMap[item])
+        console.error(
+          `"${item}" doesn't map to one of the .md files. Did you spell it wrong?`
+        )
+    })
+  )
 
   return (
     <div>sdfsdf</div>
@@ -30,8 +50,3 @@ const IndexRandomGallery = ({ galleryItems }) => {
 }
 
 export default IndexRandomGallery
-
-// - Whiteboarding: Miro, FigJam,
-// - Design: Sketch, Figma, Xd
-// - Thinking: Muse, Concepts, MindNode, Heptabase, Kinopio
-// - Wildcard: Felt, Nodes, Origami, Bezel
