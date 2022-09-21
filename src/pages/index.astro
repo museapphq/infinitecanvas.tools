@@ -46,7 +46,40 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       >
         Meet the apps paving the way
       </h2>
-      <IndexRandomGallery client:load galleryItems={galleryItems} />
+      <ul
+        class="grid w-full grid-cols-1 540:grid-cols-2 860:grid-cols-4 gap-x-24 640:gap-x-48 gap-y-48"
+      >
+        <li class="space-y-8">
+          <div class="aspect-[16/9]">
+            <img src={`/images/gallery/miro.jpg`} alt={`Screenshot of Miro`} />
+          </div>
+          <h2 class="font-serif text-16 text-gray">Miro</h2>
+        </li>
+        <li class="space-y-8">
+          <div class="aspect-[16/9]">
+            <img
+              src={`/images/gallery/sketch.jpg`}
+              alt={`Screenshot of Sketch`}
+            />
+          </div>
+          <h2 class="font-serif text-16 text-gray">Sketch</h2>
+        </li>
+        <li class="space-y-8">
+          <div class="aspect-[16/9]">
+            <img src={`/images/gallery/muse.jpg`} alt={`Screenshot of Muse`} />
+          </div>
+          <h2 class="font-serif text-16 text-gray">Muse</h2>
+        </li>
+        <li class="space-y-8">
+          <div class="aspect-[16/9]">
+            <img
+              src={`/images/gallery/origami_studio.jpg`}
+              alt={`Screenshot of Origami Studio`}
+            />
+          </div>
+          <h2 class="font-serif text-16 text-gray">Origami Studio</h2>
+        </li>
+      </ul>
       <ButtonLink href="/gallery" color="bg-red">App gallery →</ButtonLink>
     </section>
 
