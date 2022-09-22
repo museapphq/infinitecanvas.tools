@@ -1,6 +1,6 @@
 ---
 year: 2010
-title: Sketch 1.0 released
+title: Sketch 1.0
 image: 2010_sketch.png
 ---
 
@@ -12,4 +12,4 @@ cemented it as a favorite among design teams.
 
 <a href="https://web.archive.org/web/20110711125106/http://www.bohemiancoding.com/about/blog/sketch-1-0-finally-released/" target="_blank">1.0
 release announcement↗</a>
-<a href="https://en.wikipedia.org/wiki/Sketch_(software)" target="_blank">Wikipedia↗</a>
+<a href="https://www.sketch.com/about-us/" target="_blank">About Sketch</a>
