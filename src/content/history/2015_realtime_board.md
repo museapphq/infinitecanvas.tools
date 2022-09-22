@@ -9,7 +9,7 @@ By 2015, it relaunched with a new user experience and new stack (HTML5 instead
 of flash) to much praise. The product accumulated momentum in tandem with the
 growth of remote collaboration.
 
-In 2019, the company was renamed to Miro as part of a wider rebrand. Miro is now
+In 2019, the company was renamed Miro as part of a wider rebrand. Miro is now
 considered one of the leading players in the remote collaboration software
 space.
 
