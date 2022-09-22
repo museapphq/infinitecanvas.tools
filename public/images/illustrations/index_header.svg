@@ -1,44 +1,42 @@
 <svg width="1440" height="696" viewBox="0 0 1440 696" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-    <!-- Sticky notes -->
-    <rect width="48" height="48" transform="translate(188 139)" fill="#ECD437" class="stickynote" style="animation-delay: -1.2s" />
-
-    <rect width="48" height="48" transform="translate(1098 597)" fill="#ECD437" class="stickynote" style="animation-delay: -3s" />
-
-    <rect width="48" height="48" transform="translate(224.691 154.691)" fill="#ECD437" class="stickynote" style="animation-delay: -1s" />
-
-    <rect width="48" height="48" transform="translate(517.518 82.5171)" fill="#ECD437" class="stickynote" style="animation-delay: -18s" />
-
-    <rect width="48" height="48" transform="translate(375 573)" fill="#ECD437" class="stickynote" style="animation-delay: -9s" />
-
-    <rect width="48" height="48" transform="translate(1298 281)" fill="#ECD437" class="stickynote" style="animation-delay: -15.2s" />
-
-    <rect width="48" height="48" transform="translate(1259 269)" fill="#ECD437" class="stickynote" style="animation-delay: -15s" />
-
-    <rect width="48" height="48" transform="translate(1122 563)" fill="#ECD437" class="stickynote" style="animation-delay: -3.2s" />
-
-    <rect width="48" height="48" transform="translate(453 120)" fill="#ECD437" class="stickynote" style="animation-delay: -18.2s" />
-
-    <rect width="48" height="48" transform="translate(314 568)" fill="#ECD437" class="stickynote" style="animation-delay: -9.2s" />
-
-    <rect width="48" height="48" transform="translate(964 168)" fill="#ECD437" class="stickynote" style="animation-delay: -6.2s" />
-
-    <rect width="48" height="48" transform="translate(889 170)" fill="#ECD437" class="stickynote" style="animation-delay: -6s" />
-
-    <rect width="48" height="48" transform="translate(679 617)" fill="#ECD437" class="stickynote" style="animation-delay: -12s" />
-
-    <rect width="48" height="48" transform="translate(338 597)" fill="#ECD437" class="stickynote" style="animation-delay: -9.4s" />
-
-    <!-- arrows and rects -->
-
+    <rect width="48" height="48" transform="translate(453 120)" fill="#ECD437" class="stickynote" style="animation-delay: -19.2s" />
+    <rect width="48" height="48" transform="translate(517.518 82.5171)" fill="#ECD437" class="stickynote" style="animation-delay: -19s" />
     <g opacity="0.6">
         <path class="arrow1" style="animation-delay: -17.2s" d="M512 50C489.29 50 475 68.5803 475 98.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path class="arrowhead" style="animation-delay: -17.4s" d="M481.5 92.5L475.707 98.2929C475.317 98.6834 474.683 98.6834 474.293 98.2929L468.5 92.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -16.8s" d="M481.5 92.5L475.707 98.2929C475.317 98.6834 474.683 98.6834 474.293 98.2929L468.5 92.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
+
+    <rect width="48" height="48" transform="translate(1298 281)" fill="#ECD437" class="stickynote" style="animation-delay: -15.2s" />
+    <rect width="48" height="48" transform="translate(1259 269)" fill="#ECD437" class="stickynote" style="animation-delay: -15s" />
+
+
+    <rect width="48" height="48" transform="translate(679 617)" fill="#ECD437" class="stickynote" style="animation-delay: -12s" />
     <g opacity="0.6">
-        <path d="M828 604.5C828 636.5 766 643 742.5 642.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M748.5 636L742.707 641.793C742.317 642.183 742.317 642.817 742.707 643.207L748.5 649" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrow2" style="animation-delay: -10s" d="M828 604.5C828 636.5 766 643 742.5 642.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -9.6s" d="M748.5 636L742.707 641.793C742.317 642.183 742.317 642.817 742.707 643.207L748.5 649" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
+
+    <rect width="48" height="48" transform="translate(338 597)" fill="#ECD437" class="stickynote" style="animation-delay: -9.4s" />
+    <rect width="48" height="48" transform="translate(314 568)" fill="#ECD437" class="stickynote" style="animation-delay: -9.2s" />
+    <rect width="48" height="48" transform="translate(375 573)" fill="#ECD437" class="stickynote" style="animation-delay: -9s" />
+    <g opacity="0.6">
+        <path class="arrow3" style="animation-delay: -7.4s" d="M263 587L306 587" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -7s" d="M299.5 580.5L306 587L299.5 593.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <rect width="48" height="48" transform="translate(964 168)" fill="#ECD437" class="stickynote" style="animation-delay: -6.2s" />
+    <rect width="48" height="48" transform="translate(889 170)" fill="#ECD437" class="stickynote" style="animation-delay: -6s" />
+
+
+    <rect width="48" height="48" transform="translate(1122 563)" fill="#ECD437" class="stickynote" style="animation-delay: -3.2s" />
+    <rect width="48" height="48" transform="translate(1098 597)" fill="#ECD437" class="stickynote" style="animation-delay: -3s" />
+
+
+    <rect width="48" height="48" transform="translate(188 139)" fill="#ECD437" class="stickynote" style="animation-delay: -1.2s" />
+    <rect width="48" height="48" transform="translate(224.691 154.691)" fill="#ECD437" class="stickynote" style="animation-delay: -1s" />
+
+
     <g opacity="0.6">
         <path d="M134 401.5C134 414 142 426.5 165.5 426" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M159.5 419.5L165.293 425.293C165.683 425.683 165.683 426.317 165.293 426.707L159.5 432.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -75,10 +73,7 @@
         <path d="M1313.5 81.5L1320 88L1313.5 94.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M1288 87C1287.45 87 1287 87.4477 1287 88C1287 88.5523 1287.45 89 1288 89L1288 87ZM1288 89L1320 89L1320 87L1288 87L1288 89Z" fill="#2C393A" />
     </g>
-    <g opacity="0.6">
-        <path d="M299.5 580.5L306 587L299.5 593.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M263 586C262.448 586 262 586.448 262 587C262 587.552 262.448 588 263 588L263 586ZM263 588L306 588L306 586L263 586L263 588Z" fill="#2C393A" />
-    </g>
+
     <g opacity="0.6">
         <rect x="638" y="158" width="32" height="24" rx="4" fill="#2C393A" />
     </g>
@@ -119,18 +114,18 @@
     
 
     .arrowhead {
-        stroke-dasharray: 18;
-        stroke-dashoffset: 18;
+        stroke-dasharray: 19;
+        stroke-dashoffset: 19;
         animation: arrowhead 20s linear;
         animation-iteration-count: infinite;
     }
 
     @keyframes arrowhead {
         0% {
-            stroke-dashoffset: 18;
+            stroke-dashoffset: 19;
         }
         49% {
-            stroke-dashoffset: 18;
+            stroke-dashoffset: 19;
         }
         50% {
             stroke-dashoffset: 0;
@@ -139,9 +134,10 @@
             stroke-dashoffset: 0;
         }
         100% {
-            stroke-dashoffset: 18;
+            stroke-dashoffset: 19;
         }
     }
+    
     .arrow1 {
         stroke-dasharray: 69;
         stroke-dashoffset: 69;
@@ -164,6 +160,56 @@
         }
         100% {
             stroke-dashoffset: 69;
+        }
+    }
+
+    .arrow2 {
+        stroke-dasharray: 102;
+        stroke-dashoffset: 102;
+        animation: arrow2 20s linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes arrow2 {
+        0% {
+            stroke-dashoffset: 102;
+        }
+        49% {
+            stroke-dashoffset: 102;
+        }
+        50% {
+            stroke-dashoffset: 0;
+        }
+        99% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 102;
+        }
+    }
+
+    .arrow3 {
+        stroke-dasharray: 43;
+        stroke-dashoffset: 43;
+        animation: arrow3 20s linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes arrow3 {
+        0% {
+            stroke-dashoffset: 43;
+        }
+        49% {
+            stroke-dashoffset: 43;
+        }
+        50% {
+            stroke-dashoffset: 0;
+        }
+        99% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 43;
         }
     }
 </style>
