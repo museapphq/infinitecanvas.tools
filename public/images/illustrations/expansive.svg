@@ -1243,28 +1243,28 @@
     </defs>
 
     <style>
-        @keyframes image {
+        @keyframes move {
             0% {
-                transform: translate(0px);
+                offset-distance: 0%;
             }
-            20% {
-                transform: translate(-308px, 0px);
+            10% {
+                offset-distance: 0%;
             }
-            50% {
-                transform: translate(-308px,-308px);
-            }
-            70% {
-                transform: translate(0px, -308px);
+            40% {
+                offset-distance: 100%;
             }
             100% {
-                transform: translate(0px);
+                offset-distance: 100%;
             }
         }
 
         .image {
-            transform-origin: center;
-            animation: image 30s cubic-bezier(.17,.34,.67,.83);
+            offset-path: path('M154.5 270C218.289 270 270 218.289 270 154.5C270 90.7111 218.289 39 154.5 39C90.7111 39 39 90.7111 39 154.5C39 218.289 90.7111 270 154.5 270Z');
+            animation: move 10s cubic-bezier(0,-0.05,.44,.99);
             animation-iteration-count: infinite;
+            position: absolute;
+            transform-origin: 100% 100%;
+            offset-rotate: 0deg;
         }
     </style>
 </svg>
