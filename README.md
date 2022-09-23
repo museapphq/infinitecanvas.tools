@@ -1,6 +1,21 @@
-# infinitecanavas.tools
+# InfiniteCanvas.tools
 
 ![Screenshot of website](/readme_screenshot.jpg)
+
+InfiniteCanvas.tools is created and maintained by the Muse team. We were
+motivated by the explosion of infinite canvas tools these past few years. We
+hope this site can celebrate that these new tools, Muse included, stand on the
+shoulders of those that came before. This site is a resource and community of
+like minded thinkers and builders who use infinite canvases in their work.
+
+# How to contribute
+
+If you have a change in mind (for example, an app to add to the gallery), please
+either open an issue or make a pull request with your suggested change. One of
+the maintainers will follow up to merge your change.
+
+Images in the app gallery have an aspect ratio of 16x9. If you are providing an
+image, please provide a high-resolution image of at least 1200px wide.
 
 # How to run server
 
