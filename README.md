@@ -1,3 +1,7 @@
+# infinitecanavas.tools
+
+![Screenshot of website](/readme_screenshot.jpg)
+
 # How to run server
 
 ## First time setup
