@@ -3,10 +3,11 @@
 ![Screenshot of website](/readme_screenshot.jpg)
 
 InfiniteCanvas.tools is created and maintained by the Muse team. We were
-motivated by the explosion of infinite canvas tools these past few years. We
-hope this site can celebrate that these new tools, Muse included, stand on the
-shoulders of those that came before. This site is a resource and community of
-like minded thinkers and builders who use infinite canvases in their work.
+motivated by the explosion of infinite canvas tools these past few years.
+
+We hope to celebrate how these new tools, Muse included, stand on the shoulders
+of those that came before. This site is a resource and community of like minded
+thinkers and builders who use infinite canvases in their work.
 
 # How to contribute
 
