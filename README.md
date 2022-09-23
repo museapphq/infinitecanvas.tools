@@ -15,8 +15,50 @@ If you have a change in mind (for example, an app to add to the gallery), please
 either open an issue or make a pull request with your suggested change. One of
 the maintainers will follow up to merge your change.
 
-Images in the app gallery have an aspect ratio of 16x9. If you are providing an
-image, please provide a high-resolution image of at least 1200px wide.
+## App gallery
+
+Each app gallery entry is a `.md` file in `/src/content/gallery/`.
+
+Images are stored in `/public/images/history`. Images in the app gallery have an
+aspect ratio of 16x9. If you are providing an image, please provide a
+high-resolution image of at least 1200px wide with your pull request.
+
+usecases is an array of string values chosen from the following list. The
+intention is to support building filtering or sorting of the list in the future.
+
+- whiteboard
+- ui design
+- drawing
+- mind mapping
+- thinking
+- notetaking
+- studying
+- teaching
+- task management
+- video editing
+- mood boards
+- storyboarding
+- meetings
+- reviews
+- project planning
+- design prototyping
+- 3D modeling
+- machine learning
+- outlining
+- programming
+- diagramming
+- retrospectives
+- map making
+- virtual space
+
+## History
+
+Each history entry is a `.md` file in `/src/content/history/`. Each entry has an
+entry in the frontmatter with the name of the image file.
+
+Images are stored in `/public/images/history`. Each images has a size of 1024px
+x 684px. If you are providing an image, please provide a high-resolution image
+of at least 1024px wide with your pull request.
 
 # How to run server
 
