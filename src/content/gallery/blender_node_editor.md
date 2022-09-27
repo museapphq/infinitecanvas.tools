@@ -4,6 +4,6 @@ platforms: ["Linux","Windows","macOS"]
 url: https://docs.blender.org/manual/en/2.79/render/blender_render/materials/nodes/introduction.html
 usecases: ["3D modeling"]
 image: blender_node_editor.jpg
-description: "Blender's Node Editor lets you assemble various processing blocks (nodes) into combinations which feed data to one another along connections that you specify to produce complex effects"
+description: "Visual interface for creating materials and textures in Blender."
 multiplayer: false
 ---
