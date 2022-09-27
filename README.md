@@ -1,3 +1,66 @@
+# InfiniteCanvas.tools
+
+[![Screenshot of website](/readme_screenshot.jpg)](https://infinitecanvas.tools/)
+
+[infinitecanvas.tools](https://infinitecanvas.tools/) is a microsite describing and documenting the history of infinite canvas software, from early design tools (e.g. Illustrator) up to the explosion of whiteboarding, design, programming, and thinking tools today (e.g. Miro, Figma, Origami Studio, MindNode).
+
+The site was created by the [Muse](https://museapp.com/) team to help showcase the diversity of apps in this space. We draw some inspiration from early versions of jamstack.org, separating advocacy for the category from any one specific product.
+
+We hope to celebrate how these new tools, Muse included, stand on the shoulders
+of those that came before. This site is a resource and community of like minded
+thinkers and builders who use infinite canvases in their work.
+
+# How to contribute
+
+If you have a change in mind (for example, an app to add to the gallery), please
+either open an issue or make a pull request with your suggested change. One of
+the maintainers will follow up to merge your change.
+
+## App gallery
+
+Each app gallery entry is a `.md` file in `/src/content/gallery/`.
+
+Images are stored in `/public/images/history`. Images in the app gallery have an
+aspect ratio of 16x9. If you are providing an image, please provide a
+high-resolution image of at least 1200px wide with your pull request.
+
+usecases is an array of string values chosen from the following list. The
+intention is to support building filtering or sorting of the list in the future.
+
+- whiteboard
+- ui design
+- drawing
+- mind mapping
+- thinking
+- notetaking
+- studying
+- teaching
+- task management
+- video editing
+- mood boards
+- storyboarding
+- meetings
+- reviews
+- project planning
+- design prototyping
+- 3D modeling
+- machine learning
+- outlining
+- programming
+- diagramming
+- retrospectives
+- map making
+- virtual space
+
+## History
+
+Each history entry is a `.md` file in `/src/content/history/`. Each entry has an
+entry in the frontmatter with the name of the image file.
+
+Images are stored in `/public/images/history`. Each images has a size of 1024px
+x 684px. If you are providing an image, please provide a high-resolution image
+of at least 1024px wide with your pull request.
+
 # How to run server
 
 ## First time setup
