@@ -1,6 +1,6 @@
 ---
-year: 2016
-title: Figma 1.0
+year: 2022
+title: Adobe acquires Figma
 image: 2016_figma.png
 ---
 
