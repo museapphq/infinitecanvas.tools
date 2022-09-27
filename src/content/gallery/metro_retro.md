@@ -4,6 +4,6 @@ platforms: ["Web"]
 url: https://metroretro.io/
 usecases: ["retrospectives"]
 image: metro_retro.jpg
-description: "The best tool for productive, engaging and fun retrospectives!"
+description: "Tool for productive, engaging retrospectives."
 multiplayer: false
 ---
