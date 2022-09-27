@@ -2,8 +2,9 @@
 
 ![Screenshot of website](/readme_screenshot.jpg)
 
-InfiniteCanvas.tools is created and maintained by the Muse team. We were
-motivated by the explosion of infinite canvas tools these past few years.
+[infinitecanvas.tools](https://infinitecanvas.tools/) is a microsite describing and documenting the history of infinite canvas software, from early design tools (e.g. Illustrator) up to the explosion of whiteboarding, design, programming, and thinking tools today (e.g. Miro, Figma, Origami Studio, MindNode).
+
+The site was created by the [Muse](https://museapp.com/) team to help showcase the diversity of apps in this space. We draw some inspiration from early versions of jamstack.org, separating advocacy for the category from any one specific product.
 
 We hope to celebrate how these new tools, Muse included, stand on the shoulders
 of those that came before. This site is a resource and community of like minded
