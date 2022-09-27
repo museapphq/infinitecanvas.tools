@@ -1,6 +1,6 @@
 # InfiniteCanvas.tools
 
-![Screenshot of website](/readme_screenshot.jpg)
+[![Screenshot of website](/readme_screenshot.jpg)](https://infinitecanvas.tools/)
 
 [infinitecanvas.tools](https://infinitecanvas.tools/) is a microsite describing and documenting the history of infinite canvas software, from early design tools (e.g. Illustrator) up to the explosion of whiteboarding, design, programming, and thinking tools today (e.g. Miro, Figma, Origami Studio, MindNode).
 
