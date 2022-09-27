@@ -46,6 +46,8 @@
 
         <rect class="stickynote" style="animation-delay: -5s" x="170" y="414" width="32" height="24" rx="4" fill="#2C393A" />
     </g>
+
+
     <g opacity="0.6">
         <path class="arrow4" style="animation-delay: -7.2s" d="M82 385L114 385" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path class="arrowhead" style="animation-delay: -6.8s" d="M108 378.5L113.793 384.293C114.183 384.683 114.183 385.317 113.793 385.707L108 391.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -58,6 +60,25 @@
         <path class="arrow6" style="animation-delay: -5.2s" d="M134 401.5C134 414 142 426.5 165.5 426" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path class="arrowhead" style="animation-delay: -4.8s" d="M159.5 419.5L165.293 425.293C165.683 425.683 165.683 426.317 165.293 426.707L159.5 432.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 
+    </g>
+
+    <g>
+        <rect style="animation-delay: -17s" class="stickynote" x="638" y="158" width="32" height="24" rx="4" fill="#2C393A" />
+
+        <path style="animation-delay: -16s" class="stickynote" d="M724.658 158.691C726.056 157.682 727.944 157.682 729.342 158.691L740.51 166.757C742.721 168.354 742.721 171.646 740.51 173.243L729.342 181.309C727.944 182.318 726.056 182.318 724.658 181.309L713.49 173.243C711.279 171.646 711.279 168.354 713.49 166.757L724.658 158.691Z" fill="#2C393A" />
+
+        <path style="animation-delay: -15s" class="stickynote" d="M816 170C816 176.627 808.837 182 800 182C791.163 182 784 176.627 784 170C784 163.373 791.163 158 800 158C808.837 158 816 163.373 816 170Z" fill="#2C393A" />
+
+    </g>
+
+
+    <g opacity="0.6">
+        <path class="arrow7" style="animation-delay: -15.2s" d="M675 170L707 170" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -14.8s" d="M700.5 163.5L707 170L700.5 176.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+
+        <path class="arrow7" style="animation-delay: -14.2s" d="M746 170L778 170" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -13.8s" d="M771.5 163.5L778 170L771.5 176.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
 
     <g opacity="0.6">
@@ -78,19 +99,6 @@
         <path d="M1288 87C1287.45 87 1287 87.4477 1287 88C1287 88.5523 1287.45 89 1288 89L1288 87ZM1288 89L1320 89L1320 87L1288 87L1288 89Z" fill="#2C393A" />
     </g>
 
-    <g opacity="0.6">
-        <rect x="638" y="158" width="32" height="24" rx="4" fill="#2C393A" />
-    </g>
-    <path opacity="0.6" d="M724.658 158.691C726.056 157.682 727.944 157.682 729.342 158.691L740.51 166.757C742.721 168.354 742.721 171.646 740.51 173.243L729.342 181.309C727.944 182.318 726.056 182.318 724.658 181.309L713.49 173.243C711.279 171.646 711.279 168.354 713.49 166.757L724.658 158.691Z" fill="#2C393A" />
-    <path opacity="0.6" d="M816 170C816 176.627 808.837 182 800 182C791.163 182 784 176.627 784 170C784 163.373 791.163 158 800 158C808.837 158 816 163.373 816 170Z" fill="#2C393A" />
-    <g opacity="0.6">
-        <path d="M700.5 163.5L707 170L700.5 176.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M675 169C674.448 169 674 169.448 674 170C674 170.552 674.448 171 675 171L675 169ZM675 171L707 171L707 169L675 169L675 171Z" fill="#2C393A" />
-    </g>
-    <g opacity="0.6">
-        <path d="M771.5 163.5L778 170L771.5 176.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M746 169C745.448 169 745 169.448 745 170C745 170.552 745.448 171 746 171L746 169ZM746 171L778 171L778 169L746 169L746 171Z" fill="#2C393A" />
-    </g>
 
     <style>
     .stickynote {
@@ -283,6 +291,30 @@
         }
         100% {
             stroke-dashoffset: 47;
+        }
+    }
+
+    .arrow7 {
+        stroke-dasharray: 32;
+        stroke-dashoffset: 32;
+        animation: arrow7 20s linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes arrow7 {
+        0% {
+            stroke-dashoffset: 32;
+        }
+        49% {
+            stroke-dashoffset: 32;
+        }
+        50% {
+            stroke-dashoffset: 0;
+        }
+        99% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 32;
         }
     }
 
