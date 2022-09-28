@@ -81,22 +81,23 @@
         <path class="arrowhead" style="animation-delay: -13.8s" d="M771.5 163.5L778 170L771.5 176.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </g>
 
-    <g opacity="0.6">
-        <path d="M1346.5 121.5L1340 128L1333.5 121.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M1341 104C1341 103.448 1340.55 103 1340 103C1339.45 103 1339 103.448 1339 104L1341 104ZM1339 104L1339 128L1341 128L1341 104L1339 104Z" fill="#2C393A" />
+
+    <g>
+        <rect style="animation-delay: -12s" class="stickynote" x="1252" y="76" width="32" height="24" rx="4" fill="#2C393A" />
+
+        <rect style="animation-delay: -11s" class="stickynote" x="1324" y="76" width="32" height="24" rx="4" fill="#2C393A" />
+
+        <rect style="animation-delay: -10s" class="stickynote" x="1324" y="132" width="32" height="24" rx="4" fill="#2C393A" />
     </g>
+
+
     <g opacity="0.6">
-        <rect x="1252" y="76" width="32" height="24" rx="4" fill="#2C393A" />
-    </g>
-    <g opacity="0.6">
-        <rect x="1324" y="76" width="32" height="24" rx="4" fill="#2C393A" />
-    </g>
-    <g opacity="0.6">
-        <rect x="1324" y="132" width="32" height="24" rx="4" fill="#2C393A" />
-    </g>
-    <g opacity="0.6">
-        <path d="M1313.5 81.5L1320 88L1313.5 94.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-        <path d="M1288 87C1287.45 87 1287 87.4477 1287 88C1287 88.5523 1287.45 89 1288 89L1288 87ZM1288 89L1320 89L1320 87L1288 87L1288 89Z" fill="#2C393A" />
+        <path class="arrow7" style="animation-delay: -10.2s" d="M1288 88L1320 88" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -9.8s" d="M1313.5 81.5L1320 88L1313.5 94.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+        <path class="arrow8" style="animation-delay: -9.2s" d="M1340 104L1340 128" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path class="arrowhead" style="animation-delay: -8.8s" d="M1346.5 121.5L1340 128L1333.5 121.5" stroke="#2C393A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
     </g>
 
 
@@ -318,5 +319,28 @@
         }
     }
 
+    .arrow8 {
+        stroke-dasharray: 24;
+        stroke-dashoffset: 24;
+        animation: arrow8 20s linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes arrow8 {
+        0% {
+            stroke-dashoffset: 24;
+        }
+        49% {
+            stroke-dashoffset: 24;
+        }
+        50% {
+            stroke-dashoffset: 0;
+        }
+        99% {
+            stroke-dashoffset: 0;
+        }
+        100% {
+            stroke-dashoffset: 24;
+        }
+    }
 </style>
 </svg>
