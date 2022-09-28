@@ -2,7 +2,7 @@
 const lists = [
   ["miro", "sketch", "muse", "origami_studio"],
   ["figma", "milanote", "concepts", "tensorflow"],
-  ["miro", "figma", "mindnode", "tldraw"]
+  ["miro", "figma", "mind_node", "tldraw"]
 ]
 
 const getRandomItemFromArray = (array) =>
