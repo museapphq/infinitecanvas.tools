@@ -17,7 +17,7 @@ const GalleryItem = ({ title, image }) => (
   </li>
 )
 
-const IndexRandomGallery = ({ galleryItems }) => {
+const IndexAppGallery = ({ galleryItems }) => {
   const filePathToName = (filePath) =>
     filePath.match(/([^/]*).md$/g)[0].replace(".md", "")
 
@@ -50,4 +50,4 @@ const IndexRandomGallery = ({ galleryItems }) => {
   )
 }
 
-export default IndexRandomGallery
+export default IndexAppGallery

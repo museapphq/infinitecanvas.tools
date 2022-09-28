@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import ButtonLink from "../components/ButtonLink.astro"
-import IndexRandomGallery from "../components/index/IndexRandomGallery.jsx"
+import IndexAppGallery from "../components/index/IndexAppGallery.jsx"
 import WhatMakesItem from "../components/index/WhatMakesItem.astro"
 import TimelineItem from "../components/index/TimelineItem.astro"
 import SlideShow from "../components/index/SlideShow.jsx"
@@ -43,7 +43,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
       >
         Meet the apps paving the way
       </h2>
-      <IndexRandomGallery client:load galleryItems={galleryItems} />
+      <IndexAppGallery client:load galleryItems={galleryItems} />
       <ButtonLink href="/gallery" color="bg-red">App gallery →</ButtonLink>
     </section>
 
