@@ -12,4 +12,4 @@ cemented it as a favorite among design teams.
 
 <a href="https://web.archive.org/web/20110711125106/http://www.bohemiancoding.com/about/blog/sketch-1-0-finally-released/" target="_blank">1.0
 release announcement↗</a>
-<a href="https://www.sketch.com/about-us/" target="_blank">About Sketch</a>
+<a href="https://www.sketch.com/about-us/" target="_blank">About Sketch↗</a>

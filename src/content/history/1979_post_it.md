@@ -12,5 +12,5 @@ color was selected by chance. After many iterations, the product was finally
 sold as "Post-Its" in 1979.
 
 <a href="https://www.post-it.com/3M/en_US/post-it/contact-us/about-us/" target="_blank">History
-of Post-it notes</a>
+of Post-it notes↗</a>
 <a href="https://en.wikipedia.org/wiki/Post-it_Note" target="_blank">Wikipedia↗</a>
