@@ -20,7 +20,7 @@ the maintainers will follow up to merge your change.
 
 Each app gallery entry is a `.md` file in `/src/content/gallery/`.
 
-Images are stored in `/public/images/history`. Images in the app gallery have an
+Images are stored in `/public/images/gallery`. Images in the app gallery have an
 aspect ratio of 16x9. If you are providing an image, please provide a
 high-resolution image of at least 1200px wide with your pull request.
 

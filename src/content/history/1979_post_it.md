@@ -5,8 +5,8 @@ image: 1979_post_it.png
 ---
 
 Dr. Spencer Silver, while attempting to develop a super-strong adhesive,
-accidentally created a "low-tack", reusable, pressurive-sensitive adhesive. He
-tried to find an application for the adhesive for years. Then, his colleageu Art
+accidentally created a "low-tack", reusable, pressure-sensitive adhesive. He
+tried to find an application for the adhesive for years. Then, his colleague Art
 Fry used the adhesive to anchor a bookmark in his hymn book. The pale yellow
 color was selected by chance. After many iterations, the product was finally
 sold as "Post-Its" in 1979.
