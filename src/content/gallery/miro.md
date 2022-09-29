@@ -5,5 +5,5 @@ url: https://miro.com/
 usecases: ["whiteboard"]
 image: miro.jpg
 description: "The online collaborative whiteboard platform to bring teams together, anytime, anywhere."
-multiplayer: false
+multiplayer: true
 ---
