@@ -1,9 +1,9 @@
 ---
 title: Condensr
-platforms: ["Java","MacOS","Windows"]
+platforms: ["Windows","macOS"]
 url: http://condensr.de/
-usecases: ["thinking"]
+usecases: ["mind mapping","thinking"]
 image: condensr.jpg
-description: "A visual think tool whose two panes are adequate to the two basic modes of brain operation."
+description: "A visual thinking tool for drawing connections between notes."
 multiplayer: false
 ---
