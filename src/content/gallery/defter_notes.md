@@ -2,8 +2,8 @@
 title: Defter Notes
 platforms: ["iPadOS"]
 url: defternotes.com
-usecases: ["drawing","notetaking","thinking"]
+usecases: ["drawing","mood boards","notetaking","studying","thinking","virtual space"]
 image: defter_notes.jpg
-description: "Agile iPad app for deft note-taking."
+description: "iPad app for handwritten spatial notes."
 multiplayer: false
 ---
