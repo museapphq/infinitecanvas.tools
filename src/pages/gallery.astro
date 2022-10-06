@@ -40,7 +40,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
                 .replace("https://", "")
                 .replace("http://", "")
                 .replace("www.", "")
-                .match(/[a-z1-3.]*/g)[0] + "↗" //capture just the domain and nothing after
+                .match(/[a-z0-9\-.]*/g)[0] + "↗" //capture just the domain and nothing after
             return (
               <li class="scroll scroll-hidden">
                 <div class="aspect-[16/9] mb-16">
