@@ -1,9 +1,11 @@
 ---
 title: Modyfi
-platforms: ["Web", "MacOS", "Windows", "Linux"]
+platforms: ["Linux", "Web", "Windows", "macOS"]
 url: http://modyfi.io/
-usecases: ["image editing", "image creation", "content creation", "creative exploration"]
+usecases: ["image editing"]
 image: modyfi.jpg
-description: "The image editor you've always wanted. AI-powered, browser based, real-time collaboration, and all your assets in one place."
-multiplayer: True
+description:
+  "AI-powered, browser based image editor with real-time collaboration, and all
+  your assets in one place."
+multiplayer: true
 ---
