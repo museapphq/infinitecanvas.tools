@@ -51,6 +51,7 @@ intention is to support building filtering or sorting of the list in the future.
 - retrospectives
 - map making
 - virtual space
+- process modeling
 
 ## History
 
