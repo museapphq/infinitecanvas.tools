@@ -4,6 +4,6 @@ platforms: ["Web"]
 url: https://mavenoid.com
 usecases: ["programming"]
 image: mavenoid.jpg
-description: "Mavenoid is a support solution for hardware companies"
+description: "Support solution for hardware companies"
 multiplayer: true
 ---
