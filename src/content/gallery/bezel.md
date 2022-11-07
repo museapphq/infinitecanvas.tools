@@ -4,6 +4,6 @@ platforms: ["Web"]
 url: https://www.bezel.it
 usecases: ["3D modeling"]
 image: bezel.jpg
-description: "Collaborative 3D design tool."
+description: "Design and prototype on a spatial canvas together."
 multiplayer: true
 ---
