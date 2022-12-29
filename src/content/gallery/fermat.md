@@ -2,8 +2,8 @@
 title: Fermat
 platforms: ["Web"]
 url: https://fermat.ws/
-usecases: ["whiteboard","programming","thinking"]
+usecases: ["programming","thinking","whiteboard"]
 image: fermat.jpg
-description: "Unstuck your brainstorming with AI on a spatial canvas."
+description: "Unstick your brainstorming with AI on a spatial canvas."
 multiplayer: false
 ---
