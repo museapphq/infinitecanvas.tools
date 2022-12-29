@@ -2,8 +2,8 @@
 title: Visily
 platforms: ["Web"]
 url: https://www.visily.ai/
-usecases: ["ui design", "design prototyping"]
+usecases: ["design prototyping","ui design"]
 image: visily.jpg
-description: "Collaborative wireframing and prototyping software built for both designers & non-designers. Powered by AI."
+description: "Collaborative wireframing and prototyping software powered by AI."
 multiplayer: true
 ---
