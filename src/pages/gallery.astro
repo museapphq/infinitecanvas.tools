@@ -41,8 +41,9 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
                 .replace("http://", "")
                 .replace("www.", "")
                 .match(/[a-z0-9\-.]*/g)[0] + "↗" //capture just the domain and nothing after
+            const id = title.replace(/\s/g, "-").toLowerCase()
             return (
-              <li class="scroll scroll-hidden">
+              <li class="scroll scroll-hidden" id={id}>
                 <div class="aspect-[16/9] mb-16">
                   <img
                     src={`/images/gallery/${image}`}
