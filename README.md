@@ -2,9 +2,15 @@
 
 [![Screenshot of website](/readme_screenshot.jpg)](https://infinitecanvas.tools/)
 
-[infinitecanvas.tools](https://infinitecanvas.tools/) is a microsite describing and documenting the history of infinite canvas software, from early design tools (e.g. Illustrator) up to the explosion of whiteboarding, design, programming, and thinking tools today (e.g. Miro, Figma, Origami Studio, MindNode).
+[infinitecanvas.tools](https://infinitecanvas.tools/) is a microsite describing
+and documenting the history of infinite canvas software, from early design tools
+(e.g. Illustrator) up to the explosion of whiteboarding, design, programming,
+and thinking tools today (e.g. Miro, Figma, Origami Studio, MindNode).
 
-The site was created by the [Muse](https://museapp.com/) team to help showcase the diversity of apps in this space. We draw some inspiration from early versions of jamstack.org, separating advocacy for the category from any one specific product.
+The site was created by the [Muse](https://museapp.com/) team to help showcase
+the diversity of apps in this space. We draw some inspiration from early
+versions of jamstack.org, separating advocacy for the category from any one
+specific product.
 
 We hope to celebrate how these new tools, Muse included, stand on the shoulders
 of those that came before. This site is a resource and community of like minded
@@ -27,31 +33,32 @@ high-resolution image of at least 1200px wide with your pull request.
 usecases is an array of string values chosen from the following list. The
 intention is to support building filtering or sorting of the list in the future.
 
-- whiteboard
-- ui design
-- drawing
-- mind mapping
-- thinking
-- notetaking
-- studying
-- teaching
-- task management
-- video editing
-- mood boards
-- storyboarding
-- meetings
-- reviews
-- project planning
-- design prototyping
 - 3D modeling
-- machine learning
-- outlining
-- programming
+- design prototyping
 - diagramming
-- retrospectives
+- drawing
+- machine learning
 - map making
-- virtual space
+- meetings
+- mind mapping
+- mood boards
+- notetaking
+- outlining
 - process modeling
+- programming
+- project planning
+- retrospectives
+- reviews
+- storyboarding
+- studying
+- task management
+- teaching
+- thinking
+- ui design
+- video editing
+- virtual space
+- website
+- whiteboard
 
 ## History
 
