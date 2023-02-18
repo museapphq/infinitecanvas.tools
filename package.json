@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.3.4",
-    "@astrojs/react": "^1.1.0",
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.6",
-    "prettier": "^2.7.1",
-    "prettier-plugin-astro": "^0.5.2",
+    "@astrojs/image": "^0.15.0",
+    "@astrojs/react": "^2.0.2",
+    "@astrojs/tailwind": "^3.0.1",
+    "astro": "^2.0.14",
+    "prettier": "^2.8.4",
+    "prettier-plugin-astro": "^0.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
