@@ -1,7 +1,7 @@
 ---
 import Nav from "../components/Nav.astro"
 import Footer from "../components/Footer.astro"
-import style from "../styles/style.css"
+import "../styles/style.css"
 export interface Props {
   title: string
   url?: string
@@ -53,7 +53,8 @@ const DESCRIPTION = "Explore infinite canvas tools that work the way we think"
     />
     <script src="/scrollReveal.js" defer></script>
 
-    <script src="https://cdn.usefathom.com/script.js" data-site="UKEFMQEZ" defer></script>
+    <script src="https://cdn.usefathom.com/script.js" data-site="UKEFMQEZ" defer
+    ></script>
 
     <title>{title}</title>
   </head>
