@@ -2,8 +2,8 @@
 title: Count
 platforms: ["Web"]
 url: https://count.co/
-usecases: ["whiteboard", "diagramming", "thinking"]
+usecases: ["data analysis","diagramming","thinking","whiteboard"]
 image: count.jpg
-description: "For data teams to plan, build and share their analysis. It's Miro, but for data."
+description: "Explore data spatially, breakdown and refactor your data models, and share with stakeholders."
 multiplayer: true
 ---
