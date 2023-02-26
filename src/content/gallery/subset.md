@@ -2,8 +2,8 @@
 title: Subset
 platforms: ["Web"]
 url: https://subset.so/
-usecases: []
+usecases: ["data analysis","programming","spreadsheet"]
 image: subset.jpg
-description: "A modern spreadsheet built on an endless canvas."
-multiplayer: false
+description: "Collaborative canvas to crunch numbers."
+multiplayer: true
 ---
