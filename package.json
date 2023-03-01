@@ -13,7 +13,7 @@
     "@astrojs/image": "^0.3.4",
     "@astrojs/react": "^2.0.2",
     "@astrojs/tailwind": "^3.0.1",
-    "astro": "^2.0.15",
+    "astro": "^2.0.16",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0",
     "react": "^18.2.0",
