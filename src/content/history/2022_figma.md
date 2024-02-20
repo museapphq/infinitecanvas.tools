@@ -14,9 +14,8 @@ control and enabled cross-platform real-time collaboration.
 Over the years, Figma became one of the primary tools used by digital designers.
 
 In 2022, Adobe announced its intention to acquire Figma for $20 billion.
-However, in 2023, the merger was [abandoned](https://www.figma.com/blog/figma-adobe-abandon-proposed-merger/).
+However, in 2023, the merger was abandoned.
 
-<a href="https://techcrunch.com/2013/06/26/21-years-4-million-dollars/" target="_blank">Early
-funding announcement↗</a>
-<a href="https://adamnash.blog/2022/09/16/figma-a-random-walk-in-palo-alto/" target="_blank">Adam
-Nash's story about Figma↗</a>
+<a href="https://techcrunch.com/2013/06/26/21-years-4-million-dollars/" target="_blank">
+Funding announcement↗</a>
+<a href="https://www.figma.com/blog/figma-adobe-abandon-proposed-merger/" target="_blank">News of cancelled acquisition↗</a>
