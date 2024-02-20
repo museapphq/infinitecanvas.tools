@@ -22,3 +22,6 @@ pnpm-debug.log*
 # import related
 /import_script/list.csv
 /import_script/output/
+
+# astro directories
+.astro/

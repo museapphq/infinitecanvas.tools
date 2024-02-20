@@ -6,8 +6,6 @@ import WhatMakesItem from "../components/index/WhatMakesItem.astro"
 import TimelineItem from "../components/index/TimelineItem.astro"
 import SlideShow from "../components/index/SlideShow.jsx"
 
-import index_header from "/images/illustrations/index_header.svg"
-
 const galleryItems = await Astro.glob("../content/gallery/*.md")
 ---
 
@@ -17,7 +15,7 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
     <div style={`background-image: url("/images/backgrounds/dot_grid.svg")`}>
       <div
         class="mix-blend-multiply relative pb-48 h-[360px] 768:h-[540px] 1280:h-[720px] flex flex-col items-center justify-center bg-center bg-no-repeat bg-cover 1440:bg-auto scroll scroll-hidden"
-        style={`background-image: url("${index_header}")`}
+        style={`background-image: url("/images/illustrations/index_header.svg")`}
       >
         <h1
           class="font-sans text-black text-48 768:text-[72px] 1280:text-[94px] text-center mt-64 768:mt-96 1280:mt-96 leading-normal mb-16"
