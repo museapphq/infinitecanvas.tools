@@ -2,8 +2,8 @@
 title: Kosmik
 platforms: ["Web","Windows","macOS"]
 url: https://www.kosmik.app/?ref=infinitecanvas.tools
-usecases: ["browsing","collecting","notetaking","research","collaborating","thinking","whiteboard","mind mapping"]
+usecases: ["mind mapping","mood boards","notetaking"]
 image: kosmik.jpg
-description: "One place to browse, capture, curate, share your visual inspiration, references, ideas and notes."
+description: "Collaborative tool used to browse, capture, curate, share visual inspiration, references, ideas and notes"
 multiplayer: true
 ---
