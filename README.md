@@ -26,9 +26,9 @@ the maintainers will follow up to merge your change.
 
 Each app gallery entry is a `.md` file in `/src/content/gallery/`.
 
-Images are stored in `/public/images/gallery`. Images in the app gallery have an
-aspect ratio of 16x9. If you are providing an image, please provide a
-high-resolution image of at least 1200px wide with your pull request.
+Images are stored in `/public/images/gallery`.
+If you are providing an image for the App Gallery, please provide a
+JPG image of 600x340 with your pull request.
 
 usecases is an array of string values chosen from the following list. The
 intention is to support building filtering or sorting of the list in the future.
