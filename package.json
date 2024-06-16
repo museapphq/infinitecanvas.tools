@@ -7,7 +7,8 @@
     "start": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "dead-links": "awk '/^url:/{ print $2 }' src/content/gallery/*.md | xargs -n 1 curl -s -w \"%{http_code} %{url} %{redirect_url}\\n\" -o /dev/null --max-time 20"
   },
   "devDependencies": {
     "@astrojs/image": "^0.18.0",
