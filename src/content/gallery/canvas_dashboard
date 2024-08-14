@@ -1,0 +1,9 @@
+---
+title: Dashboards As Code
+platforms: ["Web"]
+url: https://www.holistics.io/product/canvas-dashboard/
+usecases: ["business intelligence", "data analysis"]
+image: dashboard_as_code.jpg
+description: "Build dashboards with ease of canvas & power of code."
+multiplayer: false
+---
