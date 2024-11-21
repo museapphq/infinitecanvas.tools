@@ -44,18 +44,20 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             const id = title.replace(/\s/g, "-").toLowerCase()
             return (
               <li class="scroll scroll-hidden" id={id}>
-                <div class="aspect-[16/9] mb-16">
-                  <img
-                    src={`/images/gallery/${image}`}
-                    alt={`Screenshot of ${title}`}
-                  />
+                <div class="aspect-[16/9] mb-16 transition-opacity group-hover:opacity-90">
+                  <a href={url} target="_blank" rel="noopener noreferrer" class="block group">
+                    <img
+                      src={`/images/gallery/${image}`}
+                      alt={`Screenshot of ${title}`}
+                    />
+                  </a>
                 </div>
-                <h2 class="font-serif text-20 text-gray">{title}</h2>
-                <a href={url} target="_blank">
-                  <p class="mb-16 font-sans font-bold text-red hover-dim text-16">
+                <h2 class="font-serif text-20 text-gray group-hover:text-black transition-colors">{title}</h2>
+                <p class="mb-16 font-sans font-bold text-red hover-dim text-16">
+                  <a href={url} target="_blank" rel="noopener noreferrer">
                     {formattedURL}
-                  </p>
-                </a>
+                  </a>
+                </p>
                 <p class="font-sans text-gray text-opacity-80 text-16">
                   {description}
                 </p>
