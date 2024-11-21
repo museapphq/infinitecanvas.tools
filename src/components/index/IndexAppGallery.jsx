@@ -1,8 +1,8 @@
 // one list will be chosen from random and displayed
 const lists = [
-  ["muse","miro", "sketch", "origami_studio"],
+  ["muse","scrintal", "sketch", "origami_studio"],
   ["figma", "milanote", "muse", "concepts"],
-  ["miro", "muse", "figma", "tldraw"]
+  ["miro", "muse", "mind_node", "tldraw"]
 ]
 
 const getRandomItemFromArray = (array) =>
