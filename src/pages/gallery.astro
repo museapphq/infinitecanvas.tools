@@ -45,7 +45,12 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
             return (
               <li class="scroll scroll-hidden" id={id}>
                 <div class="aspect-[16/9] mb-16 transition-opacity group-hover:opacity-90">
-                  <a href={url} target="_blank" rel="noopener noreferrer" class="block group">
+                  <a 
+                    href={url} 
+                    target="_blank" 
+                    rel={title === "Muse" ? "noopener" : "noopener noreferrer nofollow"} 
+                    class="block group"
+                  >
                     <img
                       src={`/images/gallery/${image}`}
                       alt={`Screenshot of ${title}`}
@@ -54,7 +59,11 @@ const galleryItems = await Astro.glob("../content/gallery/*.md")
                 </div>
                 <h2 class="font-serif text-20 text-gray group-hover:text-black transition-colors">{title}</h2>
                 <p class="mb-16 font-sans font-bold text-red hover-dim text-16">
-                  <a href={url} target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={url} 
+                    target="_blank" 
+                    rel={title === "Muse" ? "noopener" : "noopener noreferrer nofollow"}
+                  >
                     {formattedURL}
                   </a>
                 </p>

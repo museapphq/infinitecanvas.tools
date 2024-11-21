@@ -10,7 +10,12 @@ const getRandomItemFromArray = (array) =>
 
 const GalleryItem = ({ title, image, url }) => (
   <li className="space-y-8" key={title}>
-    <a href={url} target="_blank" rel="noopener noreferrer" className="block">
+    <a 
+      href={url} 
+      target="_blank" 
+      rel={title === "Muse" ? "noopener" : "noopener noreferrer nofollow"} 
+      className="block"
+    >
       <div className="aspect-[16/9] hover:opacity-90 transition-opacity">
         <img src={`/images/gallery/${image}`} alt={`Screenshot of ${title}`} />
       </div>
