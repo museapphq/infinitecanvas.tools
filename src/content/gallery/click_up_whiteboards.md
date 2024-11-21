@@ -1,9 +1,9 @@
 ---
 title: ClickUp Whiteboards
 platforms: ["Android","Linux","Web","Windows","iOS","iPadOS","macOS"]
-url: https://help.clickup.com/hc/en-us/articles/6335140592663-Release-2-107
+url: https://clickup.com/features/whiteboards
 usecases: ["whiteboard"]
 image: click_up_whiteboards.jpg
-description: "Whiteboarding withinthe all-in-one productivity platform."
+description: "Whiteboarding within the all-in-one productivity platform."
 multiplayer: true
 ---
