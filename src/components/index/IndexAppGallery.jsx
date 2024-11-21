@@ -8,12 +8,14 @@ const lists = [
 const getRandomItemFromArray = (array) =>
   array[Math.floor(Math.random() * array.length)]
 
-const GalleryItem = ({ title, image }) => (
+const GalleryItem = ({ title, image, url }) => (
   <li className="space-y-8" key={title}>
-    <div className="aspect-[16/9]">
-      <img src={`/images/gallery/${image}`} alt={`Screenshot of ${title}`} />
-    </div>
-    <h2 className="font-serif text-16 text-gray">{title}</h2>
+    <a href={url} target="_blank" rel="noopener noreferrer" className="block">
+      <div className="aspect-[16/9] hover:opacity-90 transition-opacity">
+        <img src={`/images/gallery/${image}`} alt={`Screenshot of ${title}`} />
+      </div>
+      <h2 className="font-serif text-16 text-gray hover:text-black transition-colors">{title}</h2>
+    </a>
   </li>
 )
 
