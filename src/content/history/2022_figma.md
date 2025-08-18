@@ -1,7 +1,7 @@
 ---
 year: 2022
 title: Adobe proposes to acquire Figma
-image: 2016_figma.png
+image: 2016_figma.webp
 ---
 
 Figma began in 2012 as a browser-based photo editing tool harnessing the

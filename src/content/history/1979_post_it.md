@@ -1,7 +1,7 @@
 ---
 year: 1979
 title: Post It note
-image: 1979_post_it.png
+image: 1979_post_it.webp
 ---
 
 Dr. Spencer Silver, while attempting to develop a super-strong adhesive,

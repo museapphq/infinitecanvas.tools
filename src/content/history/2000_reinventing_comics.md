@@ -1,7 +1,7 @@
 ---
 year: 2000
 title: The term “Infinite Canvas” is coined
-image: 2000_reinventing_comics.png
+image: 2000_reinventing_comics.webp
 ---
 
 Reinventing Comics is the thematic sequel to Scott McCloud’s Understanding

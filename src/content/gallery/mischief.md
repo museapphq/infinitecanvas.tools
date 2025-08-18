@@ -3,7 +3,7 @@ title: Mischief
 platforms: ["Windows"]
 url: http://mischief.findmysoft.com/
 usecases: ["drawing"]
-image: mischief.jpg
+image: mischief.webp
 description: "A sketching, drawing, and painting tool for Windows."
 multiplayer: false
 ---

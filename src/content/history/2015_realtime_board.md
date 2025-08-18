@@ -1,7 +1,7 @@
 ---
 year: 2015
 title: RealtimeBoard 2.0 (Miro)
-image: 2015_realtime_board.png
+image: 2015_realtime_board.webp
 ---
 
 RealtimeBoard started in 2011 to solve the needs of a distributed design agency.

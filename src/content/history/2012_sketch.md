@@ -1,7 +1,7 @@
 ---
 year: 2010
 title: Sketch 1.0
-image: 2010_sketch.png
+image: 2010_sketch.webp
 ---
 
 The first version of Sketch was released to the public in late 2010 by the Dutch
