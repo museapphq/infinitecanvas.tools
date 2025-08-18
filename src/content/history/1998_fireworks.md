@@ -1,7 +1,7 @@
 ---
 year: 1998
 title: Macromedia Fireworks
-image: 1998_fireworks.png
+image: 1998_fireworks.webp
 ---
 
 Combining both raster and vector editing, Macromedia’s Fireworks was a graphics
