@@ -24,7 +24,12 @@ const GalleryItem = ({ title, image, url }) => (
   </li>
 )
 
+import { useState, useEffect } from "react"
+
 const IndexAppGallery = ({ galleryItems }) => {
+  // Use state to manage selected list, default to first list for SSR/hydration consistency
+  const [selectedList, setSelectedList] = useState(lists[0])
+
   const filePathToName = (filePath) =>
     filePath.match(/([^/]*).md$/g)[0].replace(".md", "")
 
@@ -44,8 +49,12 @@ const IndexAppGallery = ({ galleryItems }) => {
     })
   )
 
-  // get one of the lists at random
-  const listToRender = getRandomItemFromArray(lists)
+  // Randomize selection on client side only to avoid hydration mismatch
+  useEffect(() => {
+    setSelectedList(getRandomItemFromArray(lists))
+  }, [])
+
+  const listToRender = selectedList
 
   return (
     // for each item, get the frontmatter from the galleryMap and then render the GalleryItem

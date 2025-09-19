@@ -39,6 +39,15 @@ const Figure = ({ title, imgSrc, sourceUrl, active }) => (
 class SlideShow extends Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      activeIndex: 0,
+      intervalId: null
+    }
+    this.setActiveIndex = this.setActiveIndex.bind(this)
+  }
+
+  componentDidMount() {
     const { items, delayMilliseconds } = this.props
 
     setTimeout(() => {
@@ -59,12 +68,6 @@ class SlideShow extends Component {
         intervalId: intervalId
       }))
     }, delayMilliseconds)
-
-    this.state = {
-      activeIndex: 0,
-      intervalId: null
-    }
-    this.setActiveIndex = this.setActiveIndex.bind(this)
   }
 
   setActiveIndex(index) {
